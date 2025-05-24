@@ -13,7 +13,11 @@ function extractSeries(name) {
     'nitro 5','nitro v',  'elitebook', 'zbook', 'v15','v14', '15s','professional','one','yoga',
     'yogabook','chromebook', '240 G9', '14s',  '255 g8','255 g9','255 g10','zbook','fire fly',
     'spectre x360','probook','alienware','vivobook','zenbook','rog','tuf',
-    'predator','inspiron','latitude','envy','15','14'
+    'predator','inspiron','latitude','envy','spectre','15','14',
+
+    //Acer
+     'Swift Go 14',' Swift 14','Swift 3','Swift X','swift','travelmate','extensa','spin','chromebook','predator helios','predator triton',
+
   ];
   const lower = norm(name);
   for (let kw of keywords) {
@@ -41,7 +45,7 @@ function extractProcessor(name) {
 
   // AMD Ryzen 3/5/7/9
   match = lower.match(/ryzen\s*([3579])/);
-  if (match) return `ryzen ${match[1]}`;
+  if (match) return `ryzen`;
 
   // AMD Athlon
   match = lower.match(/amd\s+athlon/);
@@ -121,6 +125,24 @@ function extractProcessorGeneration(name) {
 
   return '';
 }
+function extractProcessorVariant(name) {
+  if (!name) return '';
+  
+  const normalized = name
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+  
+  // Check for AMD Ryzen variants
+  let match = normalized.match(/ryzen\s*[3579]\s*(?:pro\s*)?.*?(\d{3,4}(?:x3d|xt|ge|hs|hx|h|u|g|x|s)?)/i);
+  if (match) return match[1].toUpperCase();
+  
+  // Check for Intel variants
+  match = normalized.match(/(core\s+(?:ultra\s*)?)(i[3579]|ultra\s*[579]|pentium|celeron)\s*.*?(\d{3,5}(?:[a-z]{1,2})?)/i);
+  if (match) return match[3].toUpperCase();
+  
+  return '';
+}
 
 function extractRamFromName(name) {
   const lower = norm(name);
@@ -151,6 +173,33 @@ function extractTouchScreen(name) {
     return match ? 'YES' : '';
 }
 
+function extractProcessorGenFromProductName(productName) {
+  if (!productName) return null;
+
+  const variant = extractProcessorVariant(productName);
+  if (!variant) return null;
+
+ const normalized = variant.toLowerCase().trim();
+  
+  // AMD Ryzen pattern (7320U should return "7" not "73")
+  if (/^\d\d\d\d[a-z]*$/.test(normalized)) {
+    return normalized.charAt(0); // Just take the first character
+  }
+  
+  // Intel Core pattern (11th gen, 12th gen, etc.)
+  let match = normalized.match(/^(\d{1,2})\d{2,3}[a-z]*$/);
+  if (match) return match[1];
+  
+  // Intel N-series
+  match = normalized.match(/^n(\d)\d{2}$/);
+  if (match) return `N${match[1]}`;
+  
+  return '';
+  
+
+}
+
+
 // --- Normalizers ---
 function normalizeFlipkart(f) {
   const t = f.technicalDetails || {};
@@ -165,8 +214,9 @@ function normalizeFlipkart(f) {
     brand:       extractModel(f.productName),
     series:      extractSeries(f.technicalDetails.Series) || extractSeries(f.productName),
     processor: {
-      name:    extractProcessor(f.technicalDetails.Processor_Name) || extractProcessor(f.productName),
-      gen:     extractProcessorGeneration(f.technicalDetails.Processor_Generation) || extractProcessorGeneration(f.productName)
+      name:    extractProcessor(f.technicalDetails["Processor Name"]) || extractProcessor(f.productName),
+      gen:     extractProcessorGeneration(f.technicalDetails["Processor Generation"]) || extractProcessorGenFromProductName(f.productName),
+      variant: extractProcessorVariant(f.technicalDetails["Processor Variant"]) || extractProcessorVariant(f.productName)
     },
     ram: {
       size: extractRam(f.technicalDetails.RAM) || extractRam(f.productName)
@@ -195,8 +245,9 @@ function normalizeAmazon(a) {
     brand:  extractModel(title),
     series: extractSeries(title),
     processor: {
-      name:    extractProcessor(a.details.Processor_Type) || extractProcessor(title),
-      gen:     extractProcessorGeneration(title)
+      name:    extractProcessor(a.details["Processor Type"]) || extractProcessor(title),
+      gen:     extractProcessorGeneration(title) || extractProcessorGenFromProductName(title),
+      variant: extractProcessorVariant(title) || extractProcessorVariant(a.details["Product Name"])
     },
     ram: {
       size: extractRam(d.RAM_Size) || extractRamFromName(title)
@@ -221,11 +272,13 @@ function makeKey(lap) {
     lap.series,
     lap.processor.name,
     lap.processor.gen,
+    lap.processor.variant,
     lap.ram.size,
     lap.storage.size,
     lap.storage.type,
     lap.Touchscreen,
     lap.gpu
+
   ].join('|');
 }
 // --- Build & Split Entries ---
@@ -296,7 +349,7 @@ function buildEntries(amz, fk) {
 (function(){
   // load data
   const amazonPath   = path.join(__dirname,'amazon_complete_final.json');
-  const flipkartPath = path.join(__dirname,'RemoveHp.json');
+  const flipkartPath = path.join(__dirname,'./Flipkart/RemoveHp.json');
   const amazonData   = JSON.parse(fs.readFileSync(amazonPath,'utf-8'));
   const flipkartData = JSON.parse(fs.readFileSync(flipkartPath,'utf-8'));
 
