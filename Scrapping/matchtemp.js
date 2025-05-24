@@ -83,7 +83,7 @@ function extractGpu(name) {
 
 function extractTouchScreen(name) { 
     const lower = norm(name);
-    const match = lower.match(/touchscreen|touch\s*display/i);
+    const match = lower.match(/touchscreen|YES|touch\s*display/i);
     return match ? 'YES' : '';
 }
 
@@ -232,7 +232,7 @@ function buildEntries(amz, fk) {
 (function(){
   // load data
   const amazonPath   = path.join(__dirname,'amazon_complete_final.json');
-  const flipkartPath = path.join(__dirname,'RemoveHp.json');
+  const flipkartPath = path.join(__dirname,'./Flipkart/RemoveHp.json');
   const amazonData   = JSON.parse(fs.readFileSync(amazonPath,'utf-8'));
   const flipkartData = JSON.parse(fs.readFileSync(flipkartPath,'utf-8'));
 
