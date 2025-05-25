@@ -2036,6 +2036,43 @@
   },
   {
     "brand": "hp",
+    "series": "victus",
+    "specs": {
+      "brand": "hp",
+      "series": "victus",
+      "processor": {
+        "name": "i5",
+        "gen": "13",
+        "variant": "13420H"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 39.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 82300,
+        "link": "https://www.amazon.in/dp/B0D1YHWVF9/",
+        "rating": 3.8
+      },
+      {
+        "source": "flipkart",
+        "price": 68990,
+        "link": "https://www.flipkart.com/hp-victus-intel-core-i5-13th-gen-13420h-16-gb-1-tb-ssd-windows-11-home-4-gb-graphics-nvidia-geforce-rtx-2050-15-fa1307tx-gaming-laptop/p/itmdc1c4e71b1064?pid=COMHYBPJNBAKURKD&lid=LSTCOMHYBPJNBAKURKDVTBMAO&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_12_283&otracker=search&otracker1=search&fm=Search&iid=85c5d402-d7d6-4e1c-85a9-0f4425a32010.COMHYBPJNBAKURKD.SEARCH&ppt=sp&ppn=sp&ssid=i4focsk5e80000001747428604569&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "15",
     "specs": {
       "brand": "hp",
@@ -3072,43 +3109,6 @@
   },
   {
     "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "14",
-        "variant": "14650HX"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 40.9,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 109490,
-        "link": "https://www.amazon.in/dp/B0D1YL72Y6/",
-        "rating": 3.1
-      },
-      {
-        "source": "flipkart",
-        "price": 109390,
-        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-14th-gen-14650hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-16-wf1096tx-gaming-laptop/p/itm98841df0cbbc6?pid=COMHFCEENHGMPUDC&lid=LSTCOMHFCEENHGMPUDCKYD9VS&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_92&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMHFCEENHGMPUDC.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
-        "rating": 4.1
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "15",
     "specs": {
       "brand": "hp",
@@ -3363,43 +3363,6 @@
         "price": 41990,
         "link": "https://www.flipkart.com/hp-laptop-free-bag-intel-core-i3-13th-gen-1315u-8-gb-512-gb-ssd-windows-11-home-15-fd0465tu-thin-light-laptop/p/itmd8a5aa8341c99?pid=COMHBZX8ZP38HGQG&lid=LSTCOMHBZX8ZP38HGQGUXFZZM&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_17_385&otracker=search&otracker1=search&fm=Search&iid=99a99222-476f-4b41-b073-5cc10ab5231b.COMHBZX8ZP38HGQG.SEARCH&ppt=sp&ppn=sp&ssid=ddr3f7qzsg0000001747428625599&qH=312f91285e048e09",
         "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15",
-    "specs": {
-      "brand": "hp",
-      "series": "15",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 31400,
-        "link": "https://www.amazon.in/dp/B096G1V3RC/",
-        "rating": 4.1
-      },
-      {
-        "source": "flipkart",
-        "price": 30999,
-        "link": "https://www.flipkart.com/hp-240-g8-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-business-laptop/p/itm4bea4ae5c4254?pid=COMGKGWHFZUUG62U&lid=LSTCOMGKGWHFZUUG62UINL6LX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_14_326&otracker=search&otracker1=search&fm=Search&iid=6bcb4b6f-74f0-4bcd-9ac9-ab858eca8993.COMGKGWHFZUUG62U.SEARCH&ppt=sp&ppn=sp&ssid=s8lnl5h6tc0000001747428613178&qH=312f91285e048e09",
-        "rating": 4.2
       }
     ]
   },
@@ -3960,6 +3923,265 @@
   },
   {
     "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "13",
+        "variant": "1315U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 38449,
+        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 32349,
+        "link": "https://www.flipkart.com/hp-250r-g9-2024-intel-core-i3-13th-gen-1315u-13th-gen-8-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmff5abac6385ed?pid=COMH75KHRZHEHBNY&lid=LSTCOMH75KHRZHEHBNYFMNVCB&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_9&otracker=search&otracker1=search&fm=Search&iid=9810a9d6-9e52-43d0-a5fe-ef5e691c034c.COMH75KHRZHEHBNY.SEARCH&ppt=sp&ppn=sp&ssid=up2j7dfbsg0000001747428558405&qH=312f91285e048e09",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "13",
+        "variant": "1315U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 38449,
+        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 38990,
+        "link": "https://www.flipkart.com/hp-laptop-intel-core-i3-13th-gen-1315u-8-gb-512-gb-ssd-windows-11-home-15-fd0129tu-thin-light/p/itmcf7c16556a324?pid=COMHF6WAGPZCBQVZ&lid=LSTCOMHF6WAGPZCBQVZPP4MLX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_18&otracker=search&otracker1=search&fm=Search&iid=9810a9d6-9e52-43d0-a5fe-ef5e691c034c.COMHF6WAGPZCBQVZ.SEARCH&ppt=sp&ppn=sp&ssid=up2j7dfbsg0000001747428558405&qH=312f91285e048e09",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "13",
+        "variant": "1315U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 38449,
+        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 32690,
+        "link": "https://www.flipkart.com/hp-15r-2025-intel-core-i3-13th-gen-1315u-8-gb-512-gb-ssd-windows-11-pro-g9-thin-light-laptop/p/itmff5abac6385ed?pid=COMH8PDNRYZH6QHW&lid=LSTCOMH8PDNRYZH6QHWXNR5FL&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_55&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMH8PDNRYZH6QHW.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "13",
+        "variant": "1315U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 38449,
+        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 41990,
+        "link": "https://www.flipkart.com/hp-laptop-free-bag-intel-core-i3-13th-gen-1315u-8-gb-512-gb-ssd-windows-11-home-15-fd0465tu-thin-light-laptop/p/itmd8a5aa8341c99?pid=COMHBZX8ZP38HGQG&lid=LSTCOMHBZX8ZP38HGQGUXFZZM&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_56&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMHBZX8ZP38HGQG.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "13",
+        "variant": "1315U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 38449,
+        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 32200,
+        "link": "https://www.flipkart.com/hp-250r-g9-intel-core-i3-13th-gen-1315u-8-gb-512-gb-ssd-windows-11-home-42v68pa-thin-light-laptop/p/itm9015dcea94ace?pid=COMG3N59B6DRHGKW&lid=LSTCOMG3N59B6DRHGKWJTYTCD&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_114&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMG3N59B6DRHGKW.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "13",
+        "variant": "1315U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 38449,
+        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 53990,
+        "link": "https://www.flipkart.com/hp-laptop-intel-core-i3-13th-gen-1315u-8-gb-512-gb-ssd-windows-11-home-14-gr0000tu-thin-light/p/itm033a2153736a2?pid=COMGYSFGDEGVN2BX&lid=LSTCOMGYSFGDEGVN2BXJN2LCX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_8_192&otracker=search&otracker1=search&fm=Search&iid=ea8b8293-5a28-4ff6-a6ff-cbf63646c3c0.COMGYSFGDEGVN2BX.SEARCH&ppt=sp&ppn=sp&ssid=6dzqn85j0w0000001747428588017&qH=312f91285e048e09",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "13",
+        "variant": "1315U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 38449,
+        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 41990,
+        "link": "https://www.flipkart.com/hp-laptop-free-bag-intel-core-i3-13th-gen-1315u-8-gb-512-gb-ssd-windows-11-home-15-fd0465tu-thin-light-laptop/p/itmd8a5aa8341c99?pid=COMHBZX8ZP38HGQG&lid=LSTCOMHBZX8ZP38HGQGUXFZZM&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_17_385&otracker=search&otracker1=search&fm=Search&iid=99a99222-476f-4b41-b073-5cc10ab5231b.COMHBZX8ZP38HGQG.SEARCH&ppt=sp&ppn=sp&ssid=ddr3f7qzsg0000001747428625599&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "pavilion",
     "specs": {
       "brand": "hp",
@@ -4219,43 +4441,6 @@
   },
   {
     "brand": "hp",
-    "series": "15",
-    "specs": {
-      "brand": "hp",
-      "series": "15",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 32900,
-        "link": "https://www.amazon.in/dp/B0BM6CRHGC/",
-        "rating": 4
-      },
-      {
-        "source": "flipkart",
-        "price": 30999,
-        "link": "https://www.flipkart.com/hp-240-g8-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-business-laptop/p/itm4bea4ae5c4254?pid=COMGKGWHFZUUG62U&lid=LSTCOMGKGWHFZUUG62UINL6LX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_14_326&otracker=search&otracker1=search&fm=Search&iid=6bcb4b6f-74f0-4bcd-9ac9-ab858eca8993.COMGKGWHFZUUG62U.SEARCH&ppt=sp&ppn=sp&ssid=s8lnl5h6tc0000001747428613178&qH=312f91285e048e09",
-        "rating": 4.2
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "pavilion",
     "specs": {
       "brand": "hp",
@@ -4448,7 +4633,7 @@
       "processor": {
         "name": "mediatek",
         "gen": null,
-        "variant": ""
+        "variant": "KOMPANIO 1200"
       },
       "ram": {
         "size": "8"
@@ -4473,6 +4658,43 @@
         "price": 46150,
         "link": "https://www.flipkart.com/hp-chromebook-mediatek-kompanio-1200-8-gb-256-gb-ssd-chrome-os-13b-ca0006mu/p/itmb000f8232f39b?pid=COMGNVRAXTGH4ZF4&lid=LSTCOMGNVRAXTGH4ZF4DPSAHM&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_434&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGNVRAXTGH4ZF4.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
         "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "spectre x360",
+    "specs": {
+      "brand": "hp",
+      "series": "spectre x360",
+      "processor": {
+        "name": "i7",
+        "gen": "13",
+        "variant": "1355U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 34.3,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 124990,
+        "link": "https://www.amazon.in/dp/B0C1CKBD29/",
+        "rating": 4.6
+      },
+      {
+        "source": "flipkart",
+        "price": 145990,
+        "link": "https://www.flipkart.com/hp-spectre-x360-oled-eyesafe-evo-intel-core-i7-13th-gen-1355u-16-gb-1-tb-ssd-windows-11-home-14-ef2033tu-thin-light-laptop/p/itm41b4b90a8513b?pid=COMGZ3S6HKVCSWJQ&lid=LSTCOMGZ3S6HKVCSWJQRRE16B&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_414&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGZ3S6HKVCSWJQ.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
+        "rating": 4.8
       }
     ]
   },
@@ -4695,6 +4917,43 @@
         "price": 34999,
         "link": "https://www.flipkart.com/hp-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15s-fy5006tu-thin-light-laptop/p/itm518009fc70403?pid=COMGTJG9KRXAYFMV&lid=LSTCOMGTJG9KRXAYFMVMRHLH7&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_304&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMGTJG9KRXAYFMV.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
         "rating": 4.1
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "pavilion",
+    "specs": {
+      "brand": "hp",
+      "series": "pavilion",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1240P"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 52990,
+        "link": "https://www.amazon.in/dp/B09WDHWMQY/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 52990,
+        "link": "https://www.flipkart.com/hp-pavilion-intel-core-i5-12th-gen-1240p-8-gb-512-gb-ssd-windows-11-home-15-eg2009tu-thin-light-laptop/p/itm98d9b13d5532f?pid=COMGCRYGGMZFNSPZ&lid=LSTCOMGCRYGGMZFNSPZ22E7XE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_72&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMGCRYGGMZFNSPZ.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
+        "rating": 4.2
       }
     ]
   },
@@ -5027,6 +5286,43 @@
         "source": "flipkart",
         "price": 44990,
         "link": "https://www.flipkart.com/hp-amd-ryzen-5-hexa-core-5500u-8-gb-512-gb-ssd-windows-10-home-15s-eq2040au-thin-light-laptop/p/itmd6f033a4d0056?pid=COMG2HCTGZBGJWRY&lid=LSTCOMG2HCTGZBGJWRYLHLSOE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_16_383&otracker=search&otracker1=search&fm=Search&iid=ba489618-565d-4c1a-8177-b4772db69507.COMG2HCTGZBGJWRY.SEARCH&ppt=sp&ppn=sp&ssid=r3r1v14mcg0000001747428621775&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "envy",
+    "specs": {
+      "brand": "hp",
+      "series": "envy",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1230U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 33.8,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 81799,
+        "link": "https://www.amazon.in/dp/B0BS3X1ZBX/",
+        "rating": 4
+      },
+      {
+        "source": "flipkart",
+        "price": 83990,
+        "link": "https://www.flipkart.com/hp-envy-x360-creator-evo-intel-core-i5-12th-gen-1230u-8-gb-512-gb-ssd-windows-11-home-13-bf0085tu-thin-light-laptop/p/itm0952e9fec673b?pid=COMGH2WTFGEYZKKE&lid=LSTCOMGH2WTFGEYZKKEDQ7JIQ&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_20_465&otracker=search&otracker1=search&fm=Search&iid=f3861d81-108d-4120-b2bf-1b9f6ac87dcd.COMGH2WTFGEYZKKE.SEARCH&ppt=sp&ppn=sp&ssid=1thqkl7g740000001747428637319&qH=312f91285e048e09",
         "rating": 4.3
       }
     ]
@@ -6593,8 +6889,8 @@
       "series": "14s",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -6630,8 +6926,8 @@
       "series": "14s",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -6656,43 +6952,6 @@
         "price": 24500,
         "link": "https://www.flipkart.com/hp-intel-celeron-dual-core-n4500-8-gb-256-gb-ssd-windows-11-home-14s-dq3037tu-thin-light-laptop/p/itmb3102840e38cc?pid=COMGG63HBFDCHDBN&lid=LSTCOMGG63HBFDCHDBNAN3CPK&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_290&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMGG63HBFDCHDBN.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
         "rating": 3.7
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "14s",
-    "specs": {
-      "brand": "hp",
-      "series": "14s",
-      "processor": {
-        "name": "celeron",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "256",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 35.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 28999,
-        "link": "https://www.amazon.in/dp/B0B69LVPBT/",
-        "rating": 3.6
-      },
-      {
-        "source": "flipkart",
-        "price": 27790,
-        "link": "https://www.flipkart.com/hp-intel-celeron-dual-core-8-gb-256-gb-ssd-windows-11-home-14s-dq3032tu-thin-light-laptop/p/itmb3102840e38cc?pid=COMGUGV3V5ENV6UX&lid=LSTCOMGUGV3V5ENV6UXETBTDK&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_311&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMGUGV3V5ENV6UX.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
-        "rating": 3.2
       }
     ]
   },
@@ -6846,14 +7105,14 @@
   },
   {
     "brand": "hp",
-    "series": "15",
+    "series": "15s",
     "specs": {
       "brand": "hp",
-      "series": "15",
+      "series": "15s",
       "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -6869,14 +7128,51 @@
     "sites": [
       {
         "source": "amazon",
-        "price": 32900,
-        "link": "https://www.amazon.in/dp/B0BM6CRHGC/",
-        "rating": 4
+        "price": 51000,
+        "link": "https://www.amazon.in/dp/B0B1M9V5KT/",
+        "rating": 4.1
       },
       {
         "source": "flipkart",
-        "price": 30999,
-        "link": "https://www.flipkart.com/hp-240-g8-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-business-laptop/p/itm4bea4ae5c4254?pid=COMGKGWHFZUUG62U&lid=LSTCOMGKGWHFZUUG62UINL6LX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_14_326&otracker=search&otracker1=search&fm=Search&iid=6bcb4b6f-74f0-4bcd-9ac9-ab858eca8993.COMGKGWHFZUUG62U.SEARCH&ppt=sp&ppn=sp&ssid=s8lnl5h6tc0000001747428613178&qH=312f91285e048e09",
+        "price": 65900,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-fy5008tu-thin-light-laptop/p/itm8d69b349edfda?pid=COMH8WHXHNUAMKV3&lid=LSTCOMH8WHXHNUAMKV3FDRJVF&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_64&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMH8WHXHNUAMKV3.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 51000,
+        "link": "https://www.amazon.in/dp/B0B1M9V5KT/",
+        "rating": 4.1
+      },
+      {
+        "source": "flipkart",
+        "price": 47990,
+        "link": "https://www.flipkart.com/hp-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fy5007tu-thin-light-laptop/p/itma831720ef30c2?pid=COMGTJG9CYTFZHZ2&lid=LSTCOMGTJG9CYTFZHZ2UEF4KO&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_103&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGTJG9CYTFZHZ2.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
         "rating": 4.2
       }
     ]
@@ -6888,9 +7184,9 @@
       "brand": "hp",
       "series": "15s",
       "processor": {
-        "name": "i3",
-        "gen": "10",
-        "variant": "10110U"
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -6906,14 +7202,14 @@
     "sites": [
       {
         "source": "amazon",
-        "price": 41900,
-        "link": "https://www.amazon.in/dp/B095YC5VH4/",
-        "rating": 4
+        "price": 51000,
+        "link": "https://www.amazon.in/dp/B0B1M9V5KT/",
+        "rating": 4.1
       },
       {
         "source": "flipkart",
-        "price": 34990,
-        "link": "https://www.flipkart.com/hp-intel-core-i3-10th-gen-10110u-8-gb-512-gb-ssd-windows-10-home-15s-du1516tu-thin-light-laptop/p/itmbc49178f1c68f?pid=COMG442GHMXS9YNX&lid=LSTCOMG442GHMXS9YNXGVLEKP&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_6_123&otracker=search&otracker1=search&fm=Search&iid=67756338-b2c8-4aca-bc47-6646983a67a8.COMG442GHMXS9YNX.SEARCH&ppt=sp&ppn=sp&ssid=cryxljx3f40000001747428578897&qH=312f91285e048e09",
+        "price": 47800,
+        "link": "https://www.flipkart.com/hp-backlit-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fy5002tu-thin-light-laptop/p/itm9046eaf5a4af9?pid=COMGZNSBS7Z959EW&lid=LSTCOMGZNSBS7Z959EWGCQAVA&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_109&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGZNSBS7Z959EW.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
         "rating": 4.3
       }
     ]
@@ -6925,9 +7221,9 @@
       "brand": "hp",
       "series": "15s",
       "processor": {
-        "name": "i3",
-        "gen": "10",
-        "variant": "10110U"
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -6943,14 +7239,14 @@
     "sites": [
       {
         "source": "amazon",
-        "price": 41900,
-        "link": "https://www.amazon.in/dp/B095YC5VH4/",
-        "rating": 4
+        "price": 51000,
+        "link": "https://www.amazon.in/dp/B0B1M9V5KT/",
+        "rating": 4.1
       },
       {
         "source": "flipkart",
-        "price": 34990,
-        "link": "https://www.flipkart.com/hp-intel-core-i3-10th-gen-10110u-8-gb-512-gb-ssd-windows-10-home-15s-du1516tu-thin-light-laptop/p/itmbc49178f1c68f?pid=COMG442GHMXS9YNX&lid=LSTCOMG442GHMXS9YNXGVLEKP&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_300&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMG442GHMXS9YNX.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
+        "price": 46555,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fq5111tu-thin-light-laptop/p/itm3dbbd51f1fb3c?pid=COMGG63HGDTFCCGW&lid=LSTCOMGG63HGDTFCCGWKVIRF3&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_11_254&otracker=search&otracker1=search&fm=Search&iid=9a044059-6ffe-4edd-99b5-26627b665c26.COMGG63HGDTFCCGW.SEARCH&ppt=sp&ppn=sp&ssid=auxas7207k0000001747428600590&qH=312f91285e048e09",
         "rating": 4.3
       }
     ]
@@ -6962,9 +7258,9 @@
       "brand": "hp",
       "series": "15s",
       "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -6974,21 +7270,21 @@
         "type": "ssd"
       },
       "touch": "",
-      "displayInch": 35.6,
+      "displayInch": 15.6,
       "gpu": "intel"
     },
     "sites": [
       {
         "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
+        "price": 51000,
+        "link": "https://www.amazon.in/dp/B0B1M9V5KT/",
+        "rating": 4.1
       },
       {
         "source": "flipkart",
-        "price": 37599,
-        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGY8RDVK5TZGFC&lid=LSTCOMGY8RDVK5TZGFCKI45CE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_95&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMGY8RDVK5TZGFC.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
-        "rating": 4.3
+        "price": 46900,
+        "link": "https://www.flipkart.com/hp-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fq5202tu-thin-light-laptop/p/itm3a1a5c67dcd24?pid=COMGSB2RWWUFH2BY&lid=LSTCOMGSB2RWWUFH2BYTAWPPL&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_341&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMGSB2RWWUFH2BY.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
+        "rating": 4.2
       }
     ]
   },
@@ -6999,9 +7295,9 @@
       "brand": "hp",
       "series": "15s",
       "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -7011,169 +7307,21 @@
         "type": "ssd"
       },
       "touch": "",
-      "displayInch": 35.6,
+      "displayInch": 15.6,
       "gpu": "intel"
     },
     "sites": [
       {
         "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
+        "price": 51000,
+        "link": "https://www.amazon.in/dp/B0B1M9V5KT/",
+        "rating": 4.1
       },
       {
         "source": "flipkart",
-        "price": 36899,
-        "link": "https://www.flipkart.com/hp-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-10-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGYSSUCNJNSHZ7&lid=LSTCOMGYSSUCNJNSHZ7BSHBRY&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_99&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGYSSUCNJNSHZ7.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 35.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
-      },
-      {
-        "source": "flipkart",
-        "price": 38990,
-        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fr2511tu-thin-light-laptop/p/itm129db83c32a71?pid=COMGG3S9ZPRYMXS5&lid=LSTCOMGG3S9ZPRYMXS58TJZNH&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_115&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGG3S9ZPRYMXS5.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 35.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
-      },
-      {
-        "source": "flipkart",
-        "price": 34790,
-        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-10-home-15s-fq2072tu-thin-light-laptop/p/itmdce6afa2e1b0d?pid=COMGYCG8P7MCYQWH&lid=LSTCOMGYCG8P7MCYQWHJVZATE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_9_202&otracker=search&otracker1=search&fm=Search&iid=5ea068bd-6f01-4cad-971d-26bc3881a1ae.COMGYCG8P7MCYQWH.SEARCH&ppt=sp&ppn=sp&ssid=rmb4xmphg00000001747428592214&qH=312f91285e048e09",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 35.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
-      },
-      {
-        "source": "flipkart",
-        "price": 36899,
-        "link": "https://www.flipkart.com/hp-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-10-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGYSSUCNJNSHZ7&lid=LSTCOMGYSSUCNJNSHZ7BSHBRY&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_347&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMGYSSUCNJNSHZ7.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 35.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
-      },
-      {
-        "source": "flipkart",
-        "price": 37599,
-        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGY8RDVK5TZGFC&lid=LSTCOMGY8RDVK5TZGFCKI45CE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_348&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMGY8RDVK5TZGFC.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
-        "rating": 4.3
+        "price": 55990,
+        "link": "https://www.flipkart.com/hp-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fr5010tu-thin-light-laptop/p/itma5bc84556fdc9?pid=COMGYHP5HQU9Z5XM&lid=LSTCOMGYHP5HQU9Z5XMXDCSMV&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_413&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGYHP5HQU9Z5XM.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
+        "rating": null
       }
     ]
   },
@@ -7211,80 +7359,6 @@
         "price": 36000,
         "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-i3-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fq2674tu-thin-light-laptop/p/itm94b8bbcdcfe17?pid=COMGY4SDDYE3AAMM&lid=LSTCOMGY4SDDYE3AAMMXXBHYK&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_16_376&otracker=search&otracker1=search&fm=Search&iid=ba489618-565d-4c1a-8177-b4772db69507.COMGY4SDDYE3AAMM.SEARCH&ppt=sp&ppn=sp&ssid=r3r1v14mcg0000001747428621775&qH=312f91285e048e09",
         "rating": 3.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 35.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
-      },
-      {
-        "source": "flipkart",
-        "price": 35599,
-        "link": "https://www.flipkart.com/hp-laptop-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fq2672tu-thin-light/p/itma5bc84556fdc9?pid=COMGXE4DT7FY3NXV&lid=LSTCOMGXE4DT7FY3NXVEHTJ76&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_411&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGXE4DT7FY3NXV.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "11",
-        "variant": "1115G"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 35.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 35990,
-        "link": "https://www.amazon.in/dp/B0C3D6NMJ3/",
-        "rating": 3.6
-      },
-      {
-        "source": "flipkart",
-        "price": 35750,
-        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fq2671tu-thin-light-laptop/p/itm87114c2927ec1?pid=COMGFSNUHPZHSYHR&lid=LSTCOMGFSNUHPZHSYHRC9B3YW&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_420&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGFSNUHPZHSYHR.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
-        "rating": 4.1
       }
     ]
   },
@@ -8104,6 +8178,376 @@
   },
   {
     "brand": "hp",
+    "series": "envy",
+    "specs": {
+      "brand": "hp",
+      "series": "envy",
+      "processor": {
+        "name": "ryzen",
+        "gen": "7",
+        "variant": "7530U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 72490,
+        "link": "https://www.amazon.in/dp/B0D153Y7Y4/",
+        "rating": 3.5
+      },
+      {
+        "source": "flipkart",
+        "price": 80990,
+        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0015au-laptop/p/itmc3c086a1fc34b?pid=COMGQTFCNHFRVXKB&lid=LSTCOMGQTFCNHFRVXKB6TW5HX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_438&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCNHFRVXKB.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "envy",
+    "specs": {
+      "brand": "hp",
+      "series": "envy",
+      "processor": {
+        "name": "ryzen",
+        "gen": "7",
+        "variant": "7530U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 72490,
+        "link": "https://www.amazon.in/dp/B0D153Y7Y4/",
+        "rating": 3.5
+      },
+      {
+        "source": "flipkart",
+        "price": 89990,
+        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0016au-laptop/p/itm33567c18bc14a?pid=COMGQTFCHFVNY6SR&lid=LSTCOMGQTFCHFVNY6SRAI4VAV&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_440&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCHFVNY6SR.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "12",
+        "variant": "12700H"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 16.1,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 13633311,
+        "link": "https://www.amazon.in/dp/B09VCC4RGR/",
+        "rating": 5
+      },
+      {
+        "source": "flipkart",
+        "price": 135990,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-3070-16-b1370tx-gaming-laptop/p/itm5b316c4d48921?pid=COMGCGSTY9RYYCQV&lid=LSTCOMGCGSTY9RYYCQVBSLR3B&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_492&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGCGSTY9RYYCQV.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "12",
+        "variant": "12700H"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 16.1,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 13633311,
+        "link": "https://www.amazon.in/dp/B09VCC4RGR/",
+        "rating": 5
+      },
+      {
+        "source": "flipkart",
+        "price": 109990,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-4-gb-graphics-nvidia-geforce-rtx-3050-ti-16-b1351tx-gaming-laptop/p/itm5b316c4d48921?pid=COMGCGSTD3BJXTAQ&lid=LSTCOMGCGSTD3BJXTAQ0YWVDA&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_499&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGCGSTD3BJXTAQ.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 46180,
+        "link": "https://www.amazon.in/dp/B0CXMVNX1C/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 65900,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-fy5008tu-thin-light-laptop/p/itm8d69b349edfda?pid=COMH8WHXHNUAMKV3&lid=LSTCOMH8WHXHNUAMKV3FDRJVF&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_64&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMH8WHXHNUAMKV3.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 46180,
+        "link": "https://www.amazon.in/dp/B0CXMVNX1C/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 47990,
+        "link": "https://www.flipkart.com/hp-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fy5007tu-thin-light-laptop/p/itma831720ef30c2?pid=COMGTJG9CYTFZHZ2&lid=LSTCOMGTJG9CYTFZHZ2UEF4KO&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_103&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGTJG9CYTFZHZ2.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 46180,
+        "link": "https://www.amazon.in/dp/B0CXMVNX1C/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 47800,
+        "link": "https://www.flipkart.com/hp-backlit-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fy5002tu-thin-light-laptop/p/itm9046eaf5a4af9?pid=COMGZNSBS7Z959EW&lid=LSTCOMGZNSBS7Z959EWGCQAVA&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_109&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGZNSBS7Z959EW.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 46180,
+        "link": "https://www.amazon.in/dp/B0CXMVNX1C/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 46555,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fq5111tu-thin-light-laptop/p/itm3dbbd51f1fb3c?pid=COMGG63HGDTFCCGW&lid=LSTCOMGG63HGDTFCCGWKVIRF3&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_11_254&otracker=search&otracker1=search&fm=Search&iid=9a044059-6ffe-4edd-99b5-26627b665c26.COMGG63HGDTFCCGW.SEARCH&ppt=sp&ppn=sp&ssid=auxas7207k0000001747428600590&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 46180,
+        "link": "https://www.amazon.in/dp/B0CXMVNX1C/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 46900,
+        "link": "https://www.flipkart.com/hp-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fq5202tu-thin-light-laptop/p/itm3a1a5c67dcd24?pid=COMGSB2RWWUFH2BY&lid=LSTCOMGSB2RWWUFH2BYTAWPPL&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_341&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMGSB2RWWUFH2BY.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i5",
+        "gen": "12",
+        "variant": "1235U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 46180,
+        "link": "https://www.amazon.in/dp/B0CXMVNX1C/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 55990,
+        "link": "https://www.flipkart.com/hp-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15s-fr5010tu-thin-light-laptop/p/itma5bc84556fdc9?pid=COMGYHP5HQU9Z5XM&lid=LSTCOMGYHP5HQU9Z5XMXDCSMV&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_413&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGYHP5HQU9Z5XM.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "15s",
     "specs": {
       "brand": "hp",
@@ -8363,6 +8807,228 @@
   },
   {
     "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 0,
+        "link": "https://www.amazon.in/dp/B0CWPN7D2B/",
+        "rating": 1.9
+      },
+      {
+        "source": "flipkart",
+        "price": 32990,
+        "link": "https://www.flipkart.com/hp-250-g9-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-business-laptop/p/itmaeab3e70c465d?pid=COMGWYWD7GTFGFQH&lid=LSTCOMGWYWD7GTFGFQHS3OQW1&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_74&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMGWYWD7GTFGFQH.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 0,
+        "link": "https://www.amazon.in/dp/B0CWPN7D2B/",
+        "rating": 1.9
+      },
+      {
+        "source": "flipkart",
+        "price": 34990,
+        "link": "https://www.flipkart.com/hp-2024-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15-fd0061tu-thin-light-laptop/p/itmae9a067923020?pid=COMH6AHAGBDZW429&lid=LSTCOMH6AHAGBDZW429RUFX9C&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_83&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMH6AHAGBDZW429.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
+        "rating": 3.9
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 0,
+        "link": "https://www.amazon.in/dp/B0CWPN7D2B/",
+        "rating": 1.9
+      },
+      {
+        "source": "flipkart",
+        "price": 45590,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15-fd0063tu-thin-light-laptop/p/itmf386dd67694e5?pid=COMH3J9YFHMHUHBZ&lid=LSTCOMH3J9YFHMHUHBZJRND76&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_6_125&otracker=search&otracker1=search&fm=Search&iid=67756338-b2c8-4aca-bc47-6646983a67a8.COMH3J9YFHMHUHBZ.SEARCH&ppt=sp&ppn=sp&ssid=cryxljx3f40000001747428578897&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 0,
+        "link": "https://www.amazon.in/dp/B0CWPN7D2B/",
+        "rating": 1.9
+      },
+      {
+        "source": "flipkart",
+        "price": 33650,
+        "link": "https://www.flipkart.com/hp-250-g9-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-dos-7m659pa-laptop/p/itma488dac338fb5?pid=COMGQKM4H9PNPWDF&lid=LSTCOMGQKM4H9PNPWDF2RDHY4&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_9_205&otracker=search&otracker1=search&fm=Search&iid=5ea068bd-6f01-4cad-971d-26bc3881a1ae.COMGQKM4H9PNPWDF.SEARCH&ppt=sp&ppn=sp&ssid=rmb4xmphg00000001747428592214&qH=312f91285e048e09",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 0,
+        "link": "https://www.amazon.in/dp/B0CWPN7D2B/",
+        "rating": 1.9
+      },
+      {
+        "source": "flipkart",
+        "price": 45590,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15-fd0063tu-thin-light-laptop/p/itmf386dd67694e5?pid=COMH3J9YFHMHUHBZ&lid=LSTCOMH3J9YFHMHUHBZJRND76&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_9_213&otracker=search&otracker1=search&fm=Search&iid=5ea068bd-6f01-4cad-971d-26bc3881a1ae.COMH3J9YFHMHUHBZ.SEARCH&ppt=sp&ppn=sp&ssid=rmb4xmphg00000001747428592214&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 0,
+        "link": "https://www.amazon.in/dp/B0CWPN7D2B/",
+        "rating": 1.9
+      },
+      {
+        "source": "flipkart",
+        "price": 35890,
+        "link": "https://www.flipkart.com/hp-240-g9-intel-core-i3-12th-gen-intel-core-i3-1215u-8-gb-512-gb-ssd-dos-business-laptop/p/itm44aa451058e60?pid=COMHYF8D4XPZ69YS&lid=LSTCOMHYF8D4XPZ69YSTZTX1F&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_344&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMHYF8D4XPZ69YS.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "pavilion",
     "specs": {
       "brand": "hp",
@@ -8518,7 +9184,7 @@
       "processor": {
         "name": "mediatek",
         "gen": null,
-        "variant": ""
+        "variant": "KOMPANIO 1200"
       },
       "ram": {
         "size": "8"
@@ -8955,14 +9621,162 @@
   },
   {
     "brand": "hp",
+    "series": "envy",
+    "specs": {
+      "brand": "hp",
+      "series": "envy",
+      "processor": {
+        "name": "ryzen",
+        "gen": "7",
+        "variant": "7530U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 79990,
+        "link": "https://www.amazon.in/dp/B09GVM6R6Q/",
+        "rating": 4.3
+      },
+      {
+        "source": "flipkart",
+        "price": 80990,
+        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0015au-laptop/p/itmc3c086a1fc34b?pid=COMGQTFCNHFRVXKB&lid=LSTCOMGQTFCNHFRVXKB6TW5HX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_438&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCNHFRVXKB.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "envy",
+    "specs": {
+      "brand": "hp",
+      "series": "envy",
+      "processor": {
+        "name": "ryzen",
+        "gen": "7",
+        "variant": "7530U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 79990,
+        "link": "https://www.amazon.in/dp/B09GVM6R6Q/",
+        "rating": 4.3
+      },
+      {
+        "source": "flipkart",
+        "price": 89990,
+        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0016au-laptop/p/itm33567c18bc14a?pid=COMGQTFCHFVNY6SR&lid=LSTCOMGQTFCHFVNY6SRAI4VAV&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_440&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCHFVNY6SR.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "envy",
+    "specs": {
+      "brand": "hp",
+      "series": "envy",
+      "processor": {
+        "name": "ryzen",
+        "gen": "7",
+        "variant": "7530U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 79990,
+        "link": "https://www.amazon.in/dp/B09GVM6R6Q/",
+        "rating": 4.3
+      },
+      {
+        "source": "flipkart",
+        "price": 80990,
+        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0015au-laptop/p/itmc3c086a1fc34b?pid=COMGQTFCNHFRVXKB&lid=LSTCOMGQTFCNHFRVXKB6TW5HX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_438&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCNHFRVXKB.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
+        "rating": 3.7
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "envy",
+    "specs": {
+      "brand": "hp",
+      "series": "envy",
+      "processor": {
+        "name": "ryzen",
+        "gen": "7",
+        "variant": "7530U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 79990,
+        "link": "https://www.amazon.in/dp/B09GVM6R6Q/",
+        "rating": 4.3
+      },
+      {
+        "source": "flipkart",
+        "price": 89990,
+        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0016au-laptop/p/itm33567c18bc14a?pid=COMGQTFCHFVNY6SR&lid=LSTCOMGQTFCHFVNY6SRAI4VAV&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_440&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCHFVNY6SR.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "chromebook",
     "specs": {
       "brand": "hp",
       "series": "chromebook",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -9246,6 +10060,80 @@
         "price": 109990,
         "link": "https://www.flipkart.com/hp-omen-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-4-gb-graphics-nvidia-geforce-rtx-3050-ti-16-b1351tx-gaming-laptop/p/itm5b316c4d48921?pid=COMGCGSTD3BJXTAQ&lid=LSTCOMGCGSTD3BJXTAQ0YWVDA&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_499&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGCGSTD3BJXTAQ.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
         "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "11",
+        "variant": "11800H"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 16.1,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 115999,
+        "link": "https://www.amazon.in/dp/B09S9XXTK5/",
+        "rating": 2.5
+      },
+      {
+        "source": "flipkart",
+        "price": 195210,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-11th-gen-11800h-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-3070-16-b0370tx-gaming-laptop/p/itm5b316c4d48921?pid=COMG73Z5HGCZWBGW&lid=LSTCOMG73Z5HGCZWBGWIFDUDD&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_495&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMG73Z5HGCZWBGW.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "11",
+        "variant": "11800H"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 16.1,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 115999,
+        "link": "https://www.amazon.in/dp/B09S9XXTK5/",
+        "rating": 2.5
+      },
+      {
+        "source": "flipkart",
+        "price": 79900,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-11th-gen-11800h-16-gb-1-tb-ssd-windows-11-home-4-gb-graphics-nvidia-geforce-rtx-3050-16-b0351tx-gaming-laptop/p/itm5b316c4d48921?pid=COMGBH9JUPSVKGGV&lid=LSTCOMGBH9JUPSVKGGVSQSZTK&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_496&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGBH9JUPSVKGGV.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
+        "rating": 3.7
       }
     ]
   },
@@ -9584,43 +10472,6 @@
   },
   {
     "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "14",
-        "variant": "14650HX"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 40.9,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 124990,
-        "link": "https://www.amazon.in/dp/B0DNJTY43G/",
-        "rating": null
-      },
-      {
-        "source": "flipkart",
-        "price": 109390,
-        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-14th-gen-14650hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-16-wf1096tx-gaming-laptop/p/itm98841df0cbbc6?pid=COMHFCEENHGMPUDC&lid=LSTCOMHFCEENHGMPUDCKYD9VS&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_92&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMHFCEENHGMPUDC.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
-        "rating": 4.1
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "15",
     "specs": {
       "brand": "hp",
@@ -9838,6 +10689,228 @@
         "price": 35890,
         "link": "https://www.flipkart.com/hp-240-g9-intel-core-i3-12th-gen-intel-core-i3-1215u-8-gb-512-gb-ssd-dos-business-laptop/p/itm44aa451058e60?pid=COMHYF8D4XPZ69YS&lid=LSTCOMHYF8D4XPZ69YSTZTX1F&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_344&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMHYF8D4XPZ69YS.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
         "rating": 3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 37584,
+        "link": "https://www.amazon.in/dp/B0D9JMJ9QY/",
+        "rating": null
+      },
+      {
+        "source": "flipkart",
+        "price": 32990,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15s-fy5003tu-thin-light-laptop/p/itm2977a9ca00317?pid=COMGZVGHE9QU8C6M&lid=LSTCOMGZVGHE9QU8C6MHJQTO4&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_14&otracker=search&otracker1=search&fm=Search&iid=9810a9d6-9e52-43d0-a5fe-ef5e691c034c.COMGZVGHE9QU8C6M.SEARCH&ppt=sp&ppn=sp&ssid=up2j7dfbsg0000001747428558405&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 37584,
+        "link": "https://www.amazon.in/dp/B0D9JMJ9QY/",
+        "rating": null
+      },
+      {
+        "source": "flipkart",
+        "price": 38999,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15s-fq5007tu-thin-light-laptop/p/itmd2ff5362367f2?pid=COMGKW2NSU4SPZSG&lid=LSTCOMGKW2NSU4SPZSGEOIPKZ&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_2_26&otracker=search&otracker1=search&fm=Search&iid=e0960014-d3fb-4274-b258-7e3dc7ead82a.COMGKW2NSU4SPZSG.SEARCH&ppt=sp&ppn=sp&ssid=b2ldnk6v1s0000001747428562539&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 37584,
+        "link": "https://www.amazon.in/dp/B0D9JMJ9QY/",
+        "rating": null
+      },
+      {
+        "source": "flipkart",
+        "price": 35490,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15s-fq5327tu-fd0063tu-thin-light-laptop/p/itm2977a9ca00317?pid=COMGYHP5MCEYZHSV&lid=LSTCOMGYHP5MCEYZHSVTVJRS5&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_75&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMGYHP5MCEYZHSV.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 37584,
+        "link": "https://www.amazon.in/dp/B0D9JMJ9QY/",
+        "rating": null
+      },
+      {
+        "source": "flipkart",
+        "price": 35990,
+        "link": "https://www.flipkart.com/hp-fq-series-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15s-fq5326tu-thin-light-laptop/p/itme9a2532043dc2?pid=COMHFG63BRFVGXHW&lid=LSTCOMHFG63BRFVGXHWCYNQQN&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_100&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMHFG63BRFVGXHW.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 37584,
+        "link": "https://www.amazon.in/dp/B0D9JMJ9QY/",
+        "rating": null
+      },
+      {
+        "source": "flipkart",
+        "price": 34999,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15s-fy5006tu-thin-light-laptop/p/itm518009fc70403?pid=COMGTJG9KRXAYFMV&lid=LSTCOMGTJG9KRXAYFMVMRHLH7&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_6_143&otracker=search&otracker1=search&fm=Search&iid=67756338-b2c8-4aca-bc47-6646983a67a8.COMGTJG9KRXAYFMV.SEARCH&ppt=sp&ppn=sp&ssid=cryxljx3f40000001747428578897&qH=312f91285e048e09",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "12",
+        "variant": "1215U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 37584,
+        "link": "https://www.amazon.in/dp/B0D9JMJ9QY/",
+        "rating": null
+      },
+      {
+        "source": "flipkart",
+        "price": 34999,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-15s-fy5006tu-thin-light-laptop/p/itm518009fc70403?pid=COMGTJG9KRXAYFMV&lid=LSTCOMGTJG9KRXAYFMVMRHLH7&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_304&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMGTJG9KRXAYFMV.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
+        "rating": 4.1
       }
     ]
   }

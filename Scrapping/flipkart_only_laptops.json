@@ -7,8 +7,8 @@
       "series": "15",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -263,8 +263,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4120"
       },
       "ram": {
         "size": "4"
@@ -284,134 +284,6 @@
         "price": 16990,
         "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4120-4-gb-64-gb-emmc-storage-chrome-os-14a-ca0506tu/p/itmb2e03ff1f9366?pid=COMGBHKFAYHEMVAT&lid=LSTCOMGBHKFAYHEMVATTMWBVX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_7&otracker=search&otracker1=search&fm=Search&iid=9810a9d6-9e52-43d0-a5fe-ef5e691c034c.COMGBHKFAYHEMVAT.SEARCH&ppt=sp&ppn=sp&ssid=up2j7dfbsg0000001747428558405&qH=312f91285e048e09",
         "rating": 3.9
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "chromebook",
-    "specs": {
-      "brand": "hp",
-      "series": "chromebook",
-      "processor": {
-        "name": "celeron",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "4"
-      },
-      "storage": {
-        "size": "64",
-        "type": "emmc"
-      },
-      "touch": "YES",
-      "displayInch": 14,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 21591,
-        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4500-4-gb-64-gb-emmc-storage-chrome-os-14a-na1004tu/p/itm4489ddf90925c?pid=COMGKW2NUQJFVKSC&lid=LSTCOMGKW2NUQJFVKSCN0FAPS&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_63&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMGKW2NUQJFVKSC.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
-        "rating": 3.8
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "chromebook",
-    "specs": {
-      "brand": "hp",
-      "series": "chromebook",
-      "processor": {
-        "name": "celeron",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "4"
-      },
-      "storage": {
-        "size": "64",
-        "type": "emmc"
-      },
-      "touch": "YES",
-      "displayInch": 14,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 24768,
-        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4020-4-gb-64-gb-emmc-storage-chrome-os-14a-ca0505tu/p/itm8984b31982b0a?pid=COMGBHKFY3T3HZBP&lid=LSTCOMGBHKFY3T3HZBPSUYRNN&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_93&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMGBHKFY3T3HZBP.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
-        "rating": 3.9
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "chromebook",
-    "specs": {
-      "brand": "hp",
-      "series": "chromebook",
-      "processor": {
-        "name": "celeron",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "4"
-      },
-      "storage": {
-        "size": "64",
-        "type": "emmc"
-      },
-      "touch": "YES",
-      "displayInch": 14,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 24768,
-        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4020-4-gb-64-gb-emmc-storage-chrome-os-14a-ca0505tu/p/itm8984b31982b0a?pid=COMGBHKFY3T3HZBP&lid=LSTCOMGBHKFY3T3HZBPSUYRNN&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_8_184&otracker=search&otracker1=search&fm=Search&iid=ea8b8293-5a28-4ff6-a6ff-cbf63646c3c0.COMGBHKFY3T3HZBP.SEARCH&ppt=sp&ppn=sp&ssid=6dzqn85j0w0000001747428588017&qH=312f91285e048e09",
-        "rating": 3.9
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "chromebook",
-    "specs": {
-      "brand": "hp",
-      "series": "chromebook",
-      "processor": {
-        "name": "celeron",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "4"
-      },
-      "storage": {
-        "size": "64",
-        "type": "emmc"
-      },
-      "touch": "YES",
-      "displayInch": 14,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 23990,
-        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4020-4-gb-64-gb-emmc-storage-chrome-os-14a-na0002tu/p/itmc3c4ae0f8b260?pid=COMFVNK6BRCJSH6R&lid=LSTCOMFVNK6BRCJSH6ROYZYAU&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_11_263&otracker=search&otracker1=search&fm=Search&iid=9a044059-6ffe-4edd-99b5-26627b665c26.COMFVNK6BRCJSH6R.SEARCH&ppt=sp&ppn=sp&ssid=auxas7207k0000001747428600590&qH=312f91285e048e09",
-        "rating": 3.6
       }
     ]
   },
@@ -487,8 +359,8 @@
       "series": "15",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7120U"
       },
       "ram": {
         "size": "8"
@@ -1320,7 +1192,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -1352,7 +1224,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -1384,7 +1256,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -1416,7 +1288,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -1575,8 +1447,8 @@
       "series": "chromebook",
       "processor": {
         "name": "mediatek",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "MT8183"
       },
       "ram": {
         "size": "4"
@@ -1607,8 +1479,8 @@
       "series": "chromebook",
       "processor": {
         "name": "mediatek",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "MT8183"
       },
       "ram": {
         "size": "4"
@@ -1639,8 +1511,8 @@
       "series": "chromebook",
       "processor": {
         "name": "mediatek",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "MT8183"
       },
       "ram": {
         "size": "4"
@@ -2216,7 +2088,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "10110U"
+        "variant": "1011"
       },
       "ram": {
         "size": "8"
@@ -2248,7 +2120,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "10110U"
+        "variant": "1011"
       },
       "ram": {
         "size": "8"
@@ -2536,7 +2408,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -2568,7 +2440,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -2664,7 +2536,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1155G"
+        "variant": "1155G7"
       },
       "ram": {
         "size": "16"
@@ -2696,7 +2568,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -2812,6 +2684,38 @@
         "price": 119999,
         "link": "https://www.flipkart.com/hp-intel-core-i7-13th-gen-1355u-16-gb-512-gb-ssd-windows-11-home-ef2036tu-2-1-laptop/p/itm9bd4d2eb0a39a?pid=COMGUDBY45HCKFPQ&lid=LSTCOMGUDBY45HCKFPQZHF8G4&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_20_480&otracker=search&otracker1=search&fm=Search&iid=f3861d81-108d-4120-b2bf-1b9f6ac87dcd.COMGUDBY45HCKFPQ.SEARCH&ppt=sp&ppn=sp&ssid=1thqkl7g740000001747428637319&qH=312f91285e048e09",
         "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "chromebook",
+    "specs": {
+      "brand": "hp",
+      "series": "chromebook",
+      "processor": {
+        "name": "celeron",
+        "gen": "N4",
+        "variant": "N4500"
+      },
+      "ram": {
+        "size": "4"
+      },
+      "storage": {
+        "size": "64",
+        "type": "emmc"
+      },
+      "touch": "YES",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 21591,
+        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4500-4-gb-64-gb-emmc-storage-chrome-os-14a-na1004tu/p/itm4489ddf90925c?pid=COMGKW2NUQJFVKSC&lid=LSTCOMGKW2NUQJFVKSCN0FAPS&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_63&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMGKW2NUQJFVKSC.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
+        "rating": 3.8
       }
     ]
   },
@@ -3009,38 +2913,6 @@
   },
   {
     "brand": "hp",
-    "series": "pavilion",
-    "specs": {
-      "brand": "hp",
-      "series": "pavilion",
-      "processor": {
-        "name": "i5",
-        "gen": "12",
-        "variant": "1240P"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 52990,
-        "link": "https://www.flipkart.com/hp-pavilion-intel-core-i5-12th-gen-1240p-8-gb-512-gb-ssd-windows-11-home-15-eg2009tu-thin-light-laptop/p/itm98d9b13d5532f?pid=COMGCRYGGMZFNSPZ&lid=LSTCOMGCRYGGMZFNSPZ22E7XE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_3_72&otracker=search&otracker1=search&fm=Search&iid=b60f8c32-7e24-49e1-b8f7-90cb1569a8c6.COMGCRYGGMZFNSPZ.SEARCH&ppt=sp&ppn=sp&ssid=25ecjpcbwg0000001747428566672&qH=312f91285e048e09",
-        "rating": 4.2
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "omen",
     "specs": {
       "brand": "hp",
@@ -3112,7 +2984,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -3144,7 +3016,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -3176,7 +3048,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -3208,7 +3080,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -3240,7 +3112,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -3272,7 +3144,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -3304,7 +3176,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -3336,7 +3208,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -3368,7 +3240,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -3400,7 +3272,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -3432,7 +3304,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -3464,7 +3336,7 @@
       "processor": {
         "name": "celeron",
         "gen": "12",
-        "variant": ""
+        "variant": "4500U"
       },
       "ram": {
         "size": "8"
@@ -3496,7 +3368,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -3528,7 +3400,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -3560,7 +3432,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -3592,7 +3464,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -3624,7 +3496,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -3656,7 +3528,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -3688,7 +3560,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -3841,14 +3713,398 @@
   },
   {
     "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "14",
+        "variant": "1465"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 16.1,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 109390,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-14th-gen-14650hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-16-wf1096tx-gaming-laptop/p/itm98841df0cbbc6?pid=COMHFCEENHGMPUDC&lid=LSTCOMHFCEENHGMPUDCKYD9VS&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_92&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMHFCEENHGMPUDC.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "chromebook",
+    "specs": {
+      "brand": "hp",
+      "series": "chromebook",
+      "processor": {
+        "name": "celeron",
+        "gen": "N4",
+        "variant": "N4020"
+      },
+      "ram": {
+        "size": "4"
+      },
+      "storage": {
+        "size": "64",
+        "type": "emmc"
+      },
+      "touch": "YES",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 24768,
+        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4020-4-gb-64-gb-emmc-storage-chrome-os-14a-ca0505tu/p/itm8984b31982b0a?pid=COMGBHKFY3T3HZBP&lid=LSTCOMGBHKFY3T3HZBPSUYRNN&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_93&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMGBHKFY3T3HZBP.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
+        "rating": 3.9
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "chromebook",
+    "specs": {
+      "brand": "hp",
+      "series": "chromebook",
+      "processor": {
+        "name": "celeron",
+        "gen": "N4",
+        "variant": "N4020"
+      },
+      "ram": {
+        "size": "4"
+      },
+      "storage": {
+        "size": "64",
+        "type": "emmc"
+      },
+      "touch": "YES",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 24768,
+        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4020-4-gb-64-gb-emmc-storage-chrome-os-14a-ca0505tu/p/itm8984b31982b0a?pid=COMGBHKFY3T3HZBP&lid=LSTCOMGBHKFY3T3HZBPSUYRNN&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_8_184&otracker=search&otracker1=search&fm=Search&iid=ea8b8293-5a28-4ff6-a6ff-cbf63646c3c0.COMGBHKFY3T3HZBP.SEARCH&ppt=sp&ppn=sp&ssid=6dzqn85j0w0000001747428588017&qH=312f91285e048e09",
+        "rating": 3.9
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "chromebook",
+    "specs": {
+      "brand": "hp",
+      "series": "chromebook",
+      "processor": {
+        "name": "celeron",
+        "gen": "N4",
+        "variant": "N4020"
+      },
+      "ram": {
+        "size": "4"
+      },
+      "storage": {
+        "size": "64",
+        "type": "emmc"
+      },
+      "touch": "YES",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 23990,
+        "link": "https://www.flipkart.com/hp-chromebook-intel-celeron-dual-core-n4020-4-gb-64-gb-emmc-storage-chrome-os-14a-na0002tu/p/itmc3c4ae0f8b260?pid=COMFVNK6BRCJSH6R&lid=LSTCOMFVNK6BRCJSH6ROYZYAU&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_11_263&otracker=search&otracker1=search&fm=Search&iid=9a044059-6ffe-4edd-99b5-26627b665c26.COMFVNK6BRCJSH6R.SEARCH&ppt=sp&ppn=sp&ssid=auxas7207k0000001747428600590&qH=312f91285e048e09",
+        "rating": 3.6
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 37599,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGY8RDVK5TZGFC&lid=LSTCOMGY8RDVK5TZGFCKI45CE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_95&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMGY8RDVK5TZGFC.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 36899,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-10-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGYSSUCNJNSHZ7&lid=LSTCOMGYSSUCNJNSHZ7BSHBRY&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_99&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGYSSUCNJNSHZ7.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 38990,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fr2511tu-thin-light-laptop/p/itm129db83c32a71?pid=COMGG3S9ZPRYMXS5&lid=LSTCOMGG3S9ZPRYMXS58TJZNH&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_5_115&otracker=search&otracker1=search&fm=Search&iid=9029ab4a-67f2-495d-826c-46e2b4c56246.COMGG3S9ZPRYMXS5.SEARCH&ppt=sp&ppn=sp&ssid=w8mjj4uuxs0000001747428575093&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 34790,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-10-home-15s-fq2072tu-thin-light-laptop/p/itmdce6afa2e1b0d?pid=COMGYCG8P7MCYQWH&lid=LSTCOMGYCG8P7MCYQWHJVZATE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_9_202&otracker=search&otracker1=search&fm=Search&iid=5ea068bd-6f01-4cad-971d-26bc3881a1ae.COMGYCG8P7MCYQWH.SEARCH&ppt=sp&ppn=sp&ssid=rmb4xmphg00000001747428592214&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 36899,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-10-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGYSSUCNJNSHZ7&lid=LSTCOMGYSSUCNJNSHZ7BSHBRY&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_347&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMGYSSUCNJNSHZ7.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 37599,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fr2006tu-thin-light-laptop/p/itm169671aff88a4?pid=COMGY8RDVK5TZGFC&lid=LSTCOMGY8RDVK5TZGFCKI45CE&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_348&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMGY8RDVK5TZGFC.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 35599,
+        "link": "https://www.flipkart.com/hp-laptop-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fq2672tu-thin-light/p/itma5bc84556fdc9?pid=COMGXE4DT7FY3NXV&lid=LSTCOMGXE4DT7FY3NXVEHTJ76&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_411&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGXE4DT7FY3NXV.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 35750,
+        "link": "https://www.flipkart.com/hp-15s-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-15s-fq2671tu-thin-light-laptop/p/itm87114c2927ec1?pid=COMGFSNUHPZHSYHR&lid=LSTCOMGFSNUHPZHSYHRC9B3YW&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_420&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGFSNUHPZHSYHR.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "15s",
     "specs": {
       "brand": "hp",
       "series": "15s",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -3879,8 +4135,8 @@
       "series": "15s",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -3911,8 +4167,8 @@
       "series": "15s",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -3944,7 +4200,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -3976,7 +4232,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -4008,7 +4264,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -4040,7 +4296,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -4072,7 +4328,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1115G"
+        "variant": "1115G4"
       },
       "ram": {
         "size": "8"
@@ -4168,7 +4424,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1135G"
+        "variant": "1135G7"
       },
       "ram": {
         "size": "8"
@@ -4200,7 +4456,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1135G"
+        "variant": "1135G7"
       },
       "ram": {
         "size": "8"
@@ -4232,7 +4488,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1135G"
+        "variant": "1135G7"
       },
       "ram": {
         "size": "8"
@@ -4264,7 +4520,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1135G"
+        "variant": "1135G7"
       },
       "ram": {
         "size": "8"
@@ -4391,8 +4647,8 @@
       "series": "",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -4487,8 +4743,8 @@
       "series": "chromebook",
       "processor": {
         "name": "mediatek",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "MT8183"
       },
       "ram": {
         "size": "4"
@@ -4519,8 +4775,8 @@
       "series": "chromebook",
       "processor": {
         "name": "mediatek",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "MT8183"
       },
       "ram": {
         "size": "4"
@@ -4551,8 +4807,8 @@
       "series": "chromebook",
       "processor": {
         "name": "mediatek",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "MT8183"
       },
       "ram": {
         "size": "4"
@@ -4584,7 +4840,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -4616,7 +4872,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -4647,8 +4903,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "4"
@@ -4679,8 +4935,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "4"
@@ -4711,8 +4967,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "4"
@@ -4967,8 +5223,72 @@
       "series": "15s",
       "processor": {
         "name": "i3",
+        "gen": "10",
+        "variant": "1011"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 34990,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-10th-gen-10110u-8-gb-512-gb-ssd-windows-10-home-15s-du1516tu-thin-light-laptop/p/itmbc49178f1c68f?pid=COMG442GHMXS9YNX&lid=LSTCOMG442GHMXS9YNXGVLEKP&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_6_123&otracker=search&otracker1=search&fm=Search&iid=67756338-b2c8-4aca-bc47-6646983a67a8.COMG442GHMXS9YNX.SEARCH&ppt=sp&ppn=sp&ssid=cryxljx3f40000001747428578897&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "10",
+        "variant": "1011"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 34990,
+        "link": "https://www.flipkart.com/hp-intel-core-i3-10th-gen-10110u-8-gb-512-gb-ssd-windows-10-home-15s-du1516tu-thin-light-laptop/p/itmbc49178f1c68f?pid=COMG442GHMXS9YNX&lid=LSTCOMG442GHMXS9YNXGVLEKP&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_300&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMG442GHMXS9YNX.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -5000,7 +5320,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -5032,7 +5352,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -5064,7 +5384,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -5096,7 +5416,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -5895,8 +6215,8 @@
       "series": "14s",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "8"
@@ -5927,8 +6247,8 @@
       "series": "14s",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "8"
@@ -6152,7 +6472,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -6408,7 +6728,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -6440,7 +6760,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -7014,7 +7334,7 @@
       "brand": "hp",
       "series": "",
       "processor": {
-        "name": "",
+        "name": "core 5",
         "gen": "13",
         "variant": ""
       },
@@ -7239,8 +7559,8 @@
       "series": "255 g9",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "4"
@@ -7272,7 +7592,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -7304,7 +7624,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "0153TU"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -7528,7 +7848,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -7656,7 +7976,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -7688,7 +8008,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "1334U"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -7878,9 +8198,9 @@
       "brand": "hp",
       "series": "15",
       "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
+        "name": "core 3",
+        "gen": "1",
+        "variant": "100U"
       },
       "ram": {
         "size": "8"
@@ -7905,46 +8225,14 @@
   },
   {
     "brand": "hp",
-    "series": "15",
-    "specs": {
-      "brand": "hp",
-      "series": "15",
-      "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 58990,
-        "link": "https://www.flipkart.com/hp-intel-core-5-120u-8-gb-512-gb-ssd-windows-11-home-15-fd1096tu-thin-light-laptop/p/itm7cc4e19a57c02?pid=COMHY9ZVZAQVPTBA&lid=LSTCOMHY9ZVZAQVPTBAA7XLM7&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_297&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMHY9ZVZAQVPTBA.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "15s",
     "specs": {
       "brand": "hp",
       "series": "15s",
       "processor": {
         "name": "pentium",
-        "gen": null,
-        "variant": ""
+        "gen": "N6",
+        "variant": "N6000"
       },
       "ram": {
         "size": "8"
@@ -7976,7 +8264,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "10210U"
+        "variant": "1021"
       },
       "ram": {
         "size": "8"
@@ -8007,8 +8295,8 @@
       "series": "14",
       "processor": {
         "name": "snapdragon",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "7C"
       },
       "ram": {
         "size": "8"
@@ -8136,7 +8424,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -8167,8 +8455,8 @@
       "series": "14s",
       "processor": {
         "name": "pentium",
-        "gen": null,
-        "variant": ""
+        "gen": "N6",
+        "variant": "N6000"
       },
       "ram": {
         "size": "8"
@@ -8257,6 +8545,38 @@
   },
   {
     "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "core 5",
+        "gen": "1",
+        "variant": "120U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 58990,
+        "link": "https://www.flipkart.com/hp-intel-core-5-120u-8-gb-512-gb-ssd-windows-11-home-15-fd1096tu-thin-light-laptop/p/itm7cc4e19a57c02?pid=COMHY9ZVZAQVPTBA&lid=LSTCOMHY9ZVZAQVPTBAA7XLM7&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_297&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMHY9ZVZAQVPTBA.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "15s",
     "specs": {
       "brand": "hp",
@@ -8328,7 +8648,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1135G"
+        "variant": "1135G7"
       },
       "ram": {
         "size": "8"
@@ -8486,9 +8806,9 @@
       "brand": "hp",
       "series": "15",
       "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
+        "name": "core 7",
+        "gen": "1",
+        "variant": "150U"
       },
       "ram": {
         "size": "16"
@@ -8507,70 +8827,6 @@
         "source": "flipkart",
         "price": 77490,
         "link": "https://www.flipkart.com/hp-intel-core-7-150u-16-gb-512-gb-ssd-windows-11-home-15-fd1100tu-thin-light-laptop/p/itm5e47d49ffb09a?pid=COMHY9ZVUY2WBHX3&lid=LSTCOMHY9ZVUY2WBHX3RGKS4P&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_308&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMHY9ZVUY2WBHX3.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15",
-    "specs": {
-      "brand": "hp",
-      "series": "15",
-      "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 62990,
-        "link": "https://www.flipkart.com/hp-intel-core-5-120u-16-gb-512-gb-ssd-windows-11-home-15-fd1097tu-thin-light-laptop/p/itm6fde2b6452d54?pid=COMHY9ZVSTVJ3NQP&lid=LSTCOMHY9ZVSTVJ3NQPZIBCWO&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_14_317&otracker=search&otracker1=search&fm=Search&iid=6bcb4b6f-74f0-4bcd-9ac9-ab858eca8993.COMHY9ZVSTVJ3NQP.SEARCH&ppt=sp&ppn=sp&ssid=s8lnl5h6tc0000001747428613178&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15",
-    "specs": {
-      "brand": "hp",
-      "series": "15",
-      "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 77337,
-        "link": "https://www.flipkart.com/hp-intel-core-5-120u-16-gb-512-gb-ssd-windows-11-home-15-fd1097tu-thin-light-laptop/p/itm6fde2b6452d54?pid=COMHY9ZVSTVJ3NQP&lid=LSTCOMHY9ZVSTVJ3NQPWN73KQ&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_339&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMHY9ZVSTVJ3NQP.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
         "rating": null
       }
     ]
@@ -8604,6 +8860,38 @@
         "price": 36990,
         "link": "https://www.flipkart.com/hp-14s-amd-ryzen-3-quad-core-4300u-8-gb-512-gb-ssd-windows-10-home-14s-fr0016au-thin-light-laptop/p/itmc85ad5a7655c4?pid=COMG26RVFGZGDE9D&lid=LSTCOMG26RVFGZGDE9DP11XI5&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_310&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMG26RVFGZGDE9D.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
         "rating": 4.4
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "14s",
+    "specs": {
+      "brand": "hp",
+      "series": "14s",
+      "processor": {
+        "name": "celeron",
+        "gen": null,
+        "variant": ""
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "256",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 27790,
+        "link": "https://www.flipkart.com/hp-intel-celeron-dual-core-8-gb-256-gb-ssd-windows-11-home-14s-dq3032tu-thin-light-laptop/p/itmb3102840e38cc?pid=COMGUGV3V5ENV6UX&lid=LSTCOMGUGV3V5ENV6UXETBTDK&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_311&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMGUGV3V5ENV6UX.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
+        "rating": 3.2
       }
     ]
   },
@@ -8647,8 +8935,8 @@
       "series": "",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "4"
@@ -8679,8 +8967,8 @@
       "series": "",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "4"
@@ -8700,6 +8988,70 @@
         "price": 31000,
         "link": "https://www.flipkart.com/hp-247-g8-amd-athlon-dual-core-athlon-silver-3050u-4-gb-256-gb-ssd-dos-notebook/p/itmb513d39558f0d?pid=COMGP92B9HHXRVVF&lid=LSTCOMGP92B9HHXRVVFEDYHJ1&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_16_367&otracker=search&otracker1=search&fm=Search&iid=ba489618-565d-4c1a-8177-b4772db69507.COMGP92B9HHXRVVF.SEARCH&ppt=sp&ppn=sp&ssid=r3r1v14mcg0000001747428621775&qH=312f91285e048e09",
         "rating": 3.8
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "core 5",
+        "gen": "1",
+        "variant": "120U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 62990,
+        "link": "https://www.flipkart.com/hp-intel-core-5-120u-16-gb-512-gb-ssd-windows-11-home-15-fd1097tu-thin-light-laptop/p/itm6fde2b6452d54?pid=COMHY9ZVSTVJ3NQP&lid=LSTCOMHY9ZVSTVJ3NQPZIBCWO&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_14_317&otracker=search&otracker1=search&fm=Search&iid=6bcb4b6f-74f0-4bcd-9ac9-ab858eca8993.COMHY9ZVSTVJ3NQP.SEARCH&ppt=sp&ppn=sp&ssid=s8lnl5h6tc0000001747428613178&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "core 5",
+        "gen": "1",
+        "variant": "120U"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 77337,
+        "link": "https://www.flipkart.com/hp-intel-core-5-120u-16-gb-512-gb-ssd-windows-11-home-15-fd1097tu-thin-light-laptop/p/itm6fde2b6452d54?pid=COMHY9ZVSTVJ3NQP&lid=LSTCOMHY9ZVSTVJ3NQPWN73KQ&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_15_339&otracker=search&otracker1=search&fm=Search&iid=bb506586-07fa-4260-bbfa-85c07fb4dc7c.COMHY9ZVSTVJ3NQP.SEARCH&ppt=sp&ppn=sp&ssid=e6n529kxhs0000001747428617341&qH=312f91285e048e09",
+        "rating": null
       }
     ]
   },
@@ -8872,7 +9224,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1155G"
+        "variant": "1155G7"
       },
       "ram": {
         "size": "16"
@@ -8904,7 +9256,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1155G"
+        "variant": "1155G7"
       },
       "ram": {
         "size": "16"
@@ -8924,6 +9276,38 @@
         "price": 70899,
         "link": "https://www.flipkart.com/hp-pavilion-intel-core-i5-11th-gen-1155g7-16-gb-512-gb-ssd-windows-11-home-14-dy1010tu-thin-light-laptop/p/itmc83df27151771?pid=COMG9WRFASZUEVYG&lid=LSTCOMG9WRFASZUEVYGUQRGTI&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_14_336&otracker=search&otracker1=search&fm=Search&iid=6bcb4b6f-74f0-4bcd-9ac9-ab858eca8993.COMG9WRFASZUEVYG.SEARCH&ppt=sp&ppn=sp&ssid=s8lnl5h6tc0000001747428613178&qH=312f91285e048e09",
         "rating": 4.3
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G4"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 30999,
+        "link": "https://www.flipkart.com/hp-240-g8-intel-core-i3-11th-gen-1115g4-8-gb-512-gb-ssd-windows-11-home-business-laptop/p/itm4bea4ae5c4254?pid=COMGKGWHFZUUG62U&lid=LSTCOMGKGWHFZUUG62UINL6LX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_14_326&otracker=search&otracker1=search&fm=Search&iid=6bcb4b6f-74f0-4bcd-9ac9-ab858eca8993.COMGKGWHFZUUG62U.SEARCH&ppt=sp&ppn=sp&ssid=s8lnl5h6tc0000001747428613178&qH=312f91285e048e09",
+        "rating": 4.2
       }
     ]
   },
@@ -9032,7 +9416,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -9384,7 +9768,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1125G"
+        "variant": "1125G4"
       },
       "ram": {
         "size": "8"
@@ -9416,7 +9800,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "10110U"
+        "variant": "1011"
       },
       "ram": {
         "size": "8"
@@ -9512,7 +9896,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1135G"
+        "variant": "1135G7"
       },
       "ram": {
         "size": "8"
@@ -10120,7 +10504,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -10152,7 +10536,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -10183,8 +10567,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -10204,70 +10588,6 @@
         "price": 48990,
         "link": "https://www.flipkart.com/hp-chromebook-plus-intel-core-n-n305-8-gb-256-gb-chrome-plus-14b-cd0014tu/p/itm8b7e332e40b2a?pid=COMH2V5YJGNRZFFQ&lid=LSTCOMH2V5YJGNRZFFQO1JINK&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_17_396&otracker=search&otracker1=search&fm=Search&iid=99a99222-476f-4b41-b073-5cc10ab5231b.COMH2V5YJGNRZFFQ.SEARCH&ppt=sp&ppn=sp&ssid=ddr3f7qzsg0000001747428625599&qH=312f91285e048e09",
         "rating": 3.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "chromebook",
-    "specs": {
-      "brand": "hp",
-      "series": "chromebook",
-      "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "",
-        "type": "ufs"
-      },
-      "touch": "YES",
-      "displayInch": 14,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 42419,
-        "link": "https://www.flipkart.com/hp-intel-core-n-n200-8-gb-128-gb-chrome-os-14a-nf0016tu-chromebook/p/itm8b58b407a722f?pid=COMH2V5YQA4DCEGK&lid=LSTCOMH2V5YQA4DCEGKWBVN9P&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_20_479&otracker=search&otracker1=search&fm=Search&iid=f3861d81-108d-4120-b2bf-1b9f6ac87dcd.COMH2V5YQA4DCEGK.SEARCH&ppt=sp&ppn=sp&ssid=1thqkl7g740000001747428637319&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "chromebook",
-    "specs": {
-      "brand": "hp",
-      "series": "chromebook",
-      "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "",
-        "type": "ufs"
-      },
-      "touch": "YES",
-      "displayInch": 14,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 40990,
-        "link": "https://www.flipkart.com/hp-intel-core-n-n200-8-gb-128-gb-chrome-os-14b-cd0012tu-chromebook/p/itmae797b85bcdd8?pid=COMH2V5YTQTHVZGN&lid=LSTCOMH2V5YTQTHVZGNLPTUWM&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_502&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMH2V5YTQTHVZGN.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
-        "rating": 2.7
       }
     ]
   },
@@ -10407,8 +10727,8 @@
       "series": "chromebook",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -10439,8 +10759,8 @@
       "series": "chromebook",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -10524,38 +10844,6 @@
         "price": 117999,
         "link": "https://www.flipkart.com/hp-spectre-intel-core-i7-13th-gen-1355u-32-gb-1-tb-ssd-windows-11-home-ef2035tu-thin-light-laptop/p/itm1ddff4386d498?pid=COMGYAM9THQHGPQH&lid=LSTCOMGYAM9THQHGPQHIUSVP7&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_412&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGYAM9THQHGPQH.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
         "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "spectre x360",
-    "specs": {
-      "brand": "hp",
-      "series": "spectre x360",
-      "processor": {
-        "name": "i7",
-        "gen": "13",
-        "variant": "1355U"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "YES",
-      "displayInch": 13.5,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 145990,
-        "link": "https://www.flipkart.com/hp-spectre-x360-oled-eyesafe-evo-intel-core-i7-13th-gen-1355u-16-gb-1-tb-ssd-windows-11-home-14-ef2033tu-thin-light-laptop/p/itm41b4b90a8513b?pid=COMGZ3S6HKVCSWJQ&lid=LSTCOMGZ3S6HKVCSWJQRRE16B&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_18_414&otracker=search&otracker1=search&fm=Search&iid=7afa1141-40b9-4270-bc00-444ec9b7ca30.COMGZ3S6HKVCSWJQ.SEARCH&ppt=sp&ppn=sp&ssid=lvbn7rb2000000001747428629381&qH=312f91285e048e09",
-        "rating": 4.8
       }
     ]
   },
@@ -10913,70 +11201,6 @@
   },
   {
     "brand": "hp",
-    "series": "envy",
-    "specs": {
-      "brand": "hp",
-      "series": "envy",
-      "processor": {
-        "name": "ryzen",
-        "gen": "7",
-        "variant": "7530U"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "YES",
-      "displayInch": 15.6,
-      "gpu": "",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 80990,
-        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0015au-laptop/p/itmc3c086a1fc34b?pid=COMGQTFCNHFRVXKB&lid=LSTCOMGQTFCNHFRVXKB6TW5HX&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_438&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCNHFRVXKB.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
-        "rating": 3.7
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "envy",
-    "specs": {
-      "brand": "hp",
-      "series": "envy",
-      "processor": {
-        "name": "ryzen",
-        "gen": "7",
-        "variant": "7530U"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "YES",
-      "displayInch": 15.6,
-      "gpu": "",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 89990,
-        "link": "https://www.flipkart.com/hp-envy-x360-amd-ryzen-5-hexa-core-7530u-16-gb-512-gb-ssd-windows-11-home-15-fh0016au-laptop/p/itm33567c18bc14a?pid=COMGQTFCHFVNY6SR&lid=LSTCOMGQTFCHFVNY6SRAI4VAV&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_19_440&otracker=search&otracker1=search&fm=Search&iid=5676c917-e4c2-4c20-ad0d-e438e14f9df5.COMGQTFCHFVNY6SR.SEARCH&ppt=sp&ppn=sp&ssid=c9zrz9j6f40000001747428633344&qH=312f91285e048e09",
-        "rating": 5
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "spectre",
     "specs": {
       "brand": "hp",
@@ -10984,7 +11208,7 @@
       "processor": {
         "name": "i7",
         "gen": "10",
-        "variant": "10510Y"
+        "variant": "1051"
       },
       "ram": {
         "size": "16"
@@ -11240,7 +11464,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -11272,7 +11496,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -11304,7 +11528,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -11336,7 +11560,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -11368,7 +11592,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -11399,8 +11623,8 @@
       "series": "14",
       "processor": {
         "name": "snapdragon",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "16"
@@ -11585,38 +11809,6 @@
   },
   {
     "brand": "hp",
-    "series": "envy",
-    "specs": {
-      "brand": "hp",
-      "series": "envy",
-      "processor": {
-        "name": "i5",
-        "gen": "12",
-        "variant": "1230U"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "YES",
-      "displayInch": 13.3,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 83990,
-        "link": "https://www.flipkart.com/hp-envy-x360-creator-evo-intel-core-i5-12th-gen-1230u-8-gb-512-gb-ssd-windows-11-home-13-bf0085tu-thin-light-laptop/p/itm0952e9fec673b?pid=COMGH2WTFGEYZKKE&lid=LSTCOMGH2WTFGEYZKKEDQ7JIQ&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_20_465&otracker=search&otracker1=search&fm=Search&iid=f3861d81-108d-4120-b2bf-1b9f6ac87dcd.COMGH2WTFGEYZKKE.SEARCH&ppt=sp&ppn=sp&ssid=1thqkl7g740000001747428637319&qH=312f91285e048e09",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "victus 15",
     "specs": {
       "brand": "hp",
@@ -11719,8 +11911,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "4"
@@ -11751,8 +11943,8 @@
       "series": "14",
       "processor": {
         "name": "snapdragon",
-        "gen": null,
-        "variant": ""
+        "gen": "",
+        "variant": "X ELITE"
       },
       "ram": {
         "size": "16"
@@ -11784,7 +11976,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "13700HX"
+        "variant": "1370"
       },
       "ram": {
         "size": "16"
@@ -11905,6 +12097,70 @@
   },
   {
     "brand": "hp",
+    "series": "chromebook",
+    "specs": {
+      "brand": "hp",
+      "series": "chromebook",
+      "processor": {
+        "name": "",
+        "gen": "N2",
+        "variant": "N200"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "",
+        "type": "ufs"
+      },
+      "touch": "YES",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 42419,
+        "link": "https://www.flipkart.com/hp-intel-core-n-n200-8-gb-128-gb-chrome-os-14a-nf0016tu-chromebook/p/itm8b58b407a722f?pid=COMH2V5YQA4DCEGK&lid=LSTCOMH2V5YQA4DCEGKWBVN9P&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_20_479&otracker=search&otracker1=search&fm=Search&iid=f3861d81-108d-4120-b2bf-1b9f6ac87dcd.COMH2V5YQA4DCEGK.SEARCH&ppt=sp&ppn=sp&ssid=1thqkl7g740000001747428637319&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "chromebook",
+    "specs": {
+      "brand": "hp",
+      "series": "chromebook",
+      "processor": {
+        "name": "",
+        "gen": "N2",
+        "variant": "N200"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "",
+        "type": "ufs"
+      },
+      "touch": "YES",
+      "displayInch": 14,
+      "gpu": "intel",
+      "_matched": false
+    },
+    "sites": [
+      {
+        "source": "flipkart",
+        "price": 40990,
+        "link": "https://www.flipkart.com/hp-intel-core-n-n200-8-gb-128-gb-chrome-os-14b-cd0012tu-chromebook/p/itmae797b85bcdd8?pid=COMH2V5YTQTHVZGN&lid=LSTCOMH2V5YTQTHVZGNLPTUWM&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_502&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMH2V5YTQTHVZGN.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
+        "rating": 2.7
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "spectre x360",
     "specs": {
       "brand": "hp",
@@ -11943,8 +12199,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N1",
+        "variant": "N100"
       },
       "ram": {
         "size": "4"
@@ -12104,7 +12360,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "13500HX"
+        "variant": "1350"
       },
       "ram": {
         "size": "16"
@@ -12124,70 +12380,6 @@
         "price": 107999,
         "link": "https://www.flipkart.com/hp-omen-intel-core-i5-13th-gen-13500hx-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-16-wf0052tx-gaming-laptop/p/itm02b151446f589?pid=COMGRNGYHWQHMHBE&lid=LSTCOMGRNGYHWQHMHBEIXJDRS&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_489&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGRNGYHWQHMHBE.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
         "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "11",
-        "variant": "11800H"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 16.1,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 195210,
-        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-11th-gen-11800h-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-3070-16-b0370tx-gaming-laptop/p/itm5b316c4d48921?pid=COMG73Z5HGCZWBGW&lid=LSTCOMG73Z5HGCZWBGWIFDUDD&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_495&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMG73Z5HGCZWBGW.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "11",
-        "variant": "11800H"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 16.1,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 79900,
-        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-11th-gen-11800h-16-gb-1-tb-ssd-windows-11-home-4-gb-graphics-nvidia-geforce-rtx-3050-16-b0351tx-gaming-laptop/p/itm5b316c4d48921?pid=COMGBH9JUPSVKGGV&lid=LSTCOMGBH9JUPSVKGGVSQSZTK&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_496&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGBH9JUPSVKGGV.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
-        "rating": 3.7
       }
     ]
   },
@@ -12231,8 +12423,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N1",
+        "variant": "N100"
       },
       "ram": {
         "size": "4"

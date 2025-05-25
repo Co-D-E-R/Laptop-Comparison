@@ -8,7 +8,7 @@
       "processor": {
         "name": "m1",
         "gen": "M1",
-        "variant": ""
+        "variant": "M1"
       },
       "ram": {
         "size": "8"
@@ -411,7 +411,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -441,8 +441,8 @@
       "series": "aspire",
       "processor": {
         "name": "celeron",
-        "gen": "4",
-        "variant": "4500"
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -813,8 +813,8 @@
       "series": "15",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7120U"
       },
       "ram": {
         "size": "8"
@@ -875,8 +875,8 @@
       "series": "",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "8"
@@ -906,8 +906,8 @@
       "series": "v15",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7120U"
       },
       "ram": {
         "size": "8"
@@ -937,8 +937,8 @@
       "series": "v15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -1092,8 +1092,8 @@
       "series": "",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "8"
@@ -1403,7 +1403,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "16"
@@ -1651,7 +1651,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "1920X"
+        "variant": "1255U"
       },
       "ram": {
         "size": "8"
@@ -1774,8 +1774,8 @@
       "series": "one",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -1929,8 +1929,8 @@
       "series": "ideapad",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4020"
       },
       "ram": {
         "size": "8"
@@ -2011,37 +2011,6 @@
         "price": 77787,
         "link": "https://www.amazon.in/dp/B0CX8V9C7D/",
         "rating": 4
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "victus",
-    "specs": {
-      "brand": "hp",
-      "series": "victus",
-      "processor": {
-        "name": "i5",
-        "gen": "13",
-        "variant": ""
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 39.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 82300,
-        "link": "https://www.amazon.in/dp/B0D1YHWVF9/",
-        "rating": 3.8
       }
     ]
   },
@@ -2270,8 +2239,8 @@
       "series": "v15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -2332,8 +2301,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -2363,8 +2332,8 @@
       "series": "one",
       "processor": {
         "name": "m2",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M2"
       },
       "ram": {
         "size": "8"
@@ -2487,8 +2456,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N3",
+        "variant": "N3350"
       },
       "ram": {
         "size": "8"
@@ -2642,8 +2611,8 @@
       "series": "aspire",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -2984,7 +2953,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "16"
@@ -3014,8 +2983,8 @@
       "series": "ideapad",
       "processor": {
         "name": "celeron",
-        "gen": "4",
-        "variant": "4020"
+        "gen": "N4",
+        "variant": "N4020"
       },
       "ram": {
         "size": "8"
@@ -3046,7 +3015,7 @@
       "processor": {
         "name": "m2",
         "gen": null,
-        "variant": ""
+        "variant": "M2"
       },
       "ram": {
         "size": "16"
@@ -3262,8 +3231,8 @@
       "series": "ideapad",
       "processor": {
         "name": "celeron",
-        "gen": "4",
-        "variant": "4020"
+        "gen": "N4",
+        "variant": "N4020"
       },
       "ram": {
         "size": "8"
@@ -3387,7 +3356,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "1255U"
       },
       "ram": {
         "size": "16"
@@ -3635,7 +3604,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -3728,7 +3697,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -3882,8 +3851,8 @@
       "series": "vivobook",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -4131,7 +4100,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1334U"
       },
       "ram": {
         "size": "16"
@@ -4224,7 +4193,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1225U"
       },
       "ram": {
         "size": "8"
@@ -4286,7 +4255,7 @@
       "processor": {
         "name": "i3",
         "gen": "7",
-        "variant": "512"
+        "variant": "1215U"
       },
       "ram": {
         "size": ""
@@ -4440,8 +4409,8 @@
       "series": "one",
       "processor": {
         "name": "m2",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M2"
       },
       "ram": {
         "size": "8"
@@ -4471,8 +4440,8 @@
       "series": "vivobook",
       "processor": {
         "name": "pentium",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7505"
       },
       "ram": {
         "size": "8"
@@ -4565,7 +4534,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -4657,8 +4626,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -4720,7 +4689,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -4750,8 +4719,8 @@
       "series": "v15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -4832,6 +4801,37 @@
         "price": 51900,
         "link": "https://www.amazon.in/dp/B0DSFRFRW1/",
         "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "14",
+        "variant": "14650HX"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 40.9,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 109490,
+        "link": "https://www.amazon.in/dp/B0D1YL72Y6/",
+        "rating": 3.1
       }
     ]
   },
@@ -4998,8 +4998,8 @@
       "series": "15",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -5030,7 +5030,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -5122,8 +5122,8 @@
       "series": "vivobook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -5153,8 +5153,8 @@
       "series": "",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "365"
       },
       "ram": {
         "size": ""
@@ -5185,7 +5185,7 @@
       "processor": {
         "name": "i7",
         "gen": "14",
-        "variant": "4050"
+        "variant": "14700HX"
       },
       "ram": {
         "size": "16"
@@ -5215,8 +5215,8 @@
       "series": "v15",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7120U"
       },
       "ram": {
         "size": "8"
@@ -5246,8 +5246,8 @@
       "series": "ideapad",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7320U"
       },
       "ram": {
         "size": "32"
@@ -5308,8 +5308,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -5340,7 +5340,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "1920X"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -5370,8 +5370,8 @@
       "series": "vivobook",
       "processor": {
         "name": "snapdragon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "365"
       },
       "ram": {
         "size": "16"
@@ -5433,7 +5433,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "300"
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -5464,7 +5464,7 @@
       "processor": {
         "name": "m2",
         "gen": null,
-        "variant": ""
+        "variant": "M2"
       },
       "ram": {
         "size": "16"
@@ -5557,7 +5557,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "2050"
+        "variant": "12450H"
       },
       "ram": {
         "size": "16"
@@ -5774,7 +5774,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1135G"
       },
       "ram": {
         "size": "16"
@@ -5804,8 +5804,8 @@
       "series": "ideapad",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "350"
       },
       "ram": {
         "size": "8"
@@ -5835,8 +5835,8 @@
       "series": "pavilion",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "350"
       },
       "ram": {
         "size": "16"
@@ -5897,7 +5897,7 @@
       "series": "vivobook",
       "processor": {
         "name": "core ultra 5",
-        "gen": "5",
+        "gen": "2",
         "variant": "512GB"
       },
       "ram": {
@@ -5960,7 +5960,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "1355U"
       },
       "ram": {
         "size": "16"
@@ -6021,8 +6021,8 @@
       "series": "rog",
       "processor": {
         "name": "m3",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "365"
       },
       "ram": {
         "size": "32"
@@ -6041,6 +6041,37 @@
         "price": 199990,
         "link": "https://www.amazon.in/dp/B0F66WZZ2T/",
         "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 31400,
+        "link": "https://www.amazon.in/dp/B096G1V3RC/",
+        "rating": 4.1
       }
     ]
   },
@@ -6084,7 +6115,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "1255U"
       },
       "ram": {
         "size": "16"
@@ -6393,8 +6424,8 @@
       "series": "15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -6425,7 +6456,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -6455,7 +6486,7 @@
       "series": "zenbook",
       "processor": {
         "name": "core ultra 7",
-        "gen": "1",
+        "gen": "2",
         "variant": "120HZ"
       },
       "ram": {
@@ -6487,7 +6518,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -6516,9 +6547,9 @@
       "brand": "asus",
       "series": "rog",
       "processor": {
-        "name": "",
+        "name": "ryzen z",
         "gen": null,
-        "variant": ""
+        "variant": "Z1 EXTREME"
       },
       "ram": {
         "size": "16"
@@ -6579,8 +6610,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -6641,8 +6672,8 @@
       "series": "inspiron",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7520U"
       },
       "ram": {
         "size": "8"
@@ -6703,8 +6734,8 @@
       "series": "one",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -6851,37 +6882,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "15",
-    "specs": {
-      "brand": "hp",
-      "series": "15",
-      "processor": {
-        "name": "i3",
-        "gen": "13",
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 38449,
-        "link": "https://www.amazon.in/dp/B0D4M18BVJ/",
-        "rating": 4.1
-      }
-    ]
-  },
-  {
     "brand": "acer",
     "series": "one",
     "specs": {
@@ -6920,8 +6920,8 @@
       "series": "vivobook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -6983,7 +6983,7 @@
       "processor": {
         "name": "i3",
         "gen": "5",
-        "variant": "2018"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -7076,7 +7076,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -7138,7 +7138,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "1355U"
       },
       "ram": {
         "size": "8"
@@ -7261,8 +7261,8 @@
       "series": "15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "4",
+        "variant": "4500U"
       },
       "ram": {
         "size": "8"
@@ -7324,7 +7324,7 @@
       "processor": {
         "name": "m2",
         "gen": null,
-        "variant": ""
+        "variant": "M2"
       },
       "ram": {
         "size": "16"
@@ -7354,8 +7354,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4120"
       },
       "ram": {
         "size": ""
@@ -7570,9 +7570,9 @@
       "brand": "asus",
       "series": "14",
       "processor": {
-        "name": "m3",
-        "gen": null,
-        "variant": ""
+        "name": "core 7",
+        "gen": "2",
+        "variant": "240H"
       },
       "ram": {
         "size": "16"
@@ -7696,7 +7696,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "1255U"
       },
       "ram": {
         "size": "8"
@@ -7882,7 +7882,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -7913,7 +7913,7 @@
       "processor": {
         "name": "i5",
         "gen": "14",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -8006,7 +8006,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "512"
+        "variant": "13500H"
       },
       "ram": {
         "size": "16"
@@ -8036,8 +8036,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": ""
@@ -8099,7 +8099,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -8222,8 +8222,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -8253,8 +8253,8 @@
       "series": "pavilion",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "340"
       },
       "ram": {
         "size": "16"
@@ -8316,7 +8316,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -8439,8 +8439,8 @@
       "series": "vivobook",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "370"
       },
       "ram": {
         "size": "8"
@@ -8463,6 +8463,37 @@
     ]
   },
   {
+    "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 32900,
+        "link": "https://www.amazon.in/dp/B0BM6CRHGC/",
+        "rating": 4
+      }
+    ]
+  },
+  {
     "brand": "lenovo",
     "series": "15",
     "specs": {
@@ -8470,8 +8501,8 @@
       "series": "15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -8502,7 +8533,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -8595,7 +8626,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -8626,7 +8657,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -8656,8 +8687,8 @@
       "series": "",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "365"
       },
       "ram": {
         "size": "16"
@@ -8719,7 +8750,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": ""
+        "variant": "1135G"
       },
       "ram": {
         "size": "16"
@@ -8843,7 +8874,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "512GB"
+        "variant": "1035G"
       },
       "ram": {
         "size": "8"
@@ -8873,8 +8904,8 @@
       "series": "aspire",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -8936,7 +8967,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1240P"
       },
       "ram": {
         "size": "8"
@@ -8967,7 +8998,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -9029,7 +9060,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "16"
@@ -9060,7 +9091,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -9152,8 +9183,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N1",
+        "variant": "N100"
       },
       "ram": {
         "size": ""
@@ -9183,8 +9214,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N1",
+        "variant": "N100"
       },
       "ram": {
         "size": ""
@@ -9215,7 +9246,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "13420H"
       },
       "ram": {
         "size": "16"
@@ -9308,7 +9339,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "13420H"
+        "variant": "1342"
       },
       "ram": {
         "size": "16"
@@ -9431,8 +9462,8 @@
       "series": "rog",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "R1 EXTREME"
       },
       "ram": {
         "size": "16"
@@ -9462,8 +9493,8 @@
       "series": "vivobook",
       "processor": {
         "name": "i5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "120U"
       },
       "ram": {
         "size": "16"
@@ -9524,8 +9555,8 @@
       "series": "255 g9",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "8"
@@ -9618,7 +9649,7 @@
       "processor": {
         "name": "m3",
         "gen": null,
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -9711,7 +9742,7 @@
       "processor": {
         "name": "i7",
         "gen": "1",
-        "variant": ""
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -9742,7 +9773,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -9773,7 +9804,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -9804,7 +9835,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": ""
+        "variant": "14900HX"
       },
       "ram": {
         "size": "8"
@@ -9835,7 +9866,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "1920X"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -10021,7 +10052,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "300"
+        "variant": "1355U"
       },
       "ram": {
         "size": "16"
@@ -10392,8 +10423,8 @@
       "series": "15",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -10516,8 +10547,8 @@
       "series": "15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -10571,37 +10602,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "spectre x360",
-    "specs": {
-      "brand": "hp",
-      "series": "spectre x360",
-      "processor": {
-        "name": "i7",
-        "gen": "13",
-        "variant": "3000"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 34.3,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 124990,
-        "link": "https://www.amazon.in/dp/B0C1CKBD29/",
-        "rating": 4.6
-      }
-    ]
-  },
-  {
     "brand": "lenovo",
     "series": "thinkpad",
     "specs": {
@@ -10610,7 +10610,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1255UG"
       },
       "ram": {
         "size": "16"
@@ -10764,8 +10764,8 @@
       "series": "chromebook",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4120"
       },
       "ram": {
         "size": ""
@@ -11013,7 +11013,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -11044,7 +11044,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -11168,7 +11168,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "16"
@@ -11198,7 +11198,7 @@
       "series": "zenbook",
       "processor": {
         "name": "core ultra 7",
-        "gen": "1",
+        "gen": "2",
         "variant": "120HZ"
       },
       "ram": {
@@ -11291,8 +11291,8 @@
       "series": "zenbook",
       "processor": {
         "name": "snapdragon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "365"
       },
       "ram": {
         "size": "16"
@@ -11323,7 +11323,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "12650H"
+        "variant": "1265"
       },
       "ram": {
         "size": "16"
@@ -11353,8 +11353,8 @@
       "series": "rog",
       "processor": {
         "name": "i7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -11385,7 +11385,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": ""
+        "variant": "14900HX"
       },
       "ram": {
         "size": "8"
@@ -11415,8 +11415,8 @@
       "series": "chromebook",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -11446,8 +11446,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": ""
@@ -11478,7 +11478,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1920X"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -11509,7 +11509,7 @@
       "processor": {
         "name": "i5",
         "gen": "8",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -11601,8 +11601,8 @@
       "series": "v15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -11652,37 +11652,6 @@
         "price": 93999,
         "link": "https://www.amazon.in/dp/B0D1CJKPCR/",
         "rating": 4.6
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "pavilion",
-    "specs": {
-      "brand": "hp",
-      "series": "pavilion",
-      "processor": {
-        "name": "i5",
-        "gen": "12",
-        "variant": "512GB"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 52990,
-        "link": "https://www.amazon.in/dp/B09WDHWMQY/",
-        "rating": 4.1
       }
     ]
   },
@@ -11757,7 +11726,7 @@
       "processor": {
         "name": "celeron",
         "gen": "4",
-        "variant": ""
+        "variant": "N4020"
       },
       "ram": {
         "size": "8"
@@ -11818,8 +11787,8 @@
       "series": "15",
       "processor": {
         "name": "m3",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -12098,7 +12067,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -12160,7 +12129,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "1920X"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -12284,7 +12253,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "250"
+        "variant": "1235UG"
       },
       "ram": {
         "size": "8"
@@ -12315,7 +12284,7 @@
       "processor": {
         "name": "mediatek",
         "gen": null,
-        "variant": ""
+        "variant": "KOMPANIO 520"
       },
       "ram": {
         "size": "8"
@@ -12501,7 +12470,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13450HX"
       },
       "ram": {
         "size": "16"
@@ -12531,8 +12500,8 @@
       "series": "inspiron",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "5",
+        "variant": "R5"
       },
       "ram": {
         "size": "8"
@@ -12594,7 +12563,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": "12",
-        "variant": ""
+        "variant": "X ELITE"
       },
       "ram": {
         "size": "16"
@@ -12718,7 +12687,7 @@
       "processor": {
         "name": "m2",
         "gen": null,
-        "variant": ""
+        "variant": "M2"
       },
       "ram": {
         "size": "16"
@@ -12842,7 +12811,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -13059,7 +13028,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -13183,7 +13152,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "16"
@@ -13214,7 +13183,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "250"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -13245,7 +13214,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -13275,8 +13244,8 @@
       "series": "inspiron",
       "processor": {
         "name": "i7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "150U"
       },
       "ram": {
         "size": "16"
@@ -13307,7 +13276,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "1255U"
       },
       "ram": {
         "size": "16"
@@ -13338,7 +13307,7 @@
       "processor": {
         "name": "m3",
         "gen": null,
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -13399,8 +13368,8 @@
       "series": "ideapad",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7520U"
       },
       "ram": {
         "size": "8"
@@ -13462,7 +13431,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -13617,7 +13586,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -13678,8 +13647,8 @@
       "series": "15",
       "processor": {
         "name": "i3",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "100U"
       },
       "ram": {
         "size": "8"
@@ -13710,7 +13679,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "512"
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -13740,8 +13709,8 @@
       "series": "aspire",
       "processor": {
         "name": "celeron",
-        "gen": "4",
-        "variant": "4500"
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -13772,7 +13741,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X ELITE"
       },
       "ram": {
         "size": "16"
@@ -13834,7 +13803,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X ELITE"
       },
       "ram": {
         "size": "16"
@@ -13896,7 +13865,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13650HX"
       },
       "ram": {
         "size": "16"
@@ -13926,8 +13895,8 @@
       "series": "yoga",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "350"
       },
       "ram": {
         "size": "32"
@@ -13958,7 +13927,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "256GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -13976,37 +13945,6 @@
         "source": "amazon",
         "price": 33990,
         "link": "https://www.amazon.in/dp/B0CHRPJLT7/",
-        "rating": 4
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "envy",
-    "specs": {
-      "brand": "hp",
-      "series": "envy",
-      "processor": {
-        "name": "i5",
-        "gen": "12",
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 33.8,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 81799,
-        "link": "https://www.amazon.in/dp/B0BS3X1ZBX/",
         "rating": 4
       }
     ]
@@ -14051,7 +13989,7 @@
       "processor": {
         "name": "i5",
         "gen": "1",
-        "variant": ""
+        "variant": "125H"
       },
       "ram": {
         "size": "16"
@@ -14082,7 +14020,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -14112,8 +14050,8 @@
       "series": "ideapad",
       "processor": {
         "name": "i5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "120U"
       },
       "ram": {
         "size": "16"
@@ -14236,7 +14174,7 @@
       "series": "vivobook",
       "processor": {
         "name": "core ultra 5",
-        "gen": "5",
+        "gen": "2",
         "variant": "512GB"
       },
       "ram": {
@@ -14268,7 +14206,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "8"
@@ -14299,7 +14237,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "250"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -14361,7 +14299,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -14392,7 +14330,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "16"
@@ -14423,7 +14361,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "1255U"
       },
       "ram": {
         "size": "16"
@@ -14515,8 +14453,8 @@
       "series": "aspire",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -14609,7 +14547,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "12450HX"
+        "variant": "1245"
       },
       "ram": {
         "size": "16"
@@ -14639,8 +14577,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "6",
+        "variant": "6800H"
       },
       "ram": {
         "size": "8"
@@ -14826,7 +14764,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12650H"
       },
       "ram": {
         "size": "16"
@@ -14919,7 +14857,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1155G"
       },
       "ram": {
         "size": "8"
@@ -14949,8 +14887,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -15105,7 +15043,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -15167,7 +15105,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -15321,8 +15259,8 @@
       "series": "",
       "processor": {
         "name": "snapdragon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "16"
@@ -15353,7 +15291,7 @@
       "processor": {
         "name": "i7",
         "gen": "1",
-        "variant": ""
+        "variant": "155H"
       },
       "ram": {
         "size": "8"
@@ -15415,7 +15353,7 @@
       "processor": {
         "name": "i9",
         "gen": "13",
-        "variant": ""
+        "variant": "13900H"
       },
       "ram": {
         "size": "16"
@@ -15446,7 +15384,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -15632,7 +15570,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -15663,7 +15601,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -15694,7 +15632,7 @@
       "processor": {
         "name": "m3",
         "gen": null,
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -15725,7 +15663,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -15755,8 +15693,8 @@
       "series": "inspiron",
       "processor": {
         "name": "i7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "150U"
       },
       "ram": {
         "size": "16"
@@ -15786,8 +15724,8 @@
       "series": "inspiron",
       "processor": {
         "name": "i7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "150U"
       },
       "ram": {
         "size": "16"
@@ -15849,7 +15787,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "512GB"
+        "variant": "1305U"
       },
       "ram": {
         "size": "8"
@@ -15879,7 +15817,7 @@
       "series": "zenbook",
       "processor": {
         "name": "core ultra 7",
-        "gen": "3",
+        "gen": "2",
         "variant": "365"
       },
       "ram": {
@@ -15910,8 +15848,8 @@
       "series": "15",
       "processor": {
         "name": "i7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "150U"
       },
       "ram": {
         "size": "16"
@@ -16004,7 +15942,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "1920X"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -16097,7 +16035,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -16127,8 +16065,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N2",
+        "variant": "N200"
       },
       "ram": {
         "size": "8"
@@ -16190,7 +16128,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1920X"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -16220,8 +16158,8 @@
       "series": "latitude",
       "processor": {
         "name": "i3",
-        "gen": "2",
-        "variant": "256"
+        "gen": null,
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -16345,7 +16283,7 @@
       "processor": {
         "name": "i9",
         "gen": "1",
-        "variant": ""
+        "variant": "185H"
       },
       "ram": {
         "size": "16"
@@ -16375,8 +16313,8 @@
       "series": "15",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "4",
+        "variant": "4500U"
       },
       "ram": {
         "size": "8"
@@ -16748,7 +16686,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13620H"
       },
       "ram": {
         "size": "8"
@@ -16903,7 +16841,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X ELITE"
       },
       "ram": {
         "size": "8"
@@ -16964,8 +16902,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -17027,7 +16965,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "4060"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16"
@@ -17151,7 +17089,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "512GB"
+        "variant": "1305U"
       },
       "ram": {
         "size": "8"
@@ -17244,7 +17182,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "16"
@@ -17367,8 +17305,8 @@
       "series": "15",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -17429,8 +17367,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N2",
+        "variant": "N200"
       },
       "ram": {
         "size": "8"
@@ -17492,7 +17430,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -17523,7 +17461,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "300"
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -17585,7 +17523,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": "4070"
+        "variant": "14900HX"
       },
       "ram": {
         "size": "16"
@@ -17616,7 +17554,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -17647,7 +17585,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235UG"
       },
       "ram": {
         "size": "16"
@@ -17707,9 +17645,9 @@
       "brand": "asus",
       "series": "tuf",
       "processor": {
-        "name": "m3",
-        "gen": null,
-        "variant": ""
+        "name": "core 5",
+        "gen": "2",
+        "variant": "210H"
       },
       "ram": {
         "size": "16"
@@ -17740,7 +17678,7 @@
       "processor": {
         "name": "i5",
         "gen": "14",
-        "variant": ""
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -17770,8 +17708,8 @@
       "series": "15",
       "processor": {
         "name": "i5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "120U"
       },
       "ram": {
         "size": "8"
@@ -17832,8 +17770,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "16"
@@ -17864,7 +17802,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "12500H"
+        "variant": "1250"
       },
       "ram": {
         "size": "16"
@@ -17895,7 +17833,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -17957,7 +17895,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -17987,8 +17925,8 @@
       "series": "15",
       "processor": {
         "name": "pentium",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7505"
       },
       "ram": {
         "size": "8"
@@ -18019,7 +17957,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "12450H"
       },
       "ram": {
         "size": "8"
@@ -18050,7 +17988,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "1255U"
       },
       "ram": {
         "size": "16"
@@ -18204,8 +18142,8 @@
       "series": "14",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "2",
+        "variant": "258V"
       },
       "ram": {
         "size": "32"
@@ -18297,8 +18235,8 @@
       "series": "255 g9",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": ""
@@ -18329,7 +18267,7 @@
       "processor": {
         "name": "i7",
         "gen": "1",
-        "variant": ""
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -18359,8 +18297,8 @@
       "series": "ideapad",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4020"
       },
       "ram": {
         "size": "8"
@@ -18422,7 +18360,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12650H"
       },
       "ram": {
         "size": "16"
@@ -18453,7 +18391,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -18483,8 +18421,8 @@
       "series": "255 g9",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "8"
@@ -18545,8 +18483,8 @@
       "series": "14",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M4"
       },
       "ram": {
         "size": "32"
@@ -18699,9 +18637,9 @@
       "brand": "acer",
       "series": "aspire",
       "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
+        "name": "core 5",
+        "gen": "1",
+        "variant": "120U"
       },
       "ram": {
         "size": "16"
@@ -18794,7 +18732,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "2021"
+        "variant": "1355U"
       },
       "ram": {
         "size": "8"
@@ -18825,7 +18763,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": ""
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -18856,7 +18794,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -19041,8 +18979,8 @@
       "series": "",
       "processor": {
         "name": "m3",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "M3"
       },
       "ram": {
         "size": "16"
@@ -19092,37 +19030,6 @@
         "price": 27990,
         "link": "https://www.amazon.in/dp/B09NNQ6DT1/",
         "rating": 4
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i5",
-        "gen": "12",
-        "variant": "512GB"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 51000,
-        "link": "https://www.amazon.in/dp/B0B1M9V5KT/",
-        "rating": 4.1
       }
     ]
   },
@@ -19320,8 +19227,8 @@
       "series": "14",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "8"
@@ -19538,7 +19445,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -19569,7 +19476,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "300"
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -19600,7 +19507,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "256GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -19631,7 +19538,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "3200MHZ"
       },
       "ram": {
         "size": "8"
@@ -19692,8 +19599,8 @@
       "series": "chromebook",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "N1",
+        "variant": "N100"
       },
       "ram": {
         "size": "8"
@@ -19816,8 +19723,8 @@
       "series": "yoga",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "365"
       },
       "ram": {
         "size": "32"
@@ -19878,8 +19785,8 @@
       "series": "zbook",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155U"
       },
       "ram": {
         "size": "16"
@@ -19941,7 +19848,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13650HX"
       },
       "ram": {
         "size": "16"
@@ -19972,7 +19879,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "300"
+        "variant": "1315U"
       },
       "ram": {
         "size": "16"
@@ -20034,7 +19941,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "8"
@@ -20064,8 +19971,8 @@
       "series": "14",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3045B"
       },
       "ram": {
         "size": ""
@@ -20089,6 +19996,37 @@
   },
   {
     "brand": "hp",
+    "series": "15",
+    "specs": {
+      "brand": "hp",
+      "series": "15",
+      "processor": {
+        "name": "i3",
+        "gen": "11",
+        "variant": "1115G"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 32900,
+        "link": "https://www.amazon.in/dp/B0BM6CRHGC/",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "15s",
     "specs": {
       "brand": "hp",
@@ -20096,7 +20034,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -20158,7 +20096,7 @@
       "processor": {
         "name": "i7",
         "gen": "1",
-        "variant": ""
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -20219,8 +20157,8 @@
       "series": "15",
       "processor": {
         "name": "i5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "120U"
       },
       "ram": {
         "size": "16"
@@ -20344,7 +20282,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -20375,7 +20313,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "512"
+        "variant": "1355U"
       },
       "ram": {
         "size": "8"
@@ -20406,7 +20344,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13420H"
       },
       "ram": {
         "size": "16"
@@ -20468,7 +20406,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -20487,6 +20425,37 @@
         "price": 39900,
         "link": "https://www.amazon.in/dp/B0B42RSQWR/",
         "rating": 3.8
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "15s",
+    "specs": {
+      "brand": "hp",
+      "series": "15s",
+      "processor": {
+        "name": "i3",
+        "gen": "10",
+        "variant": "10110U"
+      },
+      "ram": {
+        "size": "8"
+      },
+      "storage": {
+        "size": "512",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 41900,
+        "link": "https://www.amazon.in/dp/B095YC5VH4/",
+        "rating": 4
       }
     ]
   },
@@ -20530,7 +20499,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X ELITE"
       },
       "ram": {
         "size": "32"
@@ -20560,8 +20529,8 @@
       "series": "255 g8",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "8"
@@ -20592,7 +20561,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -20623,7 +20592,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13620H"
       },
       "ram": {
         "size": "16"
@@ -20653,8 +20622,8 @@
       "series": "vivobook",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -20747,7 +20716,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -20901,8 +20870,8 @@
       "series": "aspire",
       "processor": {
         "name": "",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3020E"
       },
       "ram": {
         "size": ""
@@ -20933,7 +20902,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -20995,7 +20964,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1366X"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -21026,7 +20995,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "256GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -21088,7 +21057,7 @@
       "processor": {
         "name": "i5",
         "gen": "8",
-        "variant": ""
+        "variant": "2310"
       },
       "ram": {
         "size": "8"
@@ -21119,7 +21088,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "32"
@@ -21243,7 +21212,7 @@
       "processor": {
         "name": "i5",
         "gen": "1",
-        "variant": ""
+        "variant": "125H"
       },
       "ram": {
         "size": "16"
@@ -21274,7 +21243,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "300"
+        "variant": "1355U"
       },
       "ram": {
         "size": "16"
@@ -21367,7 +21336,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -21552,8 +21521,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7320U"
       },
       "ram": {
         "size": "32"
@@ -21770,7 +21739,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "256"
+        "variant": "1035G"
       },
       "ram": {
         "size": "8"
@@ -21831,8 +21800,8 @@
       "series": "inspiron",
       "processor": {
         "name": "i3",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "100U"
       },
       "ram": {
         "size": "8"
@@ -21893,8 +21862,8 @@
       "series": "v15",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3050U"
       },
       "ram": {
         "size": "8"
@@ -22018,7 +21987,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "16"
@@ -22049,7 +22018,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "1920X"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -22420,8 +22389,8 @@
       "series": "alienware",
       "processor": {
         "name": "m1",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "185H"
       },
       "ram": {
         "size": "16"
@@ -22483,7 +22452,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -22545,7 +22514,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "512GB"
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -22576,7 +22545,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "1360P"
       },
       "ram": {
         "size": "16"
@@ -22638,7 +22607,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "1365U"
       },
       "ram": {
         "size": "16"
@@ -22669,7 +22638,7 @@
       "processor": {
         "name": "i5",
         "gen": "1",
-        "variant": ""
+        "variant": "125H"
       },
       "ram": {
         "size": "8"
@@ -22700,7 +22669,7 @@
       "processor": {
         "name": "i9",
         "gen": "12",
-        "variant": ""
+        "variant": "12900"
       },
       "ram": {
         "size": "32"
@@ -22762,7 +22731,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "32"
@@ -22917,7 +22886,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -22978,8 +22947,8 @@
       "series": "zbook",
       "processor": {
         "name": "core ultra 5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "125U"
       },
       "ram": {
         "size": "16"
@@ -23010,7 +22979,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -23072,7 +23041,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13420H"
       },
       "ram": {
         "size": "8"
@@ -23195,8 +23164,8 @@
       "series": "vivobook",
       "processor": {
         "name": "pentium",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7505"
       },
       "ram": {
         "size": "8"
@@ -23289,7 +23258,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "16"
@@ -23320,7 +23289,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -23382,7 +23351,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "250"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -23442,9 +23411,9 @@
       "brand": "dell",
       "series": "inspiron",
       "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
+        "name": "core 7",
+        "gen": "1",
+        "variant": "150U"
       },
       "ram": {
         "size": "16"
@@ -23475,7 +23444,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": ""
+        "variant": "14900HX"
       },
       "ram": {
         "size": "8"
@@ -23568,7 +23537,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -23599,7 +23568,7 @@
       "processor": {
         "name": "i7",
         "gen": "14",
-        "variant": ""
+        "variant": "14700HX"
       },
       "ram": {
         "size": "16"
@@ -23661,7 +23630,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -23692,7 +23661,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512"
+        "variant": "1155G"
       },
       "ram": {
         "size": "8"
@@ -23723,7 +23692,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -23847,7 +23816,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13620H"
       },
       "ram": {
         "size": "16"
@@ -23878,7 +23847,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -24126,7 +24095,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "16"
@@ -24188,7 +24157,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -24218,8 +24187,8 @@
       "series": "15",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155H"
       },
       "ram": {
         "size": "32"
@@ -24343,7 +24312,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -24374,7 +24343,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "13420H"
       },
       "ram": {
         "size": "16"
@@ -24405,7 +24374,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "512GB"
+        "variant": "10210U"
       },
       "ram": {
         "size": "8"
@@ -24467,7 +24436,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "16"
@@ -24529,7 +24498,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -24684,7 +24653,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -24715,7 +24684,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1366X"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -24746,7 +24715,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -24870,7 +24839,7 @@
       "processor": {
         "name": "i9",
         "gen": "13",
-        "variant": ""
+        "variant": "13980HX"
       },
       "ram": {
         "size": "8"
@@ -25025,7 +24994,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": "4080"
+        "variant": "14900HX"
       },
       "ram": {
         "size": "16"
@@ -25087,7 +25056,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -25118,7 +25087,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "1355U"
       },
       "ram": {
         "size": "16"
@@ -25179,8 +25148,8 @@
       "series": "inspiron",
       "processor": {
         "name": "i7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "150U"
       },
       "ram": {
         "size": "16"
@@ -25242,7 +25211,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "8"
@@ -25459,7 +25428,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "16"
@@ -25490,7 +25459,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": ""
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -25521,7 +25490,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -25583,7 +25552,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "32"
@@ -25602,37 +25571,6 @@
         "price": 34890,
         "link": "https://www.amazon.in/dp/B0CDXSMDGF/",
         "rating": 4
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "envy",
-    "specs": {
-      "brand": "hp",
-      "series": "envy",
-      "processor": {
-        "name": "ryzen",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": ""
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 72490,
-        "link": "https://www.amazon.in/dp/B0D153Y7Y4/",
-        "rating": 3.5
       }
     ]
   },
@@ -25676,7 +25614,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -25706,8 +25644,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "5",
+        "variant": "R5"
       },
       "ram": {
         "size": "8"
@@ -25831,7 +25769,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": ""
+        "variant": "14900HX"
       },
       "ram": {
         "size": "32"
@@ -25893,7 +25831,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -25986,7 +25924,7 @@
       "processor": {
         "name": "i9",
         "gen": "13",
-        "variant": "4070"
+        "variant": "13900HX"
       },
       "ram": {
         "size": "16"
@@ -26048,7 +25986,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "512"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -26172,7 +26110,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -26234,7 +26172,7 @@
       "processor": {
         "name": "i9",
         "gen": "13",
-        "variant": ""
+        "variant": "13900H"
       },
       "ram": {
         "size": "8"
@@ -26253,37 +26191,6 @@
         "price": 260000,
         "link": "https://www.amazon.in/dp/B0BWK3TS1C/",
         "rating": 2.8
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "12",
-        "variant": ""
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 16.1,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 13633311,
-        "link": "https://www.amazon.in/dp/B09VCC4RGR/",
-        "rating": 5
       }
     ]
   },
@@ -26327,7 +26234,7 @@
       "processor": {
         "name": "i5",
         "gen": "9",
-        "variant": "1920"
+        "variant": "9300H"
       },
       "ram": {
         "size": "8"
@@ -26420,7 +26327,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -26451,7 +26358,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -26482,7 +26389,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "8"
@@ -26916,7 +26823,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -26947,7 +26854,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -26970,37 +26877,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i5",
-        "gen": "12",
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 46180,
-        "link": "https://www.amazon.in/dp/B0CXMVNX1C/",
-        "rating": 3
-      }
-    ]
-  },
-  {
     "brand": "lenovo",
     "series": "v15",
     "specs": {
@@ -27009,7 +26885,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1135G"
+        "variant": "1135G7"
       },
       "ram": {
         "size": "8"
@@ -27071,7 +26947,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13620H"
       },
       "ram": {
         "size": "16"
@@ -27102,7 +26978,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -27133,7 +27009,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": ""
+        "variant": "1130G"
       },
       "ram": {
         "size": "16"
@@ -27194,8 +27070,8 @@
       "series": "",
       "processor": {
         "name": "core ultra 5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "125H"
       },
       "ram": {
         "size": "16"
@@ -27226,7 +27102,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -27373,37 +27249,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "15",
-    "specs": {
-      "brand": "hp",
-      "series": "15",
-      "processor": {
-        "name": "i3",
-        "gen": "12",
-        "variant": ""
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 14,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 0,
-        "link": "https://www.amazon.in/dp/B0CWPN7D2B/",
-        "rating": 1.9
-      }
-    ]
-  },
-  {
     "brand": "lenovo",
     "series": "thinkpad",
     "specs": {
@@ -27412,7 +27257,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "300NI"
+        "variant": "1360P"
       },
       "ram": {
         "size": "16"
@@ -27443,7 +27288,7 @@
       "processor": {
         "name": "i7",
         "gen": "14",
-        "variant": ""
+        "variant": "14700HX"
       },
       "ram": {
         "size": "16"
@@ -27536,7 +27381,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13500H"
       },
       "ram": {
         "size": "8"
@@ -27660,7 +27505,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -27691,7 +27536,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -27722,7 +27567,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "12450H"
+        "variant": "1245"
       },
       "ram": {
         "size": "16"
@@ -27753,7 +27598,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512"
+        "variant": "1215U"
       },
       "ram": {
         "size": "16"
@@ -27846,7 +27691,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -27877,7 +27722,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "300"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -27908,7 +27753,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -27939,7 +27784,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "8C"
       },
       "ram": {
         "size": "8"
@@ -27969,8 +27814,8 @@
       "series": "15",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -28000,8 +27845,8 @@
       "series": "zbook",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -28032,7 +27877,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "16"
@@ -28125,7 +27970,7 @@
       "processor": {
         "name": "i7",
         "gen": "1",
-        "variant": ""
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -28310,8 +28155,8 @@
       "series": "14",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "2",
+        "variant": "258V"
       },
       "ram": {
         "size": "32"
@@ -28341,8 +28186,8 @@
       "series": "inspiron",
       "processor": {
         "name": "i5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "1334U"
       },
       "ram": {
         "size": "8"
@@ -28404,7 +28249,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "16"
@@ -28435,7 +28280,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13450HX"
       },
       "ram": {
         "size": "8"
@@ -28496,8 +28341,8 @@
       "series": "14",
       "processor": {
         "name": "i5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "1235U"
       },
       "ram": {
         "size": ""
@@ -28528,7 +28373,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13500H"
       },
       "ram": {
         "size": "16"
@@ -28559,7 +28404,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -28590,7 +28435,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -28621,7 +28466,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -28651,8 +28496,8 @@
       "series": "ideapad",
       "processor": {
         "name": "celeron",
-        "gen": "4",
-        "variant": "4020"
+        "gen": "N4",
+        "variant": "N4020"
       },
       "ram": {
         "size": "8"
@@ -28683,7 +28528,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13420H"
       },
       "ram": {
         "size": "16"
@@ -28744,7 +28589,7 @@
       "series": "zenbook",
       "processor": {
         "name": "core ultra 7",
-        "gen": "3",
+        "gen": "2",
         "variant": "365"
       },
       "ram": {
@@ -28807,7 +28652,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "250"
+        "variant": "1235UG"
       },
       "ram": {
         "size": "8"
@@ -28838,7 +28683,7 @@
       "processor": {
         "name": "i7",
         "gen": "1",
-        "variant": ""
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -28869,7 +28714,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512"
+        "variant": "1240P"
       },
       "ram": {
         "size": "8"
@@ -28993,7 +28838,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "16"
@@ -29086,7 +28931,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -29117,7 +28962,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -29178,8 +29023,8 @@
       "series": "",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7840HS"
       },
       "ram": {
         "size": "16"
@@ -29210,7 +29055,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13650HX"
       },
       "ram": {
         "size": "16"
@@ -29241,7 +29086,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "250"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -29458,7 +29303,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -29551,7 +29396,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12650H"
       },
       "ram": {
         "size": "16"
@@ -29612,8 +29457,8 @@
       "series": "inspiron",
       "processor": {
         "name": "i3",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "100U"
       },
       "ram": {
         "size": "8"
@@ -29674,8 +29519,8 @@
       "series": "15",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -29706,7 +29551,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1366X"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -29736,8 +29581,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "6",
+        "variant": "6800H"
       },
       "ram": {
         "size": "8"
@@ -29768,7 +29613,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "1366X"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -29798,8 +29643,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "6",
+        "variant": "6800H"
       },
       "ram": {
         "size": "8"
@@ -29830,7 +29675,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "4800MHZ"
       },
       "ram": {
         "size": "8"
@@ -29891,8 +29736,8 @@
       "series": "fire fly",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155U"
       },
       "ram": {
         "size": "16"
@@ -29923,7 +29768,7 @@
       "processor": {
         "name": "i7",
         "gen": "14",
-        "variant": ""
+        "variant": "14700HX"
       },
       "ram": {
         "size": "16"
@@ -29953,8 +29798,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7320U"
       },
       "ram": {
         "size": "32"
@@ -30016,7 +29861,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": ""
+        "variant": "1135G"
       },
       "ram": {
         "size": "16"
@@ -30047,7 +29892,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13650HX"
       },
       "ram": {
         "size": "8"
@@ -30201,8 +30046,8 @@
       "series": "inspiron",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "5",
+        "variant": "R5"
       },
       "ram": {
         "size": "8"
@@ -30287,37 +30132,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "envy",
-    "specs": {
-      "brand": "hp",
-      "series": "envy",
-      "processor": {
-        "name": "ryzen",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": ""
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 79990,
-        "link": "https://www.amazon.in/dp/B09GVM6R6Q/",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
     "brand": "lenovo",
     "series": "v14",
     "specs": {
@@ -30326,7 +30140,7 @@
       "processor": {
         "name": "i5",
         "gen": "14",
-        "variant": "256GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -30357,7 +30171,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "256GB"
+        "variant": "1005G"
       },
       "ram": {
         "size": "8"
@@ -30380,37 +30194,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "envy",
-    "specs": {
-      "brand": "hp",
-      "series": "envy",
-      "processor": {
-        "name": "ryzen",
-        "gen": null,
-        "variant": ""
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": ""
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 79990,
-        "link": "https://www.amazon.in/dp/B09GVM6R6Q/",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
     "brand": "lenovo",
     "series": "v14",
     "specs": {
@@ -30419,7 +30202,7 @@
       "processor": {
         "name": "i5",
         "gen": "14",
-        "variant": "256GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -30450,7 +30233,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "256GB"
+        "variant": "1005G"
       },
       "ram": {
         "size": "8"
@@ -30481,7 +30264,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "256GB"
+        "variant": "1005G"
       },
       "ram": {
         "size": "8"
@@ -30543,7 +30326,7 @@
       "processor": {
         "name": "m3",
         "gen": null,
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -30605,7 +30388,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235UG"
       },
       "ram": {
         "size": "8"
@@ -30667,7 +30450,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "512GB"
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -30728,8 +30511,8 @@
       "series": "travelmate",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4020"
       },
       "ram": {
         "size": "8"
@@ -30760,7 +30543,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "256GB"
+        "variant": "1005G"
       },
       "ram": {
         "size": "8"
@@ -30791,7 +30574,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "512GB"
+        "variant": "1035G"
       },
       "ram": {
         "size": "8"
@@ -30822,7 +30605,7 @@
       "processor": {
         "name": "i5",
         "gen": "8",
-        "variant": "512GB"
+        "variant": "8265U"
       },
       "ram": {
         "size": "8"
@@ -30976,8 +30759,8 @@
       "series": "aspire",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": "8"
@@ -31039,7 +30822,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "256GB"
+        "variant": "1005G"
       },
       "ram": {
         "size": "8"
@@ -31101,7 +30884,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "256GB"
+        "variant": "1005G"
       },
       "ram": {
         "size": "8"
@@ -31225,7 +31008,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "13420H"
+        "variant": "1342"
       },
       "ram": {
         "size": "16"
@@ -31287,7 +31070,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "512"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -31349,7 +31132,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -31379,8 +31162,8 @@
       "series": "zenbook",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "350"
       },
       "ram": {
         "size": "16"
@@ -31409,9 +31192,9 @@
       "brand": "acer",
       "series": "aspire",
       "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
+        "name": "core 5",
+        "gen": "1",
+        "variant": "120U"
       },
       "ram": {
         "size": "16"
@@ -31473,7 +31256,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "16"
@@ -31535,7 +31318,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": ""
+        "variant": "14900HX"
       },
       "ram": {
         "size": "32"
@@ -31566,7 +31349,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12650H"
       },
       "ram": {
         "size": "8"
@@ -31658,8 +31441,8 @@
       "series": "aspire",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": ""
@@ -31690,7 +31473,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "512GB"
+        "variant": "1035G"
       },
       "ram": {
         "size": "8"
@@ -31721,7 +31504,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12650H"
       },
       "ram": {
         "size": "16"
@@ -31752,7 +31535,7 @@
       "processor": {
         "name": "m3",
         "gen": "M3",
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -31845,7 +31628,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": ""
+        "variant": "14900HX"
       },
       "ram": {
         "size": "8"
@@ -31937,8 +31720,8 @@
       "series": "aspire",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4500"
       },
       "ram": {
         "size": ""
@@ -32000,7 +31783,7 @@
       "processor": {
         "name": "i7",
         "gen": "11",
-        "variant": ""
+        "variant": "1195G"
       },
       "ram": {
         "size": "8"
@@ -32031,7 +31814,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": ""
+        "variant": "10110U"
       },
       "ram": {
         "size": "8"
@@ -32124,7 +31907,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": ""
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -32185,8 +31968,8 @@
       "series": "",
       "processor": {
         "name": "i9",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "185H"
       },
       "ram": {
         "size": "8"
@@ -32279,7 +32062,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235UG"
       },
       "ram": {
         "size": "16"
@@ -32310,7 +32093,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "512GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -32371,8 +32154,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "6",
+        "variant": "6800H"
       },
       "ram": {
         "size": "8"
@@ -32403,7 +32186,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "300"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -32433,8 +32216,8 @@
       "series": "inspiron",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3450U"
       },
       "ram": {
         "size": "8"
@@ -32465,7 +32248,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "512GB"
+        "variant": "13620H"
       },
       "ram": {
         "size": "16"
@@ -32526,8 +32309,8 @@
       "series": "15",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7640HS"
       },
       "ram": {
         "size": "16"
@@ -32589,7 +32372,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12650H"
       },
       "ram": {
         "size": "16"
@@ -32682,7 +32465,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "400"
+        "variant": "1255U"
       },
       "ram": {
         "size": "16"
@@ -32713,7 +32496,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -32775,7 +32558,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "512GB"
+        "variant": "10210U"
       },
       "ram": {
         "size": "8"
@@ -32837,7 +32620,7 @@
       "processor": {
         "name": "i7",
         "gen": "8",
-        "variant": "239IN"
+        "variant": "8750H"
       },
       "ram": {
         "size": "8"
@@ -32898,8 +32681,8 @@
       "series": "15",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -32961,7 +32744,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13420H"
       },
       "ram": {
         "size": "8"
@@ -33209,7 +32992,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -33295,37 +33078,6 @@
   },
   {
     "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "11",
-        "variant": "300"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 16.1,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 115999,
-        "link": "https://www.amazon.in/dp/B09S9XXTK5/",
-        "rating": 2.5
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "probook",
     "specs": {
       "brand": "hp",
@@ -33395,7 +33147,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": "256GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -33457,7 +33209,7 @@
       "processor": {
         "name": "m3",
         "gen": null,
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -33488,7 +33240,7 @@
       "processor": {
         "name": "m3",
         "gen": null,
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -33643,7 +33395,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "512"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -33674,7 +33426,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -33829,7 +33581,7 @@
       "processor": {
         "name": "",
         "gen": "14",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -33891,7 +33643,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1240P"
       },
       "ram": {
         "size": "16"
@@ -33922,7 +33674,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "514"
+        "variant": "1260P"
       },
       "ram": {
         "size": "16"
@@ -33953,7 +33705,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": "8"
@@ -33984,7 +33736,7 @@
       "processor": {
         "name": "i7",
         "gen": "10",
-        "variant": "256"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -34015,7 +33767,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": ""
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -34046,7 +33798,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "256GB"
+        "variant": ""
       },
       "ram": {
         "size": "8"
@@ -34077,7 +33829,7 @@
       "processor": {
         "name": "i7",
         "gen": "9",
-        "variant": "1920"
+        "variant": "9750H"
       },
       "ram": {
         "size": "8"
@@ -34107,8 +33859,8 @@
       "series": "15",
       "processor": {
         "name": "athlon",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7120U"
       },
       "ram": {
         "size": "8"
@@ -34170,7 +33922,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "1255U"
       },
       "ram": {
         "size": "16"
@@ -34294,7 +34046,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -34418,7 +34170,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16"
@@ -34480,7 +34232,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1240P"
       },
       "ram": {
         "size": "8"
@@ -34542,7 +34294,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "300NI"
+        "variant": "1260P"
       },
       "ram": {
         "size": "16"
@@ -34604,7 +34356,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -34635,7 +34387,7 @@
       "processor": {
         "name": "i7",
         "gen": "11",
-        "variant": "300"
+        "variant": "11850H"
       },
       "ram": {
         "size": "16"
@@ -34696,8 +34448,8 @@
       "series": "255 g8",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3250U"
       },
       "ram": {
         "size": "8"
@@ -34727,8 +34479,8 @@
       "series": "255 g8",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "3",
+        "variant": "3250U"
       },
       "ram": {
         "size": "8"
@@ -34790,7 +34542,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12700H"
       },
       "ram": {
         "size": "16"
@@ -34882,8 +34634,8 @@
       "series": "one",
       "processor": {
         "name": "celeron",
-        "gen": null,
-        "variant": ""
+        "gen": "N4",
+        "variant": "N4020"
       },
       "ram": {
         "size": ""
@@ -35007,7 +34759,7 @@
       "processor": {
         "name": "i9",
         "gen": "14",
-        "variant": ""
+        "variant": "14900HX"
       },
       "ram": {
         "size": "8"
@@ -35038,7 +34790,7 @@
       "processor": {
         "name": "m3",
         "gen": null,
-        "variant": ""
+        "variant": "M3"
       },
       "ram": {
         "size": "8"
@@ -35069,7 +34821,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "8C"
       },
       "ram": {
         "size": "8"
@@ -35099,8 +34851,8 @@
       "series": "latitude",
       "processor": {
         "name": "core ultra 7",
-        "gen": "5",
-        "variant": "512GB"
+        "gen": "1",
+        "variant": "165H"
       },
       "ram": {
         "size": "16"
@@ -35379,7 +35131,7 @@
       "processor": {
         "name": "i9",
         "gen": "1",
-        "variant": ""
+        "variant": "185H"
       },
       "ram": {
         "size": "8"
@@ -35410,7 +35162,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": ""
+        "variant": "1315U"
       },
       "ram": {
         "size": "16"
@@ -35440,8 +35192,8 @@
       "series": "15",
       "processor": {
         "name": "i7",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "155H"
       },
       "ram": {
         "size": "16"
@@ -35503,7 +35255,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "1355U"
       },
       "ram": {
         "size": "32"
@@ -35534,7 +35286,7 @@
       "processor": {
         "name": "i9",
         "gen": "12",
-        "variant": ""
+        "variant": "12900"
       },
       "ram": {
         "size": "32"
@@ -35565,7 +35317,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13500HX"
       },
       "ram": {
         "size": "16"
@@ -35596,7 +35348,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "8"
@@ -35751,7 +35503,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "16"
@@ -35782,7 +35534,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "16"
@@ -35813,7 +35565,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13700H"
       },
       "ram": {
         "size": "16"
@@ -35844,7 +35596,7 @@
       "processor": {
         "name": "i5",
         "gen": "1",
-        "variant": ""
+        "variant": "125H"
       },
       "ram": {
         "size": "16"
@@ -35875,7 +35627,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13620H"
       },
       "ram": {
         "size": "16"
@@ -35906,7 +35658,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1366X"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -36185,7 +35937,7 @@
       "processor": {
         "name": "i9",
         "gen": "12",
-        "variant": ""
+        "variant": "12900HK"
       },
       "ram": {
         "size": "32"
@@ -36247,7 +35999,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": ""
+        "variant": "12700H"
       },
       "ram": {
         "size": "8"
@@ -36495,7 +36247,7 @@
       "processor": {
         "name": "i3",
         "gen": "11",
-        "variant": ""
+        "variant": "1115G"
       },
       "ram": {
         "size": ""
@@ -36650,7 +36402,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "12650H"
+        "variant": "1265"
       },
       "ram": {
         "size": "16"
@@ -36681,7 +36433,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "512GB"
+        "variant": "1334U"
       },
       "ram": {
         "size": "16"
@@ -36805,7 +36557,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "16"
@@ -36867,7 +36619,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1255U"
       },
       "ram": {
         "size": "8"
@@ -36896,9 +36648,9 @@
       "brand": "lenovo",
       "series": "ideapad",
       "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
+        "name": "core 5",
+        "gen": "1",
+        "variant": "120U"
       },
       "ram": {
         "size": "16"
@@ -36929,7 +36681,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": "300"
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -36960,7 +36712,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "300"
+        "variant": "1355U"
       },
       "ram": {
         "size": "16"
@@ -37084,7 +36836,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "13420H"
+        "variant": "1342"
       },
       "ram": {
         "size": "16"
@@ -37114,8 +36866,8 @@
       "series": "probook",
       "processor": {
         "name": "i5",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -37177,7 +36929,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "300"
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -37394,7 +37146,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "250"
+        "variant": ""
       },
       "ram": {
         "size": "16"
@@ -37702,9 +37454,9 @@
       "brand": "asus",
       "series": "tuf",
       "processor": {
-        "name": "m3",
-        "gen": null,
-        "variant": ""
+        "name": "core 5",
+        "gen": "2",
+        "variant": "210H"
       },
       "ram": {
         "size": "16"
@@ -38014,7 +37766,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1334U"
       },
       "ram": {
         "size": "16"
@@ -38045,7 +37797,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "1335U"
       },
       "ram": {
         "size": "8"
@@ -38076,7 +37828,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": ""
+        "variant": "1315U"
       },
       "ram": {
         "size": "16"
@@ -38107,7 +37859,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": ""
+        "variant": "1315U"
       },
       "ram": {
         "size": "8"
@@ -38138,7 +37890,7 @@
       "processor": {
         "name": "i3",
         "gen": "13",
-        "variant": ""
+        "variant": "1315U"
       },
       "ram": {
         "size": "16"
@@ -38168,8 +37920,8 @@
       "series": "",
       "processor": {
         "name": "core ultra 9",
-        "gen": null,
-        "variant": ""
+        "gen": "1",
+        "variant": "185H"
       },
       "ram": {
         "size": "16"
@@ -38479,7 +38231,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13450HX"
       },
       "ram": {
         "size": "16"
@@ -38572,7 +38324,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13450HX"
       },
       "ram": {
         "size": "16"
@@ -38634,7 +38386,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13450HX"
       },
       "ram": {
         "size": "16"
@@ -38757,8 +38509,8 @@
       "series": "inspiron",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "7",
+        "variant": "7530U"
       },
       "ram": {
         "size": "16"
@@ -38788,8 +38540,8 @@
       "series": "inspiron",
       "processor": {
         "name": "ryzen",
-        "gen": null,
-        "variant": ""
+        "gen": "8",
+        "variant": "8840U"
       },
       "ram": {
         "size": "8"
@@ -39006,7 +38758,7 @@
       "processor": {
         "name": "snapdragon",
         "gen": null,
-        "variant": ""
+        "variant": "X ELITE"
       },
       "ram": {
         "size": "32"
@@ -39036,8 +38788,8 @@
       "series": "15",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "2",
+        "variant": "258V"
       },
       "ram": {
         "size": "8"
@@ -39067,8 +38819,8 @@
       "series": "alienware",
       "processor": {
         "name": "i9",
-        "gen": null,
-        "variant": ""
+        "gen": "14",
+        "variant": "14900HX"
       },
       "ram": {
         "size": "8"
@@ -39130,7 +38882,7 @@
       "processor": {
         "name": "",
         "gen": "14",
-        "variant": ""
+        "variant": "125U"
       },
       "ram": {
         "size": "32"
@@ -39215,6 +38967,37 @@
     ]
   },
   {
+    "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "14",
+        "variant": "14650HX"
+      },
+      "ram": {
+        "size": "16"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 40.9,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 124990,
+        "link": "https://www.amazon.in/dp/B0DNJTY43G/",
+        "rating": null
+      }
+    ]
+  },
+  {
     "brand": "asus",
     "series": "tuf",
     "specs": {
@@ -39253,8 +39036,8 @@
       "series": "chromebook",
       "processor": {
         "name": "i3",
-        "gen": "3",
-        "variant": "305"
+        "gen": "N3",
+        "variant": "N305"
       },
       "ram": {
         "size": "8"
@@ -39314,9 +39097,9 @@
       "brand": "hp",
       "series": "fire fly",
       "processor": {
-        "name": "",
-        "gen": null,
-        "variant": ""
+        "name": "core ultra 5",
+        "gen": "1",
+        "variant": "125U"
       },
       "ram": {
         "size": "16"
@@ -39378,7 +39161,7 @@
       "processor": {
         "name": "i5",
         "gen": null,
-        "variant": ""
+        "variant": "X PLUS"
       },
       "ram": {
         "size": "16"
@@ -39409,7 +39192,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "13620H"
       },
       "ram": {
         "size": "16"
@@ -39440,7 +39223,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -39471,7 +39254,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": ""
+        "variant": "12450H"
       },
       "ram": {
         "size": "16"
@@ -39533,7 +39316,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1235U"
       },
       "ram": {
         "size": "8"
@@ -39595,7 +39378,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": ""
+        "variant": "1360P"
       },
       "ram": {
         "size": "16"
@@ -39687,8 +39470,8 @@
       "series": "14",
       "processor": {
         "name": "core ultra 7",
-        "gen": null,
-        "variant": ""
+        "gen": "2",
+        "variant": "256V"
       },
       "ram": {
         "size": "16"
@@ -39719,7 +39502,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": ""
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -39750,7 +39533,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13420H"
       },
       "ram": {
         "size": "16"
@@ -39781,7 +39564,7 @@
       "processor": {
         "name": "i7",
         "gen": "14",
-        "variant": ""
+        "variant": "14700HX"
       },
       "ram": {
         "size": "16"
@@ -39812,7 +39595,7 @@
       "processor": {
         "name": "i9",
         "gen": "13",
-        "variant": "300NI"
+        "variant": "1360P"
       },
       "ram": {
         "size": "16"
@@ -40184,7 +39967,7 @@
       "processor": {
         "name": "i5",
         "gen": "11",
-        "variant": "1920"
+        "variant": "1135G"
       },
       "ram": {
         "size": "8"
@@ -40455,37 +40238,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "12",
-        "variant": "512GB"
-      },
-      "ram": {
-        "size": "8"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 37584,
-        "link": "https://www.amazon.in/dp/B0D9JMJ9QY/",
-        "rating": null
-      }
-    ]
-  },
-  {
     "brand": "lenovo",
     "series": "14",
     "specs": {
@@ -40525,7 +40277,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -40618,7 +40370,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "512GB"
+        "variant": "1215U"
       },
       "ram": {
         "size": "8"
@@ -40742,7 +40494,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": ""
+        "variant": "13450HX"
       },
       "ram": {
         "size": "16"
