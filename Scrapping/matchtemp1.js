@@ -32,7 +32,7 @@ function extractSeries(name) {
     'ROG Zephyrus', 'ROG Strix', 'ROG Flow', 'ROG Scar', 'ROG Mothership', 'ROG Swift', 'ROG Ally', 'ZenBook Pro', 'ZenBook Flip',
     //Acer
     'Aspire Vero', 'Aspire 5', 'Aspire 7', 'Aspire 9', 'Aspire 3', 'Aspire 1', 'Aspire C', 'Aspire S',
-    
+
 
   ];
   const lower = norm(name);
@@ -146,13 +146,26 @@ function extractProcessorVariant(name) {
     .replace(/\s+/g, ' ')
     .trim();
 
+
+
   // Check for AMD Ryzen variants
   let match = normalized.match(/ryzen\s*[3579]\s*(?:pro\s*)?.*?(\d{3,4}(?:x3d|xt|ge|hs|hx|h|u|g|x|s)?)/i);
   if (match) return match[1].toUpperCase();
 
+
+  // Add this near the top of your extractProcessorVariant function
+  match = normalized.match(/i[3579][\s-]+(\d{4,5})\s+([a-z](?:k|kf|x|xt|h|hk|hx|hs|u|g|t)?)/i);
+  if (match) return (match[1] + match[2]).toUpperCase();
+
   // NEW PATTERN: Model numbers in parentheses
   match = normalized.match(/i[3579].*?\((\d{4,5}[a-z]*)\)/i);
   if (match) return match[1].toUpperCase();
+
+  // For Intel with generation followed by full model number
+  match = normalized.match(/i[3579].*?(?:\d+)(?:th|nd|rd|st)?\s*gen(?:eration)?\s*(\d{4,5}[a-z]*)/i);
+  if (match) return match[1].toUpperCase();
+
+
 
   // NEW PATTERN: Intel with hyphen (i3-1215U format)
   match = normalized.match(/i[3579][\s-]+(\d{4,5}[a-z]*)/i);
@@ -210,6 +223,9 @@ function extractProcessorVariant(name) {
   match = normalized.match(/athlon\s*(pro)?\s*(\d{4}[a-z]*)/i);
   if (match) return match[2].toUpperCase();
 
+  // For Intel with space between number and suffix (12900 H)
+  match = normalized.match(/(core\s+(?:ultra\s*)?)(i[3579]|ultra\s*[579]|pentium|celeron)\s*(?:[\w-]*\s+)?(\d{4,5})\s+([a-z])/i);
+  if (match) return (match[3] + match[4]).toUpperCase();
 
 
   return findProcessorVariantFromList(normalized);
@@ -249,7 +265,7 @@ function allProcessorVariants() {
 
     // Intel Core 14th Gen (Meteor Lake)
     "14th_gen_core": [
-      "14400", "14500", "14600", "14600K", "14700", "14700K", "14900", "14900K"
+      "14400", "14500", "14600", "14600K", "14700", "14700K", "14900", "14900K", "14900KF", "14900KS", "14900F", "14900KF", "14900KS", "14900F", "14900K", "14900KF", "14900KS", "14900F", "14900K", "14900KF", "14900KS", "14900F",
     ],
 
     // Intel Core Ultra (Meteor Lake)
@@ -537,7 +553,7 @@ function normalizeAmazon(a) {
     },
     ram: {
       size: extractRam(d["RAM Size"]) || extractRamFromName(title) || extractRamFromName((a.details.Features || []).join(' ')),
-      type: norm(a.details["Memory Technology"]) || extractRamType(title) || extractRamType(a.details["Computer Memory Type"]) ||  extractRamType((a.details.Features || []).join(' ')),
+      type: norm(a.details["Memory Technology"]) || extractRamType(title) || extractRamType((a.details.Features || []).join(' ')) || extractRamType(a.details["Computer Memory Type"]),
     },
     storage: {
       size: storageSize,

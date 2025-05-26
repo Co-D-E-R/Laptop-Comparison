@@ -2153,7 +2153,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "1011"
+        "variant": "10110U"
       },
       "ram": {
         "size": "8",
@@ -2186,7 +2186,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "1011"
+        "variant": "10110U"
       },
       "ram": {
         "size": "8",
@@ -3763,39 +3763,6 @@
   },
   {
     "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "14",
-        "variant": "1465"
-      },
-      "ram": {
-        "size": "16",
-        "type": "ddr5"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 16.1,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 109390,
-        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-14th-gen-14650hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-16-wf1096tx-gaming-laptop/p/itm98841df0cbbc6?pid=COMHFCEENHGMPUDC&lid=LSTCOMHFCEENHGMPUDCKYD9VS&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_92&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMHFCEENHGMPUDC.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
-        "rating": 4.1
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "chromebook",
     "specs": {
       "brand": "hp",
@@ -5320,72 +5287,6 @@
       "series": "15s",
       "processor": {
         "name": "i3",
-        "gen": "10",
-        "variant": "1011"
-      },
-      "ram": {
-        "size": "8",
-        "type": "ddr4"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 34990,
-        "link": "https://www.flipkart.com/hp-intel-core-i3-10th-gen-10110u-8-gb-512-gb-ssd-windows-10-home-15s-du1516tu-thin-light-laptop/p/itmbc49178f1c68f?pid=COMG442GHMXS9YNX&lid=LSTCOMG442GHMXS9YNXGVLEKP&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_6_123&otracker=search&otracker1=search&fm=Search&iid=67756338-b2c8-4aca-bc47-6646983a67a8.COMG442GHMXS9YNX.SEARCH&ppt=sp&ppn=sp&ssid=cryxljx3f40000001747428578897&qH=312f91285e048e09",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "10",
-        "variant": "1011"
-      },
-      "ram": {
-        "size": "8",
-        "type": "ddr4"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel",
-      "_matched": false
-    },
-    "sites": [
-      {
-        "source": "flipkart",
-        "price": 34990,
-        "link": "https://www.flipkart.com/hp-intel-core-i3-10th-gen-10110u-8-gb-512-gb-ssd-windows-10-home-15s-du1516tu-thin-light-laptop/p/itmbc49178f1c68f?pid=COMG442GHMXS9YNX&lid=LSTCOMG442GHMXS9YNXGVLEKP&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_13_300&otracker=search&otracker1=search&fm=Search&iid=a1187e3f-31f6-4c5f-8978-5291dd96ff40.COMG442GHMXS9YNX.SEARCH&ppt=sp&ppn=sp&ssid=82ruyl6xnk0000001747428608671&qH=312f91285e048e09",
-        "rating": 4.3
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
         "gen": "11",
         "variant": ""
       },
@@ -6839,7 +6740,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -6872,7 +6773,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -8390,7 +8291,7 @@
       "processor": {
         "name": "i5",
         "gen": "10",
-        "variant": "1021"
+        "variant": "10210U"
       },
       "ram": {
         "size": "8",
@@ -9974,7 +9875,7 @@
       "processor": {
         "name": "i3",
         "gen": "10",
-        "variant": "1011"
+        "variant": "10110U"
       },
       "ram": {
         "size": "8",
@@ -11426,7 +11327,7 @@
       "processor": {
         "name": "i7",
         "gen": "10",
-        "variant": "1051"
+        "variant": "10510Y"
       },
       "ram": {
         "size": "16",
@@ -11690,7 +11591,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -11723,7 +11624,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -11756,7 +11657,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -11789,7 +11690,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -11822,7 +11723,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -12218,7 +12119,7 @@
       "processor": {
         "name": "i7",
         "gen": "13",
-        "variant": "1370"
+        "variant": "13700HX"
       },
       "ram": {
         "size": "16",
@@ -12614,7 +12515,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "1350"
+        "variant": "13500HX"
       },
       "ram": {
         "size": "16",

@@ -632,7 +632,8 @@ function makeKey(lap) {
     lap.storage.size,
     lap.storage.type,
     lap.Touchscreen,
-    lap.gpu
+    lap.gpu,
+    lap.gpuversion
 
   ].join('|');
 }

@@ -3336,7 +3336,7 @@
       "processor": {
         "name": "i3",
         "gen": "12",
-        "variant": "1215"
+        "variant": "1215L"
       },
       "ram": {
         "size": "8",
@@ -4924,38 +4924,6 @@
         "price": 51900,
         "link": "https://www.amazon.in/dp/B0DSFRFRW1/",
         "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "14",
-        "variant": "14650HX"
-      },
-      "ram": {
-        "size": "16",
-        "type": "ddr5"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 40.9,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 109490,
-        "link": "https://www.amazon.in/dp/B0D1YL72Y6/",
-        "rating": 3.1
       }
     ]
   },
@@ -7404,7 +7372,7 @@
       },
       "ram": {
         "size": "8",
-        "type": "ddr4"
+        "type": "ddr5"
       },
       "storage": {
         "size": "512",
@@ -9576,7 +9544,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "1342"
+        "variant": "13420H"
       },
       "ram": {
         "size": "16",
@@ -11624,7 +11592,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "1265"
+        "variant": "12650H"
       },
       "ram": {
         "size": "16",
@@ -14920,7 +14888,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "1245"
+        "variant": "12450HX"
       },
       "ram": {
         "size": "16",
@@ -17740,7 +17708,7 @@
       },
       "ram": {
         "size": "8",
-        "type": "ddr5"
+        "type": "lpddr5"
       },
       "storage": {
         "size": "512",
@@ -18248,7 +18216,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "1250"
+        "variant": "12500H"
       },
       "ram": {
         "size": "16",
@@ -20928,38 +20896,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "15s",
-    "specs": {
-      "brand": "hp",
-      "series": "15s",
-      "processor": {
-        "name": "i3",
-        "gen": "10",
-        "variant": "10110U"
-      },
-      "ram": {
-        "size": "8",
-        "type": "ddr4"
-      },
-      "storage": {
-        "size": "512",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 15.6,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 41900,
-        "link": "https://www.amazon.in/dp/B095YC5VH4/",
-        "rating": 4
-      }
-    ]
-  },
-  {
     "brand": "",
     "series": "15",
     "specs": {
@@ -23240,7 +23176,7 @@
       "processor": {
         "name": "i9",
         "gen": "12",
-        "variant": "12900"
+        "variant": "12900H"
       },
       "ram": {
         "size": "32",
@@ -27948,7 +27884,7 @@
       },
       "ram": {
         "size": "16",
-        "type": "ddr5"
+        "type": "lpddr5"
       },
       "storage": {
         "size": "512",
@@ -28328,7 +28264,7 @@
       "processor": {
         "name": "i5",
         "gen": "12",
-        "variant": "1245"
+        "variant": "12450H"
       },
       "ram": {
         "size": "16",
@@ -29825,10 +29761,10 @@
   },
   {
     "brand": "acer",
-    "series": "",
+    "series": "nitro",
     "specs": {
       "brand": "acer",
-      "series": "",
+      "series": "nitro",
       "processor": {
         "name": "ryzen",
         "gen": "7",
@@ -31880,7 +31816,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "1342"
+        "variant": "13420H"
       },
       "ram": {
         "size": "16",
@@ -35916,7 +35852,7 @@
       },
       "ram": {
         "size": "8",
-        "type": "ddr5"
+        "type": "lpddr5"
       },
       "storage": {
         "size": "",
@@ -36296,7 +36232,7 @@
       "processor": {
         "name": "i9",
         "gen": "12",
-        "variant": "12900"
+        "variant": "12900H"
       },
       "ram": {
         "size": "32",
@@ -37448,7 +37384,7 @@
       "processor": {
         "name": "i7",
         "gen": "12",
-        "variant": "1265"
+        "variant": "12650H"
       },
       "ram": {
         "size": "16",
@@ -37896,7 +37832,7 @@
       "processor": {
         "name": "i5",
         "gen": "13",
-        "variant": "1342"
+        "variant": "13420H"
       },
       "ram": {
         "size": "16",
@@ -40096,38 +40032,6 @@
     ]
   },
   {
-    "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "14",
-        "variant": "14650HX"
-      },
-      "ram": {
-        "size": "16",
-        "type": "ddr5"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 40.9,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 124990,
-        "link": "https://www.amazon.in/dp/B0DNJTY43G/",
-        "rating": null
-      }
-    ]
-  },
-  {
     "brand": "asus",
     "series": "tuf",
     "specs": {
@@ -40556,7 +40460,7 @@
       },
       "ram": {
         "size": "8",
-        "type": "ddr5"
+        "type": "lpddr5"
       },
       "storage": {
         "size": "1",
