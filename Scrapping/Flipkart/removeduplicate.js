@@ -6,6 +6,7 @@ const Dell = require('./Dell.json');
 const HP = require('./hp.json');
 const MSI = require('./msi.json');
 const asar = require('./asar.json');
+const asus = require('./asus.json');
 
 const allLaptops = [...Apple, ...Dell, ...HP, ...MSI, ...asar];
 
