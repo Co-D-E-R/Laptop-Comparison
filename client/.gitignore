@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -11,7 +12,6 @@ node_modules
 dist
 dist-ssr
 *.local
-*.env
 
 # Editor directories and files
 .vscode/*
@@ -23,4 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+=======
+.qodo
 .env
+>>>>>>> 2f45e665032ce7f5f891adeecb342ee8472585fd
