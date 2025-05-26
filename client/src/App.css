@@ -1,24 +1,4 @@
-/* Modern App Styles */
-#root {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.logo {
-  height: 3em;
-  padding: 0.75em;
-  will-change: filter;
-  transition: all 0.3s ease;
-  border-radius: 12px;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em rgba(102, 126, 234, 0.6));
-  transform: scale(1.05);
-}
+/* App component styles - Using Tailwind CSS classes and global cosmic theme */
 
 .logo.react:hover {
   filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.6));

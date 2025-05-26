@@ -1,8 +1,4 @@
-/* ProductGrid Component Styles */
-.product-grid-section {
-  padding: 4rem 0;
-  background: #f8f9fa;
-}
+/* ProductGrid component styles - Using Tailwind CSS classes and global cosmic theme */
 
 .product-grid-container {
   max-width: 1400px;
