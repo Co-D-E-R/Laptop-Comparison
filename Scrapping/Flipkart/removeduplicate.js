@@ -7,8 +7,9 @@ const HP = require('./hp.json');
 const MSI = require('./msi.json');
 const asar = require('./asar.json');
 const asus = require('./asus.json');
+const Lenovo = require('./Lenovo.json');
 
-const allLaptops = [...Apple, ...Dell, ...HP, ...MSI, ...asar];
+const brandData = {Apple, Dell, HP, MSI, asar, asus, Lenovo};
 
 
 
@@ -17,12 +18,20 @@ function removeDuplicates(data) {
     return filtered 
 }
 
-const removedLaptops = removeDuplicates(HP);
+let allLaptops;
+
+Object.entries(brandData).forEach(([brandName, laptops]) => {
+    console.log(`Processing ${brandName}...`);
+    console.log(`Original count: ${laptops.length}`);
+    const removedLaptops = removeDuplicates(laptops);
+    console.log(`New count after removing duplicates: ${removedLaptops.length}`);
+    console.log(`Removed ${laptops.length - removedLaptops.length} duplicates from ${brandName}.`);
+    allLaptops = allLaptops ? allLaptops.concat(removedLaptops) : removedLaptops;
+});
+
+console.log(`Total laptops after processing all brands: ${allLaptops.length}`);
 
 
-const outputPath = path.join(__dirname, 'RemoveHp.json');
-fs.writeFileSync(outputPath, JSON.stringify(removedLaptops, null, 2));
-
-console.log(`Successfully removed duplicates! Found ${HP.length - removedLaptops.length} duplicates.`);
-console.log(`Original count: ${HP.length}, New count: ${removedLaptops.length}`);
-console.log(`Output saved to ${outputPath}`);
+const outputFilePath = path.join(__dirname, 'allLaptops.json');
+fs.writeFileSync(outputFilePath, JSON.stringify(allLaptops, null, 2), 'utf8');
+console.log(`All laptops combined and saved to ${outputFilePath}.`);
