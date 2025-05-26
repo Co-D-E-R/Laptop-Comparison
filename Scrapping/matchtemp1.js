@@ -17,7 +17,22 @@ function extractSeries(name) {
     'predator', 'inspiron', 'latitude', 'envy', 'spectre', '15', '14',
 
     //Acer
-    'Swift Go 14', ' Swift 14', 'Swift 3', 'Swift X', 'swift', 'travelmate', 'extensa', 'spin', 'chromebook', 'predator helios', 'predator triton',
+    'Swift Go 14', ' Swift 14', 'Swift 3', 'Swift X', 'swift', 'travelmate', 'extensa', 'spin', 'chromebook', 'predator helios', 'predator triton', 'predator', 'aspire', 'nitro', 'conceptd', 'enduro', 'veriton', 'travelmate p2', 'travelmate p4', 'travelmate p6', 'travelmate p8',
+    //Dell
+    'XPS', 'Latitude', 'Inspiron', 'Vostro', 'Alienware', 'Precision', 'G-series', 'G15', 'G16', 'G3', 'G5', 'G7',
+    //MSI
+    'Stealth', 'Katana', 'Pulse', 'Vector', 'Sword', 'Creator', 'Modern', 'Summit', 'Bravo', 'Alpha',
+    //Apple
+    'MacBook Air', 'MacBook Pro', 'iMac', 'Mac mini', 'Mac Studio', 'Mac Pro',
+    //Lenovo
+    'ThinkBook', 'ThinkCentre', 'ThinkStation', 'IdeaCentre', 'Yoga Slim', 'Legion Slim', 'Legion Pro', 'Legion 5', 'Legion 7',
+    //HP
+    'Elite Dragonfly', 'Elite Folio', 'Elite x2', 'EliteBook x360', 'HP Spectre', 'HP Envy', 'HP Pavilion Gaming',
+    //Asus
+    'ROG Zephyrus', 'ROG Strix', 'ROG Flow', 'ROG Scar', 'ROG Mothership', 'ROG Swift', 'ROG Ally', 'ZenBook Pro', 'ZenBook Flip',
+    //Acer
+    'Aspire Vero', 'Aspire 5', 'Aspire 7', 'Aspire 9', 'Aspire 3', 'Aspire 1', 'Aspire C', 'Aspire S',
+    
 
   ];
   const lower = norm(name);
