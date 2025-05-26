@@ -727,7 +727,7 @@ function buildEntries(amz, fk) {
 (function () {
   // load data
   const amazonPath = path.join(__dirname, 'amazon_complete_final.json');
-  const flipkartPath = path.join(__dirname, './Flipkart/RemoveHp.json');
+  const flipkartPath = path.join(__dirname, './Flipkart/allLaptops.json');
   const amazonData = JSON.parse(fs.readFileSync(amazonPath, 'utf-8'));
   const flipkartData = JSON.parse(fs.readFileSync(flipkartPath, 'utf-8'));
 
