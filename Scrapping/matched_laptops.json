@@ -11,7 +11,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -48,7 +49,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -85,7 +87,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -122,7 +125,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -159,7 +163,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -196,7 +201,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -233,7 +239,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -270,7 +277,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -307,7 +315,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -344,7 +353,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -381,7 +391,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -418,7 +429,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -455,7 +467,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -492,7 +505,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -529,7 +543,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -566,7 +581,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -603,7 +619,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -640,7 +657,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -677,7 +695,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -714,7 +733,8 @@
         "variant": "1334U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -751,7 +771,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -788,7 +809,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -825,7 +847,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -862,7 +885,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -899,7 +923,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -936,7 +961,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -973,7 +999,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1010,7 +1037,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1047,7 +1075,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1084,7 +1113,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1121,7 +1151,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1158,7 +1189,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "256",
@@ -1195,7 +1227,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "256",
@@ -1232,7 +1265,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1269,7 +1303,8 @@
         "variant": "1355U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1306,7 +1341,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1343,7 +1379,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1380,7 +1417,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1417,7 +1455,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1454,7 +1493,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1491,7 +1531,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1528,7 +1569,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1565,7 +1607,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1602,7 +1645,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1639,7 +1683,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1676,7 +1721,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1713,7 +1759,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1750,7 +1797,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1787,7 +1835,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1824,7 +1873,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1861,7 +1911,8 @@
         "variant": "12650H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1898,7 +1949,8 @@
         "variant": "12650H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1935,7 +1987,8 @@
         "variant": "12650H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -1972,7 +2025,8 @@
         "variant": "12650H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2009,7 +2063,8 @@
         "variant": "12650H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2046,7 +2101,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -2083,7 +2139,8 @@
         "variant": "1334U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2120,7 +2177,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2157,7 +2215,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2194,7 +2253,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2231,7 +2291,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2268,7 +2329,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2305,7 +2367,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2332,6 +2395,44 @@
   },
   {
     "brand": "hp",
+    "series": "victus",
+    "specs": {
+      "brand": "hp",
+      "series": "victus",
+      "processor": {
+        "name": "i7",
+        "gen": "13",
+        "variant": "13620H"
+      },
+      "ram": {
+        "size": "16",
+        "type": "ddr4"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 39.6,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 91490,
+        "link": "https://www.amazon.in/dp/B0D7H15S9Z/",
+        "rating": 3.4
+      },
+      {
+        "source": "flipkart",
+        "price": 98500,
+        "link": "https://www.flipkart.com/hp-victus-intel-core-i7-13th-gen-13620h-16-gb-1-tb-ssd-windows-11-home-6-gb-graphics-nvidia-geforce-rtx-4050-15-fa1332tx-gaming-laptop/p/itmdc1c4e71b1064?pid=COMHFR4FGZTUXZGY&lid=LSTCOMHFR4FGZTUXZGYQEKLGG&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_9_214&otracker=search&otracker1=search&fm=Search&iid=5ea068bd-6f01-4cad-971d-26bc3881a1ae.COMHFR4FGZTUXZGY.SEARCH&ppt=sp&ppn=sp&ssid=rmb4xmphg00000001747428592214&qH=312f91285e048e09",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "pavilion x360",
     "specs": {
       "brand": "hp",
@@ -2342,7 +2443,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -2379,7 +2481,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -2416,7 +2519,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2453,7 +2557,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2490,7 +2595,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2527,7 +2633,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2564,7 +2671,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2601,7 +2709,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2638,7 +2747,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2675,7 +2785,8 @@
         "variant": "7520U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2712,7 +2823,8 @@
         "variant": "7520U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2749,7 +2861,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2786,7 +2899,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2823,7 +2937,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2860,7 +2975,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2897,7 +3013,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -2934,7 +3051,8 @@
         "variant": "125H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr5"
       },
       "storage": {
         "size": "512",
@@ -2971,7 +3089,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3008,7 +3127,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3045,7 +3165,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3082,7 +3203,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3119,7 +3241,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3156,7 +3279,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3193,7 +3317,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3230,7 +3355,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3267,7 +3393,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3304,7 +3431,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3341,7 +3469,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3378,7 +3507,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -3415,7 +3545,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3452,7 +3583,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3489,7 +3621,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3526,7 +3659,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3563,7 +3697,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -3600,7 +3735,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -3637,7 +3773,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3674,7 +3811,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3711,7 +3849,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3748,7 +3887,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3785,7 +3925,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3822,7 +3963,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3859,7 +4001,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -3896,7 +4039,8 @@
         "variant": "155H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr5"
       },
       "storage": {
         "size": "512",
@@ -3933,7 +4077,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -3970,7 +4115,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4007,7 +4153,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4044,7 +4191,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4081,7 +4229,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4118,7 +4267,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4155,7 +4305,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4192,7 +4343,8 @@
         "variant": "1340P"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4229,7 +4381,8 @@
         "variant": "1340P"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4266,7 +4419,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4303,7 +4457,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4340,7 +4495,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4377,7 +4533,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4404,6 +4561,44 @@
   },
   {
     "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i7",
+        "gen": "13",
+        "variant": "13620H"
+      },
+      "ram": {
+        "size": "16",
+        "type": "ddr5"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 40.9,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 99190,
+        "link": "https://www.amazon.in/dp/B0D2DFZL3K/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 115990,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-13th-gen-13620h-16-gb-1-tb-ssd-windows-11-pro-8-gb-graphics-nvidia-geforce-rtx-4060-16-wd0012tx-gaming-laptop/p/itm35c562c636aa6?pid=COMHY8KVQJD9BMK8&lid=LSTCOMHY8KVQJD9BMK84HENGW&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_8_170&otracker=search&otracker1=search&fm=Search&iid=ea8b8293-5a28-4ff6-a6ff-cbf63646c3c0.COMHY8KVQJD9BMK8.SEARCH&ppt=sp&ppn=sp&ssid=6dzqn85j0w0000001747428588017&qH=312f91285e048e09",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "pavilion",
     "specs": {
       "brand": "hp",
@@ -4414,7 +4609,8 @@
         "variant": "155U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -4451,7 +4647,8 @@
         "variant": "125H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -4488,7 +4685,8 @@
         "variant": "125H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -4525,7 +4723,8 @@
         "variant": "155U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -4562,7 +4761,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -4599,7 +4799,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -4636,7 +4837,8 @@
         "variant": "KOMPANIO 1200"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "lpddr4"
       },
       "storage": {
         "size": "256",
@@ -4673,7 +4875,8 @@
         "variant": "1355U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr4x"
       },
       "storage": {
         "size": "1",
@@ -4710,7 +4913,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4747,7 +4951,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4784,7 +4989,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4821,7 +5027,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4858,7 +5065,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4895,7 +5103,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4932,7 +5141,8 @@
         "variant": "1240P"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -4969,7 +5179,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5006,7 +5217,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5043,7 +5255,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5080,7 +5293,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5117,7 +5331,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5154,7 +5369,8 @@
         "variant": "5500U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5191,7 +5407,8 @@
         "variant": "5500U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5228,7 +5445,8 @@
         "variant": "5500U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5265,7 +5483,8 @@
         "variant": "5500U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5292,6 +5511,82 @@
   },
   {
     "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i9",
+        "gen": "13",
+        "variant": "13900HX"
+      },
+      "ram": {
+        "size": "16",
+        "type": "ddr5"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 40.9,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 124990,
+        "link": "https://www.amazon.in/dp/B0D2DDJ1PN/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 124990,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i9-13th-gen-13900hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-16-wf0148tx-gaming-laptop/p/itm35c562c636aa6?pid=COMHFCEEUF74YKAP&lid=LSTCOMHFCEEUF74YKAP1RZN9T&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_4_73&otracker=search&otracker1=search&fm=Search&iid=275eb096-ca80-4dfd-9ffd-6206e8a9965a.COMHFCEEUF74YKAP.SEARCH&ppt=sp&ppn=sp&ssid=b5fqoddvi80000001747428571081&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
+    "series": "omen",
+    "specs": {
+      "brand": "hp",
+      "series": "omen",
+      "processor": {
+        "name": "i9",
+        "gen": "13",
+        "variant": "13900HX"
+      },
+      "ram": {
+        "size": "16",
+        "type": "ddr5"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 40.9,
+      "gpu": "intel"
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 124990,
+        "link": "https://www.amazon.in/dp/B0D2DDJ1PN/",
+        "rating": 3
+      },
+      {
+        "source": "flipkart",
+        "price": 124990,
+        "link": "https://www.flipkart.com/hp-omen-intel-core-i9-13th-gen-13900hx-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-4060-16-wf0148tx-gaming-laptop/p/itm35c562c636aa6?pid=COMHFCEEUF74YKAP&lid=LSTCOMHFCEEUF74YKAP1RZN9T&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_7_157&otracker=search&otracker1=search&fm=Search&iid=cddbbc68-4399-4bcf-94d2-47a362c3d260.COMHFCEEUF74YKAP.SEARCH&ppt=sp&ppn=sp&ssid=lytnnro13k0000001747428583016&qH=312f91285e048e09",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "envy",
     "specs": {
       "brand": "hp",
@@ -5302,7 +5597,8 @@
         "variant": "1230U"
       },
       "ram": {
-        "size": "8"
+        "size": "16",
+        "type": "lpddr4x"
       },
       "storage": {
         "size": "512",
@@ -5321,8 +5617,8 @@
       },
       {
         "source": "flipkart",
-        "price": 83990,
-        "link": "https://www.flipkart.com/hp-envy-x360-creator-evo-intel-core-i5-12th-gen-1230u-8-gb-512-gb-ssd-windows-11-home-13-bf0085tu-thin-light-laptop/p/itm0952e9fec673b?pid=COMGH2WTFGEYZKKE&lid=LSTCOMGH2WTFGEYZKKEDQ7JIQ&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_20_465&otracker=search&otracker1=search&fm=Search&iid=f3861d81-108d-4120-b2bf-1b9f6ac87dcd.COMGH2WTFGEYZKKE.SEARCH&ppt=sp&ppn=sp&ssid=1thqkl7g740000001747428637319&qH=312f91285e048e09",
+        "price": 78999,
+        "link": "https://www.flipkart.com/hp-envy13-x360-bf0121tu-intel-core-i5-12th-gen-1230u-16-gb-16-optane-512-ssd-windows-11-home-13-bf0121tu-2-1-laptop/p/itm7c472a05300e5?pid=COMGH47NWT4HZFYP&lid=LSTCOMGH47NWT4HZFYPJT5O1U&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_497&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGH47NWT4HZFYP.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
         "rating": 4.3
       }
     ]
@@ -5339,7 +5635,8 @@
         "variant": "1255U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5376,7 +5673,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5413,7 +5711,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5450,7 +5749,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5487,7 +5787,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5524,7 +5825,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5561,7 +5863,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5598,7 +5901,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5635,7 +5939,8 @@
         "variant": "125H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -5672,7 +5977,8 @@
         "variant": "125H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -5709,7 +6015,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5746,7 +6053,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5783,7 +6091,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5820,7 +6129,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5857,7 +6167,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5894,7 +6205,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5931,7 +6243,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -5968,7 +6281,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6005,7 +6319,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6042,7 +6357,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6079,7 +6395,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6116,7 +6433,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6153,7 +6471,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6190,7 +6509,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6227,7 +6547,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -6264,7 +6585,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -6301,7 +6623,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6338,7 +6661,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6375,7 +6699,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6412,7 +6737,8 @@
         "variant": "125U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -6449,7 +6775,8 @@
         "variant": "125U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "512",
@@ -6486,7 +6813,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "gddr6"
       },
       "storage": {
         "size": "512",
@@ -6513,6 +6841,44 @@
   },
   {
     "brand": "hp",
+    "series": "14",
+    "specs": {
+      "brand": "hp",
+      "series": "14",
+      "processor": {
+        "name": "snapdragon",
+        "gen": null,
+        "variant": "X ELITE"
+      },
+      "ram": {
+        "size": "16",
+        "type": "lpddr 5"
+      },
+      "storage": {
+        "size": "1",
+        "type": "ssd"
+      },
+      "touch": "YES",
+      "displayInch": 14,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 125490,
+        "link": "https://www.amazon.in/dp/B0D84427H6/",
+        "rating": 5
+      },
+      {
+        "source": "flipkart",
+        "price": 153945,
+        "link": "https://www.flipkart.com/hp-omnibook-x-ai-pc-snapdragon-elite-16-gb-1-tb-ssd-windows-11-home-14-fe0121qu-thin-light-laptop/p/itm4f0ec97e25d36?pid=COMH2D4GZZK4JEDS&lid=LSTCOMH2D4GZZK4JEDSIWIIRU&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_20_473&otracker=search&otracker1=search&fm=Search&iid=f3861d81-108d-4120-b2bf-1b9f6ac87dcd.COMH2D4GZZK4JEDS.SEARCH&ppt=sp&ppn=sp&ssid=1thqkl7g740000001747428637319&qH=312f91285e048e09",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "255 g9",
     "specs": {
       "brand": "hp",
@@ -6523,7 +6889,8 @@
         "variant": "5625U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6560,7 +6927,8 @@
         "variant": "13620H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -6597,7 +6965,8 @@
         "variant": "125U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "1",
@@ -6634,7 +7003,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6671,7 +7041,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6708,7 +7079,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6745,7 +7117,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6782,7 +7155,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6819,7 +7193,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6856,7 +7231,8 @@
         "variant": "1315U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -6893,7 +7269,8 @@
         "variant": "N4500"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "256",
@@ -6930,7 +7307,8 @@
         "variant": "N4500"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "256",
@@ -6967,7 +7345,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7004,7 +7383,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7041,7 +7421,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7078,7 +7459,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7105,6 +7487,44 @@
   },
   {
     "brand": "hp",
+    "series": "255 g9",
+    "specs": {
+      "brand": "hp",
+      "series": "255 g9",
+      "processor": {
+        "name": "athlon",
+        "gen": "3",
+        "variant": "3050U"
+      },
+      "ram": {
+        "size": "4",
+        "type": "ddr4"
+      },
+      "storage": {
+        "size": "256",
+        "type": "ssd"
+      },
+      "touch": "",
+      "displayInch": 15.6,
+      "gpu": ""
+    },
+    "sites": [
+      {
+        "source": "amazon",
+        "price": 0,
+        "link": "https://www.amazon.in/dp/B0C8VF4DL5/",
+        "rating": 4
+      },
+      {
+        "source": "flipkart",
+        "price": 22390,
+        "link": "https://www.flipkart.com/hp-255-g9-amd-athlon-dual-core-silver-3050u-4-gb-256-gb-ssd-dos-thin-light-laptop/p/itmffac8a2b263c2?pid=COMGQRK4BKTZK5CC&lid=LSTCOMGQRK4BKTZK5CCVWA9X0&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_10_229&otracker=search&otracker1=search&fm=Search&iid=3907f211-dd16-4037-b534-6c6d7d35f0c2.COMGQRK4BKTZK5CC.SEARCH&ppt=sp&ppn=sp&ssid=lsrueeznc00000001747428596395&qH=312f91285e048e09",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "brand": "hp",
     "series": "15s",
     "specs": {
       "brand": "hp",
@@ -7115,7 +7535,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7152,7 +7573,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7189,7 +7611,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7226,7 +7649,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7263,7 +7687,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7300,7 +7725,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7337,7 +7763,8 @@
         "variant": "1115G"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7374,7 +7801,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7411,7 +7839,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7448,7 +7877,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7485,7 +7915,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7522,7 +7953,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7559,7 +7991,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7596,7 +8029,8 @@
         "variant": "12650H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7633,7 +8067,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -7670,7 +8105,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -7707,7 +8143,8 @@
         "variant": "1335U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr5x"
       },
       "storage": {
         "size": "512",
@@ -7744,7 +8181,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7781,7 +8219,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7818,7 +8257,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7855,7 +8295,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7892,7 +8333,8 @@
         "variant": "4500U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "256",
@@ -7929,7 +8371,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -7966,7 +8409,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8003,7 +8447,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8040,7 +8485,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8077,7 +8523,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8114,7 +8561,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8151,7 +8599,8 @@
         "variant": "512"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr42"
       },
       "storage": {
         "size": "512",
@@ -8188,7 +8637,8 @@
         "variant": "7530U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr4x"
       },
       "storage": {
         "size": "512",
@@ -8225,7 +8675,8 @@
         "variant": "7530U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "lpddr4x"
       },
       "storage": {
         "size": "512",
@@ -8252,80 +8703,6 @@
   },
   {
     "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "12",
-        "variant": "12700H"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 16.1,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 13633311,
-        "link": "https://www.amazon.in/dp/B09VCC4RGR/",
-        "rating": 5
-      },
-      {
-        "source": "flipkart",
-        "price": 135990,
-        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-8-gb-graphics-nvidia-geforce-rtx-3070-16-b1370tx-gaming-laptop/p/itm5b316c4d48921?pid=COMGCGSTY9RYYCQV&lid=LSTCOMGCGSTY9RYYCQVBSLR3B&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_492&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGCGSTY9RYYCQV.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
-    "series": "omen",
-    "specs": {
-      "brand": "hp",
-      "series": "omen",
-      "processor": {
-        "name": "i7",
-        "gen": "12",
-        "variant": "12700H"
-      },
-      "ram": {
-        "size": "16"
-      },
-      "storage": {
-        "size": "1",
-        "type": "ssd"
-      },
-      "touch": "",
-      "displayInch": 16.1,
-      "gpu": "intel"
-    },
-    "sites": [
-      {
-        "source": "amazon",
-        "price": 13633311,
-        "link": "https://www.amazon.in/dp/B09VCC4RGR/",
-        "rating": 5
-      },
-      {
-        "source": "flipkart",
-        "price": 109990,
-        "link": "https://www.flipkart.com/hp-omen-intel-core-i7-12th-gen-12700h-16-gb-1-tb-ssd-windows-11-home-4-gb-graphics-nvidia-geforce-rtx-3050-ti-16-b1351tx-gaming-laptop/p/itm5b316c4d48921?pid=COMGCGSTD3BJXTAQ&lid=LSTCOMGCGSTD3BJXTAQ0YWVDA&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_21_499&otracker=search&otracker1=search&fm=Search&iid=ccb218d1-958f-4488-9d78-2c7b7aa6e92f.COMGCGSTD3BJXTAQ.SEARCH&ppt=sp&ppn=sp&ssid=gd9u8hcwm80000001747428641808&qH=312f91285e048e09",
-        "rating": null
-      }
-    ]
-  },
-  {
-    "brand": "hp",
     "series": "15s",
     "specs": {
       "brand": "hp",
@@ -8336,7 +8713,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8373,7 +8751,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8410,7 +8789,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8447,7 +8827,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8484,7 +8865,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8521,7 +8903,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8558,7 +8941,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8595,7 +8979,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8632,7 +9017,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8669,7 +9055,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8706,7 +9093,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8743,7 +9131,8 @@
         "variant": "1235U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8780,7 +9169,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "gddr6"
       },
       "storage": {
         "size": "512",
@@ -8817,7 +9207,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8854,7 +9245,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8891,7 +9283,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8928,7 +9321,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -8965,7 +9359,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9002,7 +9397,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9039,7 +9435,8 @@
         "variant": "1240P"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9076,7 +9473,8 @@
         "variant": "1240P"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9113,7 +9511,8 @@
         "variant": "1240P"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9150,7 +9549,8 @@
         "variant": "1240P"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9187,7 +9587,8 @@
         "variant": "KOMPANIO 1200"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "lpddr4"
       },
       "storage": {
         "size": "256",
@@ -9224,7 +9625,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9261,7 +9663,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9298,7 +9701,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9335,7 +9739,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9372,7 +9777,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9409,7 +9815,8 @@
         "variant": "5600H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9446,7 +9853,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9483,7 +9891,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9520,7 +9929,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9557,7 +9967,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9594,7 +10005,8 @@
         "variant": "1355U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9631,7 +10043,8 @@
         "variant": "7530U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9668,7 +10081,8 @@
         "variant": "7530U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9705,7 +10119,8 @@
         "variant": "7530U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9742,7 +10157,8 @@
         "variant": "7530U"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9779,7 +10195,8 @@
         "variant": "N305"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "lpddr 5"
       },
       "storage": {
         "size": "256",
@@ -9816,7 +10233,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9853,7 +10271,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9890,7 +10309,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9927,7 +10347,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -9964,7 +10385,8 @@
         "variant": "12450H"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10001,7 +10423,8 @@
         "variant": "12700H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr5"
       },
       "storage": {
         "size": "1",
@@ -10038,7 +10461,8 @@
         "variant": "12700H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr5"
       },
       "storage": {
         "size": "1",
@@ -10075,7 +10499,8 @@
         "variant": "11800H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -10112,7 +10537,8 @@
         "variant": "11800H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "1",
@@ -10149,7 +10575,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10186,7 +10613,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10223,7 +10651,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10260,7 +10689,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10297,7 +10727,8 @@
         "variant": "125H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr5"
       },
       "storage": {
         "size": "512",
@@ -10334,7 +10765,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10371,7 +10803,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10408,7 +10841,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10445,7 +10879,8 @@
         "variant": "13420H"
       },
       "ram": {
-        "size": "16"
+        "size": "16",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10482,7 +10917,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10519,7 +10955,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10556,7 +10993,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10593,7 +11031,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10630,7 +11069,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10667,7 +11107,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10704,7 +11145,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10741,7 +11183,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10778,7 +11221,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10815,7 +11259,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10852,7 +11297,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",
@@ -10889,7 +11335,8 @@
         "variant": "1215U"
       },
       "ram": {
-        "size": "8"
+        "size": "8",
+        "type": "ddr4"
       },
       "storage": {
         "size": "512",

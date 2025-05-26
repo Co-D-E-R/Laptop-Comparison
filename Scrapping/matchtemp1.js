@@ -1,6 +1,7 @@
 // matchLaptops.js
 
 const fs = require('fs');
+const { type } = require('os');
 const path = require('path');
 
 // --- Utilities ---
@@ -353,6 +354,11 @@ function extractTouchScreen(name) {
   return match ? 'YES' : '';
 }
 
+function extractRamType(name) {
+  const lower = norm(name);
+  const match = lower.match(/unified\s*memory|lpddr[45x]|ddr[45]|sdram/i);
+  return match ? match[0] : '';
+}
 
 
 function extractProcessorGeneration(name) {
@@ -483,7 +489,8 @@ function normalizeFlipkart(f) {
       variant: extractProcessorVariant(f.technicalDetails["Processor Variant"]) || extractProcessorVariant(f.productName)
     },
     ram: {
-      size: extractRam(f.technicalDetails.RAM) || extractRam(f.productName)
+      size: extractRam(f.technicalDetails.RAM) || extractRam(f.productName),
+      type: norm(f.technicalDetails["RAM Type"])
     },
     storage: {
       size: storageSize,
@@ -514,7 +521,8 @@ function normalizeAmazon(a) {
       variant: extractProcessorVariant(title) || extractProcessorVariant((a.details.Features || []).join(' ')) || extractProcessorVariant(a.details.Description || '') || extractProcessorVariant(a.details["Processor Type"]) || extractProcessorVariant(a.details["Processor model number"])
     },
     ram: {
-      size: extractRam(d.RAM_Size) || extractRamFromName(title)
+      size: extractRam(d["RAM Size"]) || extractRamFromName(title) || extractRamFromName((a.details.Features || []).join(' ')),
+      type: norm(a.details["Memory Technology"]) || extractRamType(title) || extractRamType(a.details["Computer Memory Type"]) ||  extractRamType((a.details.Features || []).join(' ')),
     },
     storage: {
       size: storageSize,
