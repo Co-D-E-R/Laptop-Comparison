@@ -1,15 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const { importCSVData } = require('./csvtojson.js')
+const LaptopData = require('./Data/final_laptops.json');
+const matchLaptopData = require('./Data/matched_laptops.json');
 
 
 const Laptop = require('./model/Laptop.js');
+const matchLaptop = require('./model/matchLaptop.js');
 const Comment = require('./model/Review.js');
 
 const {AmazonData, FlipkartData} = require('./utils/dataFill.js');
 
-const amazonData = require('./Data/amazon_complete_data.json');
-const flipkartData = require('./Data/flipkart_complete_data.json');
+// const amazonData = require('./Data/amazon_complete_data.json');
+// const flipkartData = require('./Data/flipkart_complete_data.json');
 
 const path = require('path');
 const session = require('express-session');
@@ -62,7 +64,7 @@ connectDB().catch(err=> console.log(err));
 async function connectDB(){
     //add your own connection string
     try{
-        await mongoose.connect(process.env.Local_URL || process.env.Mongo_URL);  
+        await mongoose.connect(process.env.Mongo_URL);  
         // console.log(process.env.Mongo_URL);
         console.log('Database Connected');
     }catch(err){
@@ -147,42 +149,215 @@ app.get('/api/check-auth',(req,res)=>{
 
 //Data filling API
 
-app.get('/import/amazon', async(req, res) => {
+
+app.get('/api/insertonetime', async(req, res) => {
     try {
-      const transformedData = amazonData.map(AmazonData);
-      await Laptop.insertMany(transformedData);
-      res.status(200).json({success: true, message: 'Data Imported Successfully'});
-    } catch(err) {
-      console.log('Error importing Amazon data:', err);
-      res.status(500).json({success: false, message: 'Error importing Amazon data'});
+        // Clean and transform the data to match schema requirements
+        const cleanedData = LaptopData.map(laptop => {
+            // Make sure we have required fields
+            if (!laptop.brand || !laptop.series) {
+                console.log('Missing required fields for laptop:', laptop.specs?.head || 'unknown');
+                // Set default values for required fields
+                laptop.brand = laptop.brand || 'Unknown Brand';
+                laptop.series = laptop.series || 'Unknown Series';
+            }
+            
+            const transformedLaptop = { ...laptop };
+            
+            // Fix specs.touch - convert string values to boolean
+            if (transformedLaptop.specs && typeof transformedLaptop.specs.touch === 'string') {
+                const touchValue = transformedLaptop.specs.touch.trim().toLowerCase();
+                if (touchValue === "" || touchValue === "no" || touchValue === "false" || touchValue === "n/a") {
+                    transformedLaptop.specs.touch = false;
+                } else if (touchValue === "yes" || touchValue === "true") {
+                    transformedLaptop.specs.touch = true;
+                } else {
+                    // If it's some other string value, default to false
+                    transformedLaptop.specs.touch = false;
+                }
+            }
+            
+            // Fix storage size - convert string with units to number in GB
+            if (transformedLaptop.specs && transformedLaptop.specs.storage && 
+                typeof transformedLaptop.specs.storage.size === 'string') {
+                const sizeStr = transformedLaptop.specs.storage.size;
+                
+                // Extract numeric part and unit
+                const matches = sizeStr.match(/(\d+)\s*(\w+)/);
+                if (matches) {
+                    const value = parseInt(matches[1], 10);
+                    const unit = matches[2].toLowerCase();
+                    
+                    // Convert to GB
+                    if (unit === 'mb') {
+                        transformedLaptop.specs.storage.size = value / 1024; // MB to GB
+                    } else if (unit === 'tb') {
+                        transformedLaptop.specs.storage.size = value * 1024; // TB to GB
+                    } else {
+                        // Assume GB or unrecognized unit
+                        transformedLaptop.specs.storage.size = value;
+                    }
+                } else {
+                    // If format is unexpected, default to 0
+                    transformedLaptop.specs.storage.size = 0;
+                }
+            }
+            
+            // Fix rating count values by removing commas
+            if (transformedLaptop.sites && Array.isArray(transformedLaptop.sites)) {
+                transformedLaptop.sites = transformedLaptop.sites.map(site => {
+                    const updatedSite = { ...site };
+                    // Convert comma-separated numbers to plain numbers
+                    if (typeof updatedSite.ratingCount === 'string') {
+                        updatedSite.ratingCount = updatedSite.ratingCount === 'N/A' ? 0 : 
+                                                 parseInt(updatedSite.ratingCount.replace(/,/g, ''));
+                    }
+                    return updatedSite;
+                });
+            }
+            
+            // Fix specs.ratingCount if it exists
+            if (transformedLaptop.specs && typeof transformedLaptop.specs.ratingCount === 'string') {
+                transformedLaptop.specs.ratingCount = transformedLaptop.specs.ratingCount === 'N/A' ? 0 : 
+                                                    parseInt(transformedLaptop.specs.ratingCount.replace(/,/g, ''));
+            }
+            
+            // Ensure RAM size is a number
+            if (transformedLaptop.specs && transformedLaptop.specs.ram && 
+                typeof transformedLaptop.specs.ram.size === 'string') {
+                transformedLaptop.specs.ram.size = parseInt(transformedLaptop.specs.ram.size, 10);
+            }
+            
+            // Convert displayInch to number if it's a string
+            if (transformedLaptop.specs && typeof transformedLaptop.specs.displayInch === 'string') {
+                transformedLaptop.specs.displayInch = parseFloat(transformedLaptop.specs.displayInch);
+            }
+            
+            return transformedLaptop;
+        });
+        
+        console.log(`Attempting to insert ${cleanedData.length} laptops`);
+        
+        // Log the first item to inspect its structure
+        console.log('Sample item structure:', JSON.stringify(cleanedData[0], null, 2));
+        
+        await Laptop.insertMany(cleanedData, { ordered: false });
+        
+        res.status(200).json({
+            success: true, 
+            message: `Successfully inserted ${cleanedData.length} laptops`,
+            total: LaptopData.length
+        });
+    } catch (err) {
+        console.error('Error inserting data:', err);
+        res.status(500).json({success: false, message: 'Error inserting data: ' + err.message});
     }
 });
 
-app.get('/import/flipkart', async(req, res) => {
+app.get('/api/match/insertonetime', async(req, res) => {
     try {
-      const transformedData = flipkartData.map(FlipkartData);
-      await Laptop.insertMany(transformedData);
-      res.status(200).json({success: true, message: 'Data Imported Successfully'});
-    } catch(err) {
-      console.log('Error importing Flipkart data:', err);
-      res.status(500).json({success: false, message: 'Error importing Flipkart data'});
+        // Clean and transform the data to match schema requirements
+        const cleanedData = matchLaptopData.map(laptop => {
+            // Make sure we have required fields
+            if (!laptop.brand || !laptop.series) {
+                console.log('Missing required fields for laptop:', laptop.specs?.head || 'unknown');
+                // Set default values for required fields
+                laptop.brand = laptop.brand || 'Unknown Brand';
+                laptop.series = laptop.series || 'Unknown Series';
+            }
+            
+            const transformedLaptop = { ...laptop };
+            
+            // Fix specs.touch - convert string values to boolean
+            if (transformedLaptop.specs && typeof transformedLaptop.specs.touch === 'string') {
+                const touchValue = transformedLaptop.specs.touch.trim().toLowerCase();
+                if (touchValue === "" || touchValue === "no" || touchValue === "false" || touchValue === "n/a") {
+                    transformedLaptop.specs.touch = false;
+                } else if (touchValue === "yes" || touchValue === "true") {
+                    transformedLaptop.specs.touch = true;
+                } else {
+                    // If it's some other string value, default to false
+                    transformedLaptop.specs.touch = false;
+                }
+            }
+            
+            // Fix storage size - convert string with units to number in GB
+            if (transformedLaptop.specs && transformedLaptop.specs.storage && 
+                typeof transformedLaptop.specs.storage.size === 'string') {
+                const sizeStr = transformedLaptop.specs.storage.size;
+                
+                // Extract numeric part and unit
+                const matches = sizeStr.match(/(\d+)\s*(\w+)/);
+                if (matches) {
+                    const value = parseInt(matches[1], 10);
+                    const unit = matches[2].toLowerCase();
+                    
+                    // Convert to GB
+                    if (unit === 'mb') {
+                        transformedLaptop.specs.storage.size = value / 1024; // MB to GB
+                    } else if (unit === 'tb') {
+                        transformedLaptop.specs.storage.size = value * 1024; // TB to GB
+                    } else {
+                        // Assume GB or unrecognized unit
+                        transformedLaptop.specs.storage.size = value;
+                    }
+                } else {
+                    // If format is unexpected, default to 0
+                    transformedLaptop.specs.storage.size = 0;
+                }
+            }
+            
+            // Fix rating count values by removing commas
+            if (transformedLaptop.sites && Array.isArray(transformedLaptop.sites)) {
+                transformedLaptop.sites = transformedLaptop.sites.map(site => {
+                    const updatedSite = { ...site };
+                    // Convert comma-separated numbers to plain numbers
+                    if (typeof updatedSite.ratingCount === 'string') {
+                        updatedSite.ratingCount = updatedSite.ratingCount === 'N/A' ? 0 : 
+                                                 parseInt(updatedSite.ratingCount.replace(/,/g, ''));
+                    }
+                    return updatedSite;
+                });
+            }
+            
+            // Fix specs.ratingCount if it exists
+            if (transformedLaptop.specs && typeof transformedLaptop.specs.ratingCount === 'string') {
+                transformedLaptop.specs.ratingCount = transformedLaptop.specs.ratingCount === 'N/A' ? 0 : 
+                                                    parseInt(transformedLaptop.specs.ratingCount.replace(/,/g, ''));
+            }
+            
+            // Ensure RAM size is a number
+            if (transformedLaptop.specs && transformedLaptop.specs.ram && 
+                typeof transformedLaptop.specs.ram.size === 'string') {
+                transformedLaptop.specs.ram.size = parseInt(transformedLaptop.specs.ram.size, 10);
+            }
+            
+            // Convert displayInch to number if it's a string
+            if (transformedLaptop.specs && typeof transformedLaptop.specs.displayInch === 'string') {
+                transformedLaptop.specs.displayInch = parseFloat(transformedLaptop.specs.displayInch);
+            }
+            
+            return transformedLaptop;
+        });
+        
+        console.log(`Attempting to insert ${cleanedData.length} laptops`);
+        
+        // Log the first item to inspect its structure
+        console.log('Sample item structure:', JSON.stringify(cleanedData[0], null, 2));
+        
+        await matchLaptop.insertMany(cleanedData, { ordered: false });
+        
+        res.status(200).json({
+            success: true, 
+            message: `Successfully inserted ${cleanedData.length} laptops`,
+            total: matchLaptopData.length
+        });
+    } catch (err) {
+        console.error('Error inserting data:', err);
+        res.status(500).json({success: false, message: 'Error inserting data: ' + err.message});
     }
 });
 
-app.get('/api/insertonetime',async(req,res)=>{
-    res.send('API is working');
-    try{
-        const data =await importCSVData();
-        // console.log(data);
-        await Laptop.insertMany(data);
-        console.log('Data Imported Successfully');
-
-  } catch (err) {
-    console.log(err);
-  }
-
-
-});
 //All details API
 app.get('/api/search', async (req, res) => {
   const { id, name, price, processor, ram, os, storage, img_link, display, rating, no_of_ratings, no_of_reviews, laptop_brand, os_brand, page = 1 } = req.query;
@@ -348,18 +523,42 @@ app.get('/api/suggestions', async (req, res) => {
   const query = req.query.query || '';
   try {
     const suggestions = await Laptop.find({
-      name: { $regex: query, $options: 'i' }
+      $or: [
+        { 'specs.head': { $regex: query, $options: 'i' } },
+        { brand: { $regex: query, $options: 'i' } },
+        { series: { $regex: query, $options: 'i' } },
+        { 'specs.processor.name': { $regex: query, $options: 'i' } }
+      ]
     })
       .limit(30)
-      .select('name laptop_id img_link price processor ram rating laptop_brand');
+      .select('brand series specs.head specs.processor specs.ram specs.storage sites.price specs.details.imageLinks');
 
-    res.json(suggestions);
+    // Transform the results to make them more friendly for frontend consumption
+    const formattedSuggestions = suggestions.map(laptop => {
+      // Get the lowest price from all sites
+      const lowestPrice = laptop.sites && laptop.sites.length > 0 
+        ? Math.min(...laptop.sites.map(site => site.price))
+        : null;
+        
+      return {
+        id: laptop._id,
+        title: laptop.specs.head,
+        brand: laptop.brand,
+        series: laptop.series,
+        processor: `${laptop.specs.processor.name} ${laptop.specs.processor.gen}th Gen`,
+        ram: `${laptop.specs.ram.size}GB ${laptop.specs.ram.type.toUpperCase()}`,
+        storage: `${laptop.specs.storage.size}GB ${laptop.specs.storage.type.toUpperCase()}`,
+        price: lowestPrice,
+        image: laptop.specs.details.imageLinks ? laptop.specs.details.imageLinks[0] : null,
+      };
+    });
+
+    res.json(formattedSuggestions);
   } catch (err) {
     console.error('Error fetching suggestions:', err.message);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
-
 //Filer API
 app.get('/api/filter', async (req, res) => {
   const { processor, ram, os, storage, price } = req.query;
