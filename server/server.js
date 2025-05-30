@@ -177,31 +177,31 @@ app.get('/api/insertonetime', async (req, res) => {
         }
       }
 
-      // Fix storage size - convert string with units to number in GB
-      if (transformedLaptop.specs && transformedLaptop.specs.storage &&
-        typeof transformedLaptop.specs.storage.size === 'string') {
-        const sizeStr = transformedLaptop.specs.storage.size;
+      // // Fix storage size - convert string with units to number in GB
+      // if (transformedLaptop.specs && transformedLaptop.specs.storage &&
+      //   typeof transformedLaptop.specs.storage.size === 'string') {
+      //   const sizeStr = transformedLaptop.specs.storage.size;
 
-        // Extract numeric part and unit
-        const matches = sizeStr.match(/(\d+)\s*(\w+)/);
-        if (matches) {
-          const value = parseInt(matches[1], 10);
-          const unit = matches[2].toLowerCase();
+      //   // Extract numeric part and unit
+      //   const matches = sizeStr.match(/(\d+)\s*(\w+)/);
+      //   if (matches) {
+      //     const value = parseInt(matches[1], 10);
+      //     const unit = matches[2].toLowerCase();
 
-          // Convert to GB
-          if (unit === 'mb') {
-            transformedLaptop.specs.storage.size = value / 1024; // MB to GB
-          } else if (unit === 'tb') {
-            transformedLaptop.specs.storage.size = value * 1024; // TB to GB
-          } else {
-            // Assume GB or unrecognized unit
-            transformedLaptop.specs.storage.size = value;
-          }
-        } else {
-          // If format is unexpected, default to 0
-          transformedLaptop.specs.storage.size = 0;
-        }
-      }
+      //     // Convert to GB
+      //     if (unit === 'mb') {
+      //       transformedLaptop.specs.storage.size = value / 1024; // MB to GB
+      //     } else if (unit === 'tb') {
+      //       transformedLaptop.specs.storage.size = value * 1024; // TB to GB
+      //     } else {
+      //       // Assume GB or unrecognized unit
+      //       transformedLaptop.specs.storage.size = value;
+      //     }
+      //   } else {
+      //     // If format is unexpected, default to 0
+      //     transformedLaptop.specs.storage.size = 0;
+      //   }
+      // }
 
       // Fix rating count values by removing commas
       if (transformedLaptop.sites && Array.isArray(transformedLaptop.sites)) {
@@ -281,31 +281,31 @@ app.get('/api/match/insertonetime', async (req, res) => {
         }
       }
 
-      // Fix storage size - convert string with units to number in GB
-      if (transformedLaptop.specs && transformedLaptop.specs.storage &&
-        typeof transformedLaptop.specs.storage.size === 'string') {
-        const sizeStr = transformedLaptop.specs.storage.size;
+      // // Fix storage size - convert string with units to number in GB
+      // if (transformedLaptop.specs && transformedLaptop.specs.storage &&
+      //   typeof transformedLaptop.specs.storage.size === 'string') {
+      //   const sizeStr = transformedLaptop.specs.storage.size;
 
-        // Extract numeric part and unit
-        const matches = sizeStr.match(/(\d+)\s*(\w+)/);
-        if (matches) {
-          const value = parseInt(matches[1], 10);
-          const unit = matches[2].toLowerCase();
+      //   // Extract numeric part and unit
+      //   const matches = sizeStr.match(/(\d+)\s*(\w+)/);
+      //   if (matches) {
+      //     const value = parseInt(matches[1], 10);
+      //     const unit = matches[2].toLowerCase();
 
-          // Convert to GB
-          if (unit === 'mb') {
-            transformedLaptop.specs.storage.size = value / 1024; // MB to GB
-          } else if (unit === 'tb') {
-            transformedLaptop.specs.storage.size = value * 1024; // TB to GB
-          } else {
-            // Assume GB or unrecognized unit
-            transformedLaptop.specs.storage.size = value;
-          }
-        } else {
-          // If format is unexpected, default to 0
-          transformedLaptop.specs.storage.size = 0;
-        }
-      }
+      //     // Convert to GB
+      //     if (unit === 'mb') {
+      //       transformedLaptop.specs.storage.size = value / 1024; // MB to GB
+      //     } else if (unit === 'tb') {
+      //       transformedLaptop.specs.storage.size = value * 1024; // TB to GB
+      //     } else {
+      //       // Assume GB or unrecognized unit
+      //       transformedLaptop.specs.storage.size = value;
+      //     }
+      //   } else {
+      //     // If format is unexpected, default to 0
+      //     transformedLaptop.specs.storage.size = 0;
+      //   }
+      // }
 
       // Fix rating count values by removing commas
       if (transformedLaptop.sites && Array.isArray(transformedLaptop.sites)) {
@@ -545,218 +545,222 @@ app.get('/api/advancedsearch', async (req, res) => {
         hasPrev: parseInt(page) > 1
       }
     });
+  } catch (err) {
+    console.error('Error in advanced search:', err.message);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
+});
 
-
-    //Suggestions API(auto complete)
-    app.get('/api/suggestions', async (req, res) => {
-      const query = req.query.query || '';
-      try {
-        const suggestions = await Laptop.find({
-          $or: [
-            { 'specs.head': { $regex: query, $options: 'i' } },
-            { brand: { $regex: query, $options: 'i' } },
-            { series: { $regex: query, $options: 'i' } },
-            { 'specs.processor.name': { $regex: query, $options: 'i' } }
-          ]
-        })
-          .limit(30)
-          .select('brand series specs.head specs.processor specs.ram specs.storage sites.price specs.details.imageLinks');
-
-        // Transform the results to make them more friendly for frontend consumption
-        const formattedSuggestions = suggestions.map(laptop => {
-          // Get the lowest price from all sites
-          const lowestPrice = laptop.sites && laptop.sites.length > 0
-            ? Math.min(...laptop.sites.map(site => site.price))
-            : null;
-
-          return {
-            id: laptop._id,
-            title: laptop.specs.head,
-            brand: laptop.brand,
-            series: laptop.series,
-            processor: `${laptop.specs.processor.name} ${laptop.specs.processor.gen}th Gen`,
-            ram: `${laptop.specs.ram.size}GB ${laptop.specs.ram.type.toUpperCase()}`,
-            storage: `${laptop.specs.storage.size}GB ${laptop.specs.storage.type.toUpperCase()}`,
-            price: lowestPrice,
-            image: laptop.specs.details.imageLinks ? laptop.specs.details.imageLinks[0] : null,
-          };
-        });
-
-        res.json(formattedSuggestions);
-      } catch (err) {
-        console.error('Error fetching suggestions:', err.message);
-        res.status(500).json({ error: 'Internal server error' });
-      }
-    });
-    //Filer API
-    app.get('/api/filter', async (req, res) => {
-      const { processor, ram, os, storage, price } = req.query;
-
-      let filter = {};
-
-      if (processor) {
-        filter.processor = { $regex: processor, $options: 'i' };
-      }
-      if (ram) {
-        filter.ram = { $regex: ram, $options: 'i' };
-      }
-      if (os) {
-        filter.os = { $regex: os, $options: 'i' };
-      }
-      if (storage) {
-        filter.storage = { $regex: storage, $options: 'i' };
-      }
-      if (price) {
-        const [minPrice, maxPrice] = price.split('-').map(Number);
-        filter.price = { $gte: minPrice, $lte: maxPrice };
-      }
-      try {
-        const laptops = await Laptop.find(filter);
-        res.status(200).json({ success: true, laptops });
-      } catch (err) {
-        console.error('Error fetching filtered laptops:', err.message);
-        res.status(500).json({ success: false, message: 'Server Error' });
-      }
-    });
-
-    //Get User API
-
-    //Comment API
-    app.post("/api/comment", async (req, res) => {
-      const { user, laptop, comment } = req.body;
-
-      if (!user || !laptop || !comment) {
-        return res.status(400).json({ success: false, message: "Missing fields" });
-      }
-
-      try {
-        const newComment = new Comment({ user, laptop, comment });
-        await newComment.save();
-        res.status(200).json({ success: true, message: "Comment added" });
-      } catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, message: "Server error" });
-      }
-    });
-
-    //Add to favorites API
-    app.post('/api/favorites', async (req, res) => {
-      const { userId, laptopId } = req.body;
-      if (!userId || !laptopId) {
-        return res.status(400).json({ success: false, message: 'Missing fields' });
-      }
-      try {
-        const user = await User.findById(userId);
-        if (!user) {
-          return res.status(404).json({ success: false, message: 'User not found' });
-        }
-        const laptop = await Laptop.findById(laptopId);
-        if (!laptop) {
-          return res.status(404).json({ success: false, message: 'Laptop not found' });
-        }
-        if (user.favorites.includes(laptopId)) {
-          return res.status(400).json({ success: false, message: 'Laptop already in favourites' });
-        }
-        user.favorites.push(laptopId);
-        await user.save();
-        res.status(200).json({ success: true, message: 'Laptop added to favourites' });
-      }
-      catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, message: 'Servor error' });
-      }
-    });
-
-    // Remove from favorites API
-    app.delete('/api/favorites', async (req, res) => {
-      const { userId, laptopId } = req.body;
-      if (!userId || !laptopId) {
-        return res.status(400).json({ success: false, message: 'Missing fields' });
-      }
-      try {
-        const user = await User.findById(userId);
-        if (!user) {
-          return res.status(404).json({ success: false, message: 'User not found' });
-        }
-        const laptop = await Laptop.findById(laptopId);
-        if (!laptop) {
-          return res.status(404).json({ success: false, message: 'Laptop not found' });
-        }
-        if (!user.favorites.includes(laptopId)) {
-          return res.status(400).json({ success: false, message: 'Laptop not in favourites' });
-        }
-        user.favorites = user.favorites.filter(fav => fav.toString() !== laptopId);
-        await user.save();
-        res.status(200).json({ success: true, message: 'Laptop removed from favourites' });
-      } catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, message: 'Server error' });
-      }
-    });
-
-    //Get User Favorites API
-    app.get('/api/favorites/:userId', async (req, res) => {
-      const { userId } = req.params;
-      try {
-        const user = await User.findById(userId).populate('favorites');
-        if (!user) {
-          return res.status(404).json({ success: false, message: 'User not found' });
-        }
-        res.status(200).json({ success: true, favorites: user.favorites });
-      } catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, message: 'Server error' });
-      }
-    });
-
-    //Add to history API
-    app.post('/api/history', async (req, res) => {
-      const { userId, laptopId } = req.body;
-      if (!userId || !laptopId) {
-        return res.status(400).json({ success: false, message: 'Missing fields' });
-      }
-      try {
-        const user = await User.findById(userId);
-        if (!user) {
-          return res.status(404).json({ success: false, message: 'User not found' });
-        }
-        const laptop = await Laptop.findById(laptopId);
-        if (!laptop) {
-          return res.status(404).json({ success: false, message: 'Laptop not found' });
-        }
-        if (user.history.includes(laptopId)) {
-          return res.status(400).json({ success: false, message: 'Laptop already in history' });
-        }
-        // user.history.push(laptopId);
-        // Add to beginning of history array (most recent first)
-        user.history.unshift(laptopId);
-
-        // Limit history to last 20 items
-        if (user.history.length > 20) {
-          user.history = user.history.slice(0, 20);
-        }
-        await user.save();
-        res.status(200).json({ success: true, message: 'Laptop added to history' });
-      } catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, message: 'Server error' });
-      }
-    });
-
-    //Get User History API
-    app.get('/api/history/:userId', async (req, res) => {
-      const { userId } = req.params;
-      try {
-        const user = await User.findById(userId).populate('history');
-        if (!user) {
-          return res.status(404).json({ success: false, message: 'User not found' });
-        }
-        res.status(200).json({ success: true, history: user.history });
-      } catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, message: 'Server error' });
-      }
-    });
-    app.listen(8080, () => {
-      console.log('Server Started at port 8080');
+//Suggestions API(auto complete)
+app.get('/api/suggestions', async (req, res) => {
+  const query = req.query.query || '';
+  try {
+    const suggestions = await Laptop.find({
+      $or: [
+        { 'specs.head': { $regex: query, $options: 'i' } },
+        { brand: { $regex: query, $options: 'i' } },
+        { series: { $regex: query, $options: 'i' } },
+        { 'specs.processor.name': { $regex: query, $options: 'i' } }
+      ]
     })
+      .limit(30)
+      .select('brand series specs.head specs.processor specs.ram specs.storage sites.price specs.details.imageLinks');
+
+    // Transform the results to make them more friendly for frontend consumption
+    const formattedSuggestions = suggestions.map(laptop => {
+      // Get the lowest price from all sites
+      const lowestPrice = laptop.sites && laptop.sites.length > 0
+        ? Math.min(...laptop.sites.map(site => site.price))
+        : null;
+
+      return {
+        id: laptop._id,
+        title: laptop.specs.head,
+        brand: laptop.brand,
+        series: laptop.series,
+        processor: `${laptop.specs.processor.name} ${laptop.specs.processor.gen}th Gen`,
+        ram: `${laptop.specs.ram.size}GB ${laptop.specs.ram.type.toUpperCase()}`,
+        storage: `${laptop.specs.storage.size}GB ${laptop.specs.storage.type.toUpperCase()}`,
+        price: lowestPrice,
+        image: laptop.specs.details.imageLinks ? laptop.specs.details.imageLinks[0] : null,
+      };
+    });
+
+    res.json(formattedSuggestions);
+  } catch (err) {
+    console.error('Error fetching suggestions:', err.message);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+//Filer API
+app.get('/api/filter', async (req, res) => {
+  const { processor, ram, os, storage, price } = req.query;
+
+  let filter = {};
+
+  if (processor) {
+    filter.processor = { $regex: processor, $options: 'i' };
+  }
+  if (ram) {
+    filter.ram = { $regex: ram, $options: 'i' };
+  }
+  if (os) {
+    filter.os = { $regex: os, $options: 'i' };
+  }
+  if (storage) {
+    filter.storage = { $regex: storage, $options: 'i' };
+  }
+  if (price) {
+    const [minPrice, maxPrice] = price.split('-').map(Number);
+    filter.price = { $gte: minPrice, $lte: maxPrice };
+  }
+  try {
+    const laptops = await Laptop.find(filter);
+    res.status(200).json({ success: true, laptops });
+  } catch (err) {
+    console.error('Error fetching filtered laptops:', err.message);
+    res.status(500).json({ success: false, message: 'Server Error' });
+  }
+});
+
+//Get User API
+
+//Comment API
+app.post("/api/comment", async (req, res) => {
+  const { user, laptop, comment } = req.body;
+
+  if (!user || !laptop || !comment) {
+    return res.status(400).json({ success: false, message: "Missing fields" });
+  }
+
+  try {
+    const newComment = new Comment({ user, laptop, comment });
+    await newComment.save();
+    res.status(200).json({ success: true, message: "Comment added" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: "Server error" });
+  }
+});
+
+//Add to favorites API
+app.post('/api/favorites', async (req, res) => {
+  const { userId, laptopId } = req.body;
+  if (!userId || !laptopId) {
+    return res.status(400).json({ success: false, message: 'Missing fields' });
+  }
+  try {
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+    const laptop = await Laptop.findById(laptopId);
+    if (!laptop) {
+      return res.status(404).json({ success: false, message: 'Laptop not found' });
+    }
+    if (user.favorites.includes(laptopId)) {
+      return res.status(400).json({ success: false, message: 'Laptop already in favourites' });
+    }
+    user.favorites.push(laptopId);
+    await user.save();
+    res.status(200).json({ success: true, message: 'Laptop added to favourites' });
+  }
+  catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Servor error' });
+  }
+});
+
+// Remove from favorites API
+app.delete('/api/favorites', async (req, res) => {
+  const { userId, laptopId } = req.body;
+  if (!userId || !laptopId) {
+    return res.status(400).json({ success: false, message: 'Missing fields' });
+  }
+  try {
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+    const laptop = await Laptop.findById(laptopId);
+    if (!laptop) {
+      return res.status(404).json({ success: false, message: 'Laptop not found' });
+    }
+    if (!user.favorites.includes(laptopId)) {
+      return res.status(400).json({ success: false, message: 'Laptop not in favourites' });
+    }
+    user.favorites = user.favorites.filter(fav => fav.toString() !== laptopId);
+    await user.save();
+    res.status(200).json({ success: true, message: 'Laptop removed from favourites' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
+//Get User Favorites API
+app.get('/api/favorites/:userId', async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await User.findById(userId).populate('favorites');
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+    res.status(200).json({ success: true, favorites: user.favorites });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
+//Add to history API
+app.post('/api/history', async (req, res) => {
+  const { userId, laptopId } = req.body;
+  if (!userId || !laptopId) {
+    return res.status(400).json({ success: false, message: 'Missing fields' });
+  }
+  try {
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+    const laptop = await Laptop.findById(laptopId);
+    if (!laptop) {
+      return res.status(404).json({ success: false, message: 'Laptop not found' });
+    }
+    if (user.history.includes(laptopId)) {
+      return res.status(400).json({ success: false, message: 'Laptop already in history' });
+    }
+    // user.history.push(laptopId);
+    // Add to beginning of history array (most recent first)
+    user.history.unshift(laptopId);
+
+    // Limit history to last 20 items
+    if (user.history.length > 20) {
+      user.history = user.history.slice(0, 20);
+    }
+    await user.save();
+    res.status(200).json({ success: true, message: 'Laptop added to history' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
+//Get User History API
+app.get('/api/history/:userId', async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await User.findById(userId).populate('history');
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+    res.status(200).json({ success: true, history: user.history });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+app.listen(8080, () => {
+  console.log('Server Started at port 8080');
+});
