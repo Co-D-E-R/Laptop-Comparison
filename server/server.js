@@ -177,32 +177,6 @@ app.get('/api/insertonetime', async (req, res) => {
         }
       }
 
-      // // Fix storage size - convert string with units to number in GB
-      // if (transformedLaptop.specs && transformedLaptop.specs.storage &&
-      //   typeof transformedLaptop.specs.storage.size === 'string') {
-      //   const sizeStr = transformedLaptop.specs.storage.size;
-
-      //   // Extract numeric part and unit
-      //   const matches = sizeStr.match(/(\d+)\s*(\w+)/);
-      //   if (matches) {
-      //     const value = parseInt(matches[1], 10);
-      //     const unit = matches[2].toLowerCase();
-
-      //     // Convert to GB
-      //     if (unit === 'mb') {
-      //       transformedLaptop.specs.storage.size = value / 1024; // MB to GB
-      //     } else if (unit === 'tb') {
-      //       transformedLaptop.specs.storage.size = value * 1024; // TB to GB
-      //     } else {
-      //       // Assume GB or unrecognized unit
-      //       transformedLaptop.specs.storage.size = value;
-      //     }
-      //   } else {
-      //     // If format is unexpected, default to 0
-      //     transformedLaptop.specs.storage.size = 0;
-      //   }
-      // }
-
       // Fix rating count values by removing commas
       if (transformedLaptop.sites && Array.isArray(transformedLaptop.sites)) {
         transformedLaptop.sites = transformedLaptop.sites.map(site => {
@@ -281,32 +255,6 @@ app.get('/api/match/insertonetime', async (req, res) => {
         }
       }
 
-      // // Fix storage size - convert string with units to number in GB
-      // if (transformedLaptop.specs && transformedLaptop.specs.storage &&
-      //   typeof transformedLaptop.specs.storage.size === 'string') {
-      //   const sizeStr = transformedLaptop.specs.storage.size;
-
-      //   // Extract numeric part and unit
-      //   const matches = sizeStr.match(/(\d+)\s*(\w+)/);
-      //   if (matches) {
-      //     const value = parseInt(matches[1], 10);
-      //     const unit = matches[2].toLowerCase();
-
-      //     // Convert to GB
-      //     if (unit === 'mb') {
-      //       transformedLaptop.specs.storage.size = value / 1024; // MB to GB
-      //     } else if (unit === 'tb') {
-      //       transformedLaptop.specs.storage.size = value * 1024; // TB to GB
-      //     } else {
-      //       // Assume GB or unrecognized unit
-      //       transformedLaptop.specs.storage.size = value;
-      //     }
-      //   } else {
-      //     // If format is unexpected, default to 0
-      //     transformedLaptop.specs.storage.size = 0;
-      //   }
-      // }
-
       // Fix rating count values by removing commas
       if (transformedLaptop.sites && Array.isArray(transformedLaptop.sites)) {
         transformedLaptop.sites = transformedLaptop.sites.map(site => {
@@ -359,52 +307,7 @@ app.get('/api/match/insertonetime', async (req, res) => {
 });
 
 //All details API
-app.get('/api/search', async (req, res) => {
-  const { id, name, price, processor, ram, os, storage, img_link, display, rating, no_of_ratings, no_of_reviews, laptop_brand, os_brand, page = 1 } = req.query;
 
-
-  let query = {
-    ...(id && { laptop_id: id }),
-    ...(name && { name }),
-    ...(price && { price }),
-    ...(processor && { processor }),
-    ...(ram && { ram }),
-    ...(os && { os }),
-    ...(storage && { storage }),
-    ...(img_link && { img_link }),
-    ...(display && { display }),
-    ...(rating && { rating }),
-    ...(no_of_ratings && { no_of_ratings }),
-    ...(no_of_reviews && { no_of_reviews }),
-    ...(laptop_brand && { laptop_brand }),
-    ...(os_brand && { os_brand })
-  };
-
-  const limit = 50;
-  const skip = (page - 1) * limit;
-
-  try {
-    const laptops = await Laptop.find(query)
-      .limit(limit)
-      .skip(skip);
-
-    const totalResults = await Laptop.countDocuments(query); // Get total number of matching documents
-    const hasNext = page * limit < totalResults; // Check if there are more results
-
-    res.status(200).json({
-      success: true,
-      laptops,
-      hasNext,
-      totalResults,
-      currentPage: parseInt(page),
-      totalPages: Math.ceil(totalResults / limit)
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json({ success: false, message: 'Server Error' });
-  }
-
-})
 //Advaced Search API
 app.get('/api/advancedsearch', async (req, res) => {
   try {
@@ -486,7 +389,7 @@ app.get('/api/advancedsearch', async (req, res) => {
     if (laptop_brand) {
       // Handle multiple brand options
       const brandOptions = Array.isArray(laptop_brand) ? laptop_brand : [laptop_brand];
-      filter.brand = { $in: brandOptions.map(b => new RegExp(b, 'i')) };
+      filter['specs.brand'] = { $in: brandOptions.map(b => new RegExp(b, 'i')) };
     }
 
     if (laptop_model) {
@@ -592,38 +495,187 @@ app.get('/api/suggestions', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
-//Filer API
-app.get('/api/filter', async (req, res) => {
-  const { processor, ram, os, storage, price } = req.query;
 
-  let filter = {};
-
-  if (processor) {
-    filter.processor = { $regex: processor, $options: 'i' };
-  }
-  if (ram) {
-    filter.ram = { $regex: ram, $options: 'i' };
-  }
-  if (os) {
-    filter.os = { $regex: os, $options: 'i' };
-  }
-  if (storage) {
-    filter.storage = { $regex: storage, $options: 'i' };
-  }
-  if (price) {
-    const [minPrice, maxPrice] = price.split('-').map(Number);
-    filter.price = { $gte: minPrice, $lte: maxPrice };
-  }
+//Notifications for above 30% discount in wishlist
+app.get('/api/notifications/:userId', async (req, res) => {
+  const { userId } = req.params;
   try {
-    const laptops = await Laptop.find(filter);
-    res.status(200).json({ success: true, laptops });
+    const user = await User.findById(userId).populate('favorites');
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+    const notifications = user.favorites
+      .filter(laptop => {
+        // Check if laptop has sites and at least one site with price and basePrice
+        if (laptop.sites && laptop.sites.length > 0) {
+          // Calculate discount for each site
+          const siteDiscounts = laptop.sites.map(site => {
+            if (site.basePrice && site.price) {
+              return {
+                source: site.source,
+                discount: (site.basePrice - site.price) / site.basePrice,
+                price: site.price,
+                basePrice: site.basePrice
+              };
+            }
+            return null;
+          }).filter(Boolean); // Remove null entries
+
+          // If we have valid discount calculations
+          if (siteDiscounts.length > 0) {
+            // Find the best discount across all sites
+            const bestDiscount = siteDiscounts.reduce((best, current) =>
+              current.discount > best.discount ? current : best, siteDiscounts[0]);
+
+            // Return true if best discount is >= 30%
+            return bestDiscount.discount >= 0.3;
+          }
+        }
+        return false;
+      })
+      .map(laptop => {
+        // Calculate the best discount again for the selected laptops
+        const siteDiscounts = laptop.sites
+          .filter(site => site.basePrice && site.price)
+          .map(site => ({
+            source: site.source,
+            discount: (site.basePrice - site.price) / site.basePrice,
+            price: site.price,
+            basePrice: site.basePrice
+          }));
+
+        const bestDiscount = siteDiscounts.reduce((best, current) =>
+          current.discount > best.discount ? current : best, siteDiscounts[0]);
+
+        return {
+          id: laptop._id,
+          name: laptop.specs.head,
+          brand: laptop.brand,
+          currentPrice: bestDiscount.price,
+          originalPrice: bestDiscount.basePrice,
+          discountPercent: Math.round(bestDiscount.discount * 100),
+          source: bestDiscount.source
+        };
+      });
+
+    res.status(200).json({ success: true, notifications });
   } catch (err) {
-    console.error('Error fetching filtered laptops:', err.message);
-    res.status(500).json({ success: false, message: 'Server Error' });
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Server error' });
   }
 });
 
-//Get User API
+//Get random laptops from matchLaptop collection
+app.get('/api/random', async (req, res) => {
+  try {
+    const count = parseInt(req.query.count) || 20; // Default to 8 if not specified
+
+    // Validate count parameter
+    if (count <= 0 || count > 50) {
+      return res.status(400).json({
+        success: false,
+        message: 'Count must be between 1 and 50'
+      });
+    }
+
+    // Use aggregation to get random laptops with selected fields
+    const randomLaptops = await matchLaptop.aggregate([
+      { $sample: { size: count } },
+      {
+        $project: {
+          _id: 1,
+          brand: 1,
+          series: 1,
+          'specs.head': 1,
+          'specs.processor': 1,
+          'specs.ram': 1,
+          'specs.storage': 1,
+          'sites': 1,
+          'specs.details.imageLinks': 1,
+          'allTimeLowPrice': 1
+        }
+      }
+    ]);
+
+    // Format the response data
+    const formattedLaptops = randomLaptops.map(laptop => {
+      // Extract Amazon and Flipkart prices separately
+      let amazonPrice = null;
+      let flipkartPrice = null;
+
+      if (laptop.sites && laptop.sites.length > 0) {
+        // Find Amazon site data
+        const amazonSite = laptop.sites.find(site =>
+          site.source && site.source.toLowerCase() === 'amazon');
+        if (amazonSite && amazonSite.price) {
+          amazonPrice = amazonSite.price;
+        }
+
+        // Find Flipkart site data
+        const flipkartSite = laptop.sites.find(site =>
+          site.source && site.source.toLowerCase() === 'flipkart');
+        if (flipkartSite && flipkartSite.price) {
+          flipkartPrice = flipkartSite.price;
+        }
+      }
+
+      // Get images (limit to 2)
+      const images = laptop.specs?.details?.imageLinks || [];
+      const imageLinks = images.slice(0, 2);
+
+      return {
+        id: laptop._id,
+        title: laptop.specs?.head || 'Unknown Model',
+        brand: laptop.brand || 'Unknown Brand',
+        series: laptop.series || 'Unknown Series',
+        processor: laptop.specs?.processor ?
+          `${laptop.specs.processor.name || ''} ${laptop.specs.processor.gen || ''}${laptop.specs.processor.gen ? 'th Gen' : ''}` :
+          'Unknown Processor',
+        ram: laptop.specs?.ram ?
+          `${laptop.specs.ram.size || ''}${laptop.specs.ram.size ? 'GB' : ''} ${laptop.specs.ram.type?.toUpperCase() || ''}` :
+          'Unknown RAM',
+        storage: laptop.specs?.storage ?
+          `${laptop.specs.storage.size || ''}${laptop.specs.storage.size ? 'GB' : ''} ${laptop.specs.storage.type?.toUpperCase() || ''}` :
+          'Unknown Storage',
+        amazonPrice: amazonPrice,
+        flipkartPrice: flipkartPrice,
+        basePrice: laptop.allTimeLowPrice,
+        images: imageLinks.length > 0 ? imageLinks : null
+      };
+    });
+
+    res.status(200).json({
+      success: true,
+      count: formattedLaptops.length,
+      laptops: formattedLaptops
+    });
+  } catch (err) {
+    console.error('Error fetching random laptops:', err);
+    res.status(500).json({
+      success: false,
+      message: 'Failed to fetch random laptops'
+    });
+  }
+});
+
+//Get laptop by id API
+app.get('/api/laptop/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const laptop = await Laptop.findById(id);
+    if (!laptop) {
+      return res.status(404).json({ success: false, message: 'Laptop not found' });
+    }
+    res.status(200).json({ success: true, laptop });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
+
+
+
 
 //Comment API
 app.post("/api/comment", async (req, res) => {
@@ -642,6 +694,32 @@ app.post("/api/comment", async (req, res) => {
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
+//Get comments for a laptop API
+
+app.get("/api/comments/:laptopId", async (req, res) => {
+  const { laptopId } = req.params;
+
+  if (!laptopId) {
+    return res.status(400).json({ success: false, message: "Laptop ID is required" });
+  }
+
+  try {
+    // Find all comments for this laptop and populate user information
+    const comments = await Comment.find({ laptop: laptopId })
+      .populate('user', 'username name email') // Get user details but exclude sensitive data
+      .sort({ createdAt: -1 }); // Sort by newest first
+
+    res.status(200).json({
+      success: true,
+      count: comments.length,
+      comments
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: "Server error" });
+  }
+});
+
 
 //Add to favorites API
 app.post('/api/favorites', async (req, res) => {
