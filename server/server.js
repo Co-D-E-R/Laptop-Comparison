@@ -454,10 +454,26 @@ app.get('/api/advancedsearch', async (req, res) => {
   }
 });
 
-//Suggestions API(auto complete)
+
+//Suggestions API(auto complete) with pagination
 app.get('/api/suggestions', async (req, res) => {
   const query = req.query.query || '';
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 30;
+  const skip = (page - 1) * limit;
+
   try {
+    // First, get total count for pagination metadata
+    const totalCount = await Laptop.countDocuments({
+      $or: [
+        { 'specs.head': { $regex: query, $options: 'i' } },
+        { brand: { $regex: query, $options: 'i' } },
+        { series: { $regex: query, $options: 'i' } },
+        { 'specs.processor.name': { $regex: query, $options: 'i' } }
+      ]
+    });
+
+    // Then fetch the paginated results
     const suggestions = await Laptop.find({
       $or: [
         { 'specs.head': { $regex: query, $options: 'i' } },
@@ -466,33 +482,58 @@ app.get('/api/suggestions', async (req, res) => {
         { 'specs.processor.name': { $regex: query, $options: 'i' } }
       ]
     })
-      .limit(30)
-      .select('brand series specs.head specs.processor specs.ram specs.storage sites.price specs.details.imageLinks');
+      .skip(skip)
+      .limit(limit)
+      .select('brand series specs.head specs.processor specs.ram specs.storage sites specs.details.imageLinks');
 
     // Transform the results to make them more friendly for frontend consumption
     const formattedSuggestions = suggestions.map(laptop => {
       // Get the lowest price from all sites
       const lowestPrice = laptop.sites && laptop.sites.length > 0
-        ? Math.min(...laptop.sites.map(site => site.price))
+        ? Math.min(...laptop.sites.map(site => site.price || Infinity).filter(price => price !== Infinity))
         : null;
 
+      // Add null checks to prevent errors with missing data
       return {
         id: laptop._id,
-        title: laptop.specs.head,
-        brand: laptop.brand,
-        series: laptop.series,
-        processor: `${laptop.specs.processor.name} ${laptop.specs.processor.gen}th Gen`,
-        ram: `${laptop.specs.ram.size}GB ${laptop.specs.ram.type.toUpperCase()}`,
-        storage: `${laptop.specs.storage.size}GB ${laptop.specs.storage.type.toUpperCase()}`,
+        title: laptop.specs?.head || 'Unknown Model',
+        brand: laptop.brand || 'Unknown Brand',
+        series: laptop.series || 'Unknown Series',
+        processor: laptop.specs?.processor ?
+          `${laptop.specs.processor.name || ''} ${laptop.specs.processor.gen || ''}${laptop.specs.processor.gen ? 'th Gen' : ''}` :
+          'Unknown Processor',
+        ram: laptop.specs?.ram ?
+          `${laptop.specs.ram.size || ''}${laptop.specs.ram.size ? 'GB' : ''} ${laptop.specs.ram.type?.toUpperCase() || ''}` :
+          'Unknown RAM',
+        storage: laptop.specs?.storage ?
+          `${laptop.specs.storage.size || ''}${laptop.specs.storage.size ? 'GB' : ''} ${laptop.specs.storage.type?.toUpperCase() || ''}` :
+          'Unknown Storage',
         price: lowestPrice,
-        image: laptop.specs.details.imageLinks ? laptop.specs.details.imageLinks[0] : null,
+        image: laptop.specs?.details?.imageLinks?.[0] || null,
       };
     });
 
-    res.json(formattedSuggestions);
+    // Calculate pagination metadata
+    const totalPages = Math.ceil(totalCount / limit);
+
+    res.json({
+      success: true,
+      suggestions: formattedSuggestions,
+      pagination: {
+        total: totalCount,
+        page: page,
+        limit: limit,
+        totalPages: totalPages,
+        hasNextPage: page < totalPages,
+        hasPrevPage: page > 1
+      }
+    });
   } catch (err) {
     console.error('Error fetching suggestions:', err.message);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({
+      success: false,
+      message: 'Internal server error'
+    });
   }
 });
 
