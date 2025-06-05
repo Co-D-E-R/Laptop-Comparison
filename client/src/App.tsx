@@ -33,9 +33,11 @@ function App() {
                 path="/laptop/:productId"
                 element={<LaptopDetailEnhanced />}
               />
-              <Route path="/tech-assistant" element={<TechAssistantPage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/tech-assistant" element={<TechAssistantPage />} />
+              
+              
               <Route
                 path="/profile"
                 element={
