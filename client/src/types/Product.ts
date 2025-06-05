@@ -20,4 +20,12 @@ export interface Product {
     "HDD Capacity"?: string;
     "EMMC Storage Capacity"?: string;
   };
+  // For multi-site display
+  sites?: {
+    source: "amazon" | "flipkart";
+    price?: string;
+    link?: string;
+    rating?: string;
+    ratingCount?: string;
+  }[];
 }

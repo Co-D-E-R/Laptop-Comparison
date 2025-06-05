@@ -1,5 +1,5 @@
 /* Custom font imports */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 @import "tailwindcss";
 
@@ -10,12 +10,15 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #000510;
-  background-image: 
-    radial-gradient(circle at 20% 20%, #1a0b2e 0%, transparent 60%),
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      #1a0b2e 0%,
+      transparent 60%
+    ),
     radial-gradient(circle at 80% 80%, #0f172a 0%, transparent 60%),
     radial-gradient(circle at 40% 60%, #1e1b4b 0%, transparent 70%);
   min-height: 100vh;
@@ -115,18 +118,24 @@ body {
     );
     backdrop-filter: blur(30px);
     border: 1px solid rgba(139, 92, 246, 0.2);
-    box-shadow: 
-      0 25px 50px rgba(0, 0, 0, 0.3),
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 
   /* Cosmic gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 25%, #8b5cf6 50%, #a855f7 75%, #ec4899 100%);
+    background: linear-gradient(
+      135deg,
+      #22d3ee 0%,
+      #3b82f6 25%,
+      #8b5cf6 50%,
+      #a855f7 75%,
+      #ec4899 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: 'Orbitron', monospace;
+    font-family: "Orbitron", monospace;
     filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.3));
   }
 
@@ -135,7 +144,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: 'Orbitron', monospace;
+    font-family: "Orbitron", monospace;
     filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.4));
   }
 
@@ -143,8 +152,7 @@ body {
   .cosmic-button {
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
     border: 1px solid rgba(139, 92, 246, 0.3);
-    box-shadow: 
-      0 10px 20px rgba(139, 92, 246, 0.2),
+    box-shadow: 0 10px 20px rgba(139, 92, 246, 0.2),
       inset 0 1px 0 rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     position: relative;
@@ -153,8 +161,7 @@ body {
 
   .cosmic-button:hover {
     transform: translateY(-2px);
-    box-shadow: 
-      0 20px 40px rgba(139, 92, 246, 0.4),
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.4),
       inset 0 1px 0 rgba(255, 255, 255, 0.3);
   }
 
@@ -167,9 +174,7 @@ body {
 
   .card-hover:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 
-      0 25px 50px rgba(0, 0, 0, 0.2),
-      0 0 30px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2), 0 0 30px rgba(139, 92, 246, 0.3);
   }
 
   /* Cosmic loading animation */
@@ -188,15 +193,36 @@ body {
   }
 
   .neon-text {
-    text-shadow: 
-      0 0 5px rgba(139, 92, 246, 0.8),
-      0 0 10px rgba(139, 92, 246, 0.6),
-      0 0 15px rgba(139, 92, 246, 0.4);
+    text-shadow: 0 0 5px rgba(139, 92, 246, 0.8),
+      0 0 10px rgba(139, 92, 246, 0.6), 0 0 15px rgba(139, 92, 246, 0.4);
+  }
+
+  /* Search page animations */
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-slideInLeft {
+    animation: slideInLeft 0.5s ease-out forwards;
+  }
+
+  .animate-pulseGlow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  /* Text truncation utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -205,7 +231,8 @@ body {
 }
 
 @keyframes glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
   }
   50% {
@@ -223,6 +250,42 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+  }
 }

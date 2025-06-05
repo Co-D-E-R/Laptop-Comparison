@@ -1,0 +1,119 @@
+.floating-compare-button {
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  z-index: 999;
+  animation: slideInUp 0.5s ease-out;
+}
+
+.compare-preview {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+}
+
+.compare-laptops {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.compare-laptop-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.laptop-thumb-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.compare-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.compare-btn {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  justify-content: center;
+}
+
+.compare-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.compare-icon {
+  font-size: 16px;
+}
+
+.clear-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.clear-btn:hover {
+  background: rgba(255, 107, 107, 0.8);
+  transform: scale(1.1);
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-compare-button {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .compare-preview {
+    padding: 12px;
+    min-width: 180px;
+  }
+
+  .compare-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
