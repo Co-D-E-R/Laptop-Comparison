@@ -27,7 +27,7 @@ const cors = require("cors");
 
 // const PORT = process.env.PORT || 8080;
 const corsOptions
-  origin: ["https://laptop-comparison.vercel.app
+  origin: ["https://laptop-comparison.vercel.app"],
   credentials: true,
 };
 
