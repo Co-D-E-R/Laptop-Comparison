@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
+import React, { createContext, useState, useCallback, useEffect } from "react";
 
 export interface Laptop {
   _id: string;
@@ -92,10 +92,8 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
   // Save to localStorage whenever comparedLaptops changes
   useEffect(() => {
     localStorage.setItem("comparedLaptops", JSON.stringify(comparedLaptops));
-  }, [comparedLaptops]);
-
-  const addToCompare = useCallback(
-    (laptop: Laptop): boolean => {
+  }, [comparedLaptops]);  const addToCompare = useCallback(
+    (laptop: LaptopCompareItem): boolean => {
       if (comparedLaptops.length >= 3) {
         return false; // Maximum 3 laptops for comparison
       }
@@ -104,7 +102,29 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
         return false; // Already in comparison
       }
 
-      setComparedLaptops((prev) => [...prev, laptop]);
+      // Convert LaptopCompareItem to Laptop format for storage with default values
+      const fullLaptop: Laptop = {
+        _id: laptop._id,
+        brand: laptop.brand,
+        series: laptop.series,
+        specs: {
+          head: laptop.specs?.head || `${laptop.brand} ${laptop.series}`,
+          processor: { name: "Unknown", gen: "Unknown", variant: "Unknown" },
+          ram: { size: 0, type: "Unknown" },
+          storage: { size: 0, type: "Unknown" },
+          details: {
+            ...laptop.specs?.details,
+            imageLinks: laptop.specs?.details?.imageLinks || []
+          },
+          displayInch: 0,
+          gpu: "Unknown",
+          ratingCount: "0"
+        },
+        sites: [], // Initialize with empty sites array
+        allTimeLowPrice: laptop.allTimeLowPrice || 0
+      };
+
+      setComparedLaptops((prev) => [...prev, fullLaptop]);
       return true;
     },
     [comparedLaptops]
@@ -126,18 +146,25 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
     },
     [comparedLaptops]
   );
-
-  const canAddMore = comparedLaptops.length < 3;
+  const canAddMore = comparedLaptops.length < 3;  // Placeholder functions for missing properties
+  const fetchFullLaptopData = useCallback(async (laptopId: string): Promise<Laptop | null> => {
+    // TODO: Implement actual data fetching for laptop with ID: ${laptopId}
+    console.log(`Fetching data for laptop ${laptopId}`);
+    return null;
+  }, []);
 
   return (
     <CompareContext.Provider
       value={{
         comparedLaptops,
+        compareItems: [], // Placeholder for now
         addToCompare,
         removeFromCompare,
         clearCompare,
         isInCompare,
         canAddMore,
+        fetchFullLaptopData,
+        isLoading: false, // Placeholder for now
       }}
     >
       {children}

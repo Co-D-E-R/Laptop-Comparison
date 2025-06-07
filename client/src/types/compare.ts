@@ -4,19 +4,18 @@ export interface Laptop {
   series: string;
   specs: {
     head: string;
-    brand: string;
-    series: string;
+    brand?: string;
+    series?: string;
     processor: {
       name: string;
       gen: string;
       variant: string;
-    };
-    ram: {
-      size: string;
+    };    ram: {
+      size: number;
       type: string;
     };
     storage: {
-      size: string;
+      size: number;
       type: string;
     };
     details: {
@@ -71,19 +70,17 @@ export interface Laptop {
       "Standing screen display size"?: string | string[];
       // Allow for additional fields that might be present
       [key: string]: string | string[] | undefined;
-    };
-    displayInch: number;
+    };    displayInch: number;
     gpu: string;
-    basePrice: number;
-    ratingCount: string;
-  };
-  sites: Array<{
+    basePrice?: number;
+    ratingCount?: string | number;
+  };  sites: Array<{
     source: string;
     price: number;
     link: string;
     rating: number;
-    ratingCount: string;
-    basePrice: number;
+    ratingCount: string | number;
+    basePrice?: number;
   }>;
   allTimeLowPrice: number;
 }

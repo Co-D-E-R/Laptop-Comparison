@@ -35,7 +35,6 @@ const DealsSection: React.FC<DealsSectionProps> = ({ products }) => {
       },
       allTimeLowPrice: parseFloat(product.basePrice?.replace(/[^\d.]/g, '') || '0')
     };
-    // @ts-expect-error - Temporary suppress until interface is fixed
     const success = addToCompare(laptopData);
     if (!success) {
       console.log("Cannot add laptop to compare - either full or already added");

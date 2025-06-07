@@ -256,11 +256,10 @@ Remember: You're not just providing information - you're having a conversation a
 
     return formatted;
   }
-
   private getEnhancedFallbackResponse(
     userMessage: string,
     laptopContext?: LaptopContext,
-    pageContext?: string,
+    _pageContext?: string,
     comparedLaptops?: ComparedLaptopData[]
   ): string {
     const query = userMessage.toLowerCase();
@@ -383,7 +382,6 @@ I love talking about laptops and helping people make great choices! Whether you'
 Just tell me what you're looking for, and let's find you something amazing! 🚀
 
 What questions do you have for me? 😄`;
-    }
   }
 
   private getRamAssessment(ram: string): string {
@@ -403,10 +401,7 @@ What questions do you have for me? 😄`;
     if (proc.includes('i3') || proc.includes('ryzen 3')) return "good for basic tasks, though you might want something more powerful for demanding work";
     return "a solid processor that should serve you well";
   }
-
   private getChatbotComparisonResponse(comparedLaptops: ComparedLaptopData[], query: string): string {
-    const laptopNames = comparedLaptops.map(laptop => laptop.name).slice(0, 2).join(' vs ');
-    
     return `📊 **Great! Let me help you compare these laptops!**
 
 You're looking at some interesting options here! 🎯
@@ -478,8 +473,7 @@ What matters most to you in a laptop? 🤔`;
     const best = gamingScores.reduce((prev, current) => (prev.score > current.score) ? prev : current);
     return `Laptop ${best.index} (${best.laptop.name}) wins for gaming! It'll give you the best frame rates and visual quality! 🏆`;
   }
-
-  private getBestOverall(laptops: ComparedLaptopData[]): string {
+  private getBestOverall(_laptops: ComparedLaptopData[]): string {
     return `All these laptops have their strengths! What's most important to you - gaming performance, battery life, portability, or value for money? That'll help me give you a more targeted recommendation! 🎯`;
   }
 

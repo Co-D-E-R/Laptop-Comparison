@@ -183,14 +183,14 @@ const Compare: React.FC = () => {
         laptop.specs?.details?.["Graphics Chipset Brand"] || "N/A",
       type: "string",
       category: "performance",
-    },
-    {
+    },    {
       label: "Graphics Card Description",
       getValue: (laptop) =>
         laptop.specs?.details?.["Graphics Card Description"] || "N/A",
       type: "string",
       category: "performance",
-    },    {
+    },
+    {
       label: "Graphics RAM Type",
       getValue: (laptop) =>
         getStringValue(laptop.specs?.details?.["Graphics RAM Type"]),
@@ -198,7 +198,8 @@ const Compare: React.FC = () => {
       category: "performance",
     },
 
-    // Display Specifications    {
+    // Display Specifications
+    {
       label: "Display Size",
       getValue: (laptop) => {
         const display = laptop.specs?.displayInch;
@@ -215,13 +216,13 @@ const Compare: React.FC = () => {
       type: "number",
       unit: "inches",
       category: "display",
-    },
-    {
+    },    {
       label: "Screen Resolution",
-      getValue: (laptop) =>
-        laptop.specs?.details?.["Screen Resolution"] ||
-        laptop.specs?.details?.Resolution ||
-        "N/A",
+      getValue: (laptop) => {
+        const resolution = laptop.specs?.details?.["Screen Resolution"] ||
+                          laptop.specs?.details?.Resolution;
+        return Array.isArray(resolution) ? resolution.join(", ") : resolution || "N/A";
+      },
       type: "string",
       category: "display",
     },
@@ -253,10 +254,12 @@ const Compare: React.FC = () => {
         laptop.specs?.details?.["Number of HDMI Ports"] || "N/A",
       type: "string",
       category: "connectivity",
-    },
-    {
+    },    {
       label: "Audio Details",
-      getValue: (laptop) => laptop.specs?.details?.["Audio Details"] || "N/A",
+      getValue: (laptop) => {
+        const audio = laptop.specs?.details?.["Audio Details"];
+        return Array.isArray(audio) ? audio.join(", ") : audio || "N/A";
+      },
       type: "string",
       category: "connectivity",
     },
@@ -267,13 +270,13 @@ const Compare: React.FC = () => {
       getValue: (laptop) => laptop.specs?.details?.["Item Weight"] || "N/A",
       type: "string",
       category: "physical",
-    },
-    {
+    },    {
       label: "Dimensions",
-      getValue: (laptop) =>
-        laptop.specs?.details?.["Product Dimensions"] ||
-        laptop.specs?.details?.["Item Dimensions LxWxH"] ||
-        "N/A",
+      getValue: (laptop) => {
+        const dimensions = laptop.specs?.details?.["Product Dimensions"] ||
+                          laptop.specs?.details?.["Item Dimensions LxWxH"];
+        return Array.isArray(dimensions) ? dimensions.join(", ") : dimensions || "N/A";
+      },
       type: "string",
       category: "physical",
     },
@@ -282,16 +285,20 @@ const Compare: React.FC = () => {
       getValue: (laptop) => laptop.specs?.details?.["Form Factor"] || "N/A",
       type: "string",
       category: "physical",
-    },
-    {
+    },    {
       label: "Item Height",
-      getValue: (laptop) => laptop.specs?.details?.["Item Height"] || "N/A",
+      getValue: (laptop) => {
+        const height = laptop.specs?.details?.["Item Height"];
+        return Array.isArray(height) ? height.join(", ") : height || "N/A";
+      },
       type: "string",
       category: "physical",
-    },
-    {
+    },    {
       label: "Item Width",
-      getValue: (laptop) => laptop.specs?.details?.["Item Width"] || "N/A",
+      getValue: (laptop) => {
+        const width = laptop.specs?.details?.["Item Width"];
+        return Array.isArray(width) ? width.join(", ") : width || "N/A";
+      },
       type: "string",
       category: "physical",
     },
@@ -301,10 +308,12 @@ const Compare: React.FC = () => {
         laptop.specs?.details?.["Lithium Battery Energy Content"] || "N/A",
       type: "string",
       category: "physical",
-    },
-    {
+    },    {
       label: "Battery Type",
-      getValue: (laptop) => laptop.specs?.details?.Batteries || "N/A",
+      getValue: (laptop) => {
+        const batteries = laptop.specs?.details?.Batteries;
+        return Array.isArray(batteries) ? batteries.join(", ") : batteries || "N/A";
+      },
       type: "string",
       category: "physical",
     },

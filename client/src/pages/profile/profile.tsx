@@ -85,7 +85,6 @@ const Profile: React.FC = () => {
       },
       allTimeLowPrice: typeof product.basePrice === 'string' ? parseFloat(product.basePrice?.replace(/[^\d.]/g, '') || '0') : (product.basePrice || 0)
     };
-    // @ts-expect-error - Temporary suppress until interface is fixed
     const success = addToCompare(laptopData);
     if (success) {
       showNotification("success", "Added to compare");

@@ -185,10 +185,8 @@ const LaptopDetail: React.FC = () => {
           imageLinks: laptop.specs?.details?.imageLinks || []
         }
       },
-      allTimeLowPrice: laptop.allTimeLowPrice
-    };
+      allTimeLowPrice: laptop.allTimeLowPrice    };
     
-    // @ts-expect-error - Temporary suppress until interface is fixed
     const success = addToCompare(laptopData);
     if (!success) {
       console.warn("Failed to add laptop to compare");
