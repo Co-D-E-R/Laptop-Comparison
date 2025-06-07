@@ -26,8 +26,8 @@ require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 const cors = require("cors");
 
 // const PORT = process.env.PORT || 8080;
-const corsOptions = {
-  origin: ["https://laptop-comparison.vercel.app"],
+const corsOptions
+  origin: ["https://laptop-comparison.vercel.app
   credentials: true,
 };
 
