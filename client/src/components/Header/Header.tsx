@@ -89,7 +89,7 @@ const Header: React.FC = () => {
     debounceTimerRef.current = window.setTimeout(async () => {
       try {
         const response = await fetch(
-          `http://localhost:8080/api/suggestions?query=${encodeURIComponent(
+          `${import.meta.env.VITE_API_BASE_URL}/api/suggestions?query=${encodeURIComponent(
             query
           )}`
         );

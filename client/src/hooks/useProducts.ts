@@ -101,7 +101,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
 
       // Fetch carousel products from /api/random
       const carouselResponse = await fetch(
-        "http://localhost:8080/api/random?count=8"
+        "        `${import.meta.env.VITE_API_BASE_URL}/api/random?count=8`"
       );
       if (!carouselResponse.ok) {
         throw new Error(`HTTP error! status: ${carouselResponse.status}`);
@@ -113,7 +113,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
         try {
           console.log("Fetching personalized recommendations for user:", userId);
           const recommendationResponse = await fetch(
-            `http://localhost:8080/api/recommendations/${userId}`,
+            `${import.meta.env.VITE_API_BASE_URL}/api/recommendations/${userId}`,
             {
               credentials: 'include', // Include cookies for authentication
             }
@@ -140,7 +140,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
       // Fallback to general suggestions if no userId or personalized recommendations failed/empty
       if (recommendedData.length === 0) {
         const suggestionResponse = await fetch(
-          "http://localhost:8080/api/suggestions?limit=16"
+          "          `${import.meta.env.VITE_API_BASE_URL}/api/suggestions?limit=16`"
         );
         if (!suggestionResponse.ok) {
           throw new Error(`HTTP error! status: ${suggestionResponse.status}`);
@@ -160,7 +160,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
 
       // Fetch popular products from /api/popular
       const popularResponse = await fetch(
-        "http://localhost:8080/api/popular?count=16"
+        "        `${import.meta.env.VITE_API_BASE_URL}/api/popular?count=16`"
       );
       if (!popularResponse.ok) {
         throw new Error(`HTTP error! status: ${popularResponse.status}`);
@@ -168,7 +168,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
       const popularData = await popularResponse.json();
 
       // Fetch deal products from /api/deals (actual discounted products)
-      const dealResponse = await fetch("http://localhost:8080/api/deals");
+      const dealResponse = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/deals`);
       if (!dealResponse.ok) {
         throw new Error(`HTTP error! status: ${dealResponse.status}`);
       }

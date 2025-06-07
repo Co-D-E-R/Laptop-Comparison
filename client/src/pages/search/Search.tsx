@@ -161,7 +161,7 @@ const Search: React.FC = () => {
     // Add to user history if user is authenticated
     if (user) {
       try {
-        await fetch("http://localhost:8080/api/history", {
+        await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/history`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -278,7 +278,7 @@ const Search: React.FC = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8080/api/suggestions?query=${encodeURIComponent(
+        `${import.meta.env.VITE_API_BASE_URL}/api/suggestions?query=${encodeURIComponent(
           query
         )}`
       );
@@ -451,7 +451,7 @@ const Search: React.FC = () => {
         params.append("limit", "20");
 
         const response = await fetch(
-          `http://localhost:8080/api/advancedsearch?${params}`
+          `${import.meta.env.VITE_API_BASE_URL}/api/advancedsearch?${params}`
         );
         const data: SearchResponse = await response.json();
 
