@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../../components";
 import { useCompare } from "../../hooks/useCompare";
@@ -31,6 +31,9 @@ const getStringValue = (value: string | string[] | undefined): string => {
 const Compare: React.FC = () => {
   const navigate = useNavigate();
   const { comparedLaptops, removeFromCompare, clearCompare } = useCompare();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Define comprehensive comparison specifications
   const comparisonSpecs: ComparisonSpec[] = [

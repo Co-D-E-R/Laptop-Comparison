@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
-import { CompareProvider } from "./providers/CompareProvider";
+import { CompareProvider } from "./contexts/CompareContext.tsx";
 import { TechAssistantProvider } from "./contexts/TechAssistantContext";
 import { ProtectedRoute } from "./components";
 import TechAssistantWrapper from "./components/TechAssistant/TechAssistantWrapper";
@@ -33,11 +33,9 @@ function App() {
                 path="/laptop/:productId"
                 element={<LaptopDetailEnhanced />}
               />
+              <Route path="/tech-assistant" element={<TechAssistantPage />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
-              <Route path="/tech-assistant" element={<TechAssistantPage />} />
-              
-              
               <Route
                 path="/profile"
                 element={

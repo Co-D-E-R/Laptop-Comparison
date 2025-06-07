@@ -53,7 +53,6 @@ const Carousel: React.FC<CarouselProps> = ({ products }) => {
       },
       allTimeLowPrice: parseFloat(product.basePrice?.replace(/[^\d.]/g, '') || '0')
     };
-    // @ts-expect-error - Type mismatch between LaptopCompareItem and expected type
     const success = addToCompare(laptopData);
     if (!success) {
       console.log("Cannot add laptop to compare - either full or already added");

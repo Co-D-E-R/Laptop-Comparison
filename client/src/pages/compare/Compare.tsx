@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../../components";
 import { useCompare } from "../../hooks/useCompare";
@@ -22,7 +22,13 @@ interface ComparisonSpec {
 
 const Compare: React.FC = () => {
   const navigate = useNavigate();
-  const { comparedLaptops, removeFromCompare, clearCompare } = useCompare();  // Helper function to handle array values from laptop specs
+  const { comparedLaptops, removeFromCompare, clearCompare } = useCompare();
+  
+  // Scroll to top when component mounts or when compared laptops change
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [comparedLaptops]);
+  // Helper function to handle array values from laptop specs
   const getDetailValue = (value: string | string[] | undefined): string => {
     if (!value) return "N/A";
     if (Array.isArray(value)) {
@@ -30,13 +36,15 @@ const Compare: React.FC = () => {
     }
     return value;
   };
-
   // Helper function to check if a value is considered "empty" or "N/A"
   const isEmptyValue = (value: string | number): boolean => {
     if (value === null || value === undefined) return true;
     if (value === "N/A" || value === "n/a" || value === "") return true;
     if (typeof value === "number" && (value === 0 || isNaN(value))) return true;
-    if (typeof value === "string" && value.trim() === "") return true;
+    if (typeof value === "string") {
+      const trimmed = value.trim();
+      if (trimmed === "" || trimmed === "0") return true;
+    }
     return false;
   };
 
@@ -112,25 +120,42 @@ const Compare: React.FC = () => {
       getValue: (laptop) => laptop.specs?.details?.["Processor Count"] || "N/A",
       type: "string",
       category: "performance",
-    },
-    {
+    },    {
       label: "RAM Size",
       getValue: (laptop) => {
+        // First try the structured specs
         const ram = laptop.specs?.ram?.size;
-        if (ram) return parseInt(ram.toString());
+        if (typeof ram === 'number' && ram > 0) return ram;
+        if (typeof ram === 'string' && ram && ram !== 'N/A') {
+          const parsed = parseInt(ram);
+          if (!isNaN(parsed)) return parsed;
+        }
+        
+        // Fallback to details
         const ramFromDetails = laptop.specs?.details?.["RAM Size"];
-        return ramFromDetails ? parseInt(ramFromDetails.toString()) : 0;
+        if (ramFromDetails && ramFromDetails !== 'N/A') {
+          const ramString = ramFromDetails.toString();
+          const match = ramString.match(/(\d+)/);
+          return match ? parseInt(match[1]) : 0;
+        }
+        return 0;
       },
       type: "number",
       unit: "GB",
       category: "performance",
-    },
-    {
+    },    {
       label: "Memory Technology",
-      getValue: (laptop) =>
-        laptop.specs?.ram?.type?.toUpperCase() ||
-        laptop.specs?.details?.["Memory Technology"] ||
-        "N/A",
+      getValue: (laptop) => {
+        // First try the structured specs
+        const ramType = laptop.specs?.ram?.type;
+        if (ramType && ramType !== 'N/A') return ramType.toUpperCase();
+        
+        // Fallback to details
+        const memoryTech = laptop.specs?.details?.["Memory Technology"];
+        if (memoryTech && memoryTech !== 'N/A') return memoryTech;
+        
+        return "N/A";
+      },
       type: "string",
       category: "performance",
     },
@@ -147,15 +172,22 @@ const Compare: React.FC = () => {
         laptop.specs?.details?.["Maximum Memory Supported"] || "N/A",
       type: "string",
       category: "performance",
-    },
-    {
+    },    {
       label: "Storage Size",
       getValue: (laptop) => {
+        // First try the structured specs
         const storage = laptop.specs?.storage?.size;
-        if (storage) return parseInt(storage.toString());
+        if (typeof storage === 'number' && storage > 0) return storage;
+        if (typeof storage === 'string' && storage && storage !== 'N/A') {
+          const parsed = parseInt(storage);
+          if (!isNaN(parsed)) return parsed;
+        }
+        
+        // Fallback to details
         const storageFromDetails = laptop.specs?.details?.["Hard Drive Size"];
-        if (storageFromDetails) {
-          const match = storageFromDetails.toString().match(/(\d+)/);
+        if (storageFromDetails && storageFromDetails !== 'N/A') {
+          const storageString = storageFromDetails.toString();
+          const match = storageString.match(/(\d+)/);
           return match ? parseInt(match[1]) : 0;
         }
         return 0;

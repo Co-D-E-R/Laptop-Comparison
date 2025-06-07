@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CompareContext } from "../contexts/CompareContext";
+import { CompareContext } from "../contexts/CompareContext.tsx";
 
 export const useCompare = () => {
   const context = useContext(CompareContext);

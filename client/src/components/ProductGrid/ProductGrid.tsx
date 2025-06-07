@@ -28,45 +28,22 @@ const ProductGrid: React.FC<ProductGridProps> = ({
   // Handle adding laptop to comparison
   const handleAddToCompare = (e: React.MouseEvent, product: Product) => {
     e.stopPropagation(); // Prevent product card click
-    const laptopData = {
+    
+    // Create simplified laptop data structure that matches LaptopCompareItem interface
+    const laptopCompareItem = {
       _id: product.productId,
       brand: product.technicalDetails?.["Processor Brand"] || "Unknown",
       series: product.technicalDetails?.["Model Name"] || "Unknown",
       specs: {
         head: product.productName,
-        brand: product.technicalDetails?.["Processor Brand"] || "Unknown",
-        series: product.technicalDetails?.["Model Name"] || "Unknown",
-        processor: {
-          name: product.technicalDetails?.["Processor Name"] || "Unknown",
-          gen: "Unknown",
-          variant: "Unknown"
-        },
-        ram: {
-          size: product.technicalDetails?.RAM || "Unknown",
-          type: "Unknown"
-        },
-        storage: {
-          size: (product.technicalDetails?.["SSD Capacity"] || 
-                 product.technicalDetails?.["HDD Capacity"] || 
-                 product.technicalDetails?.["EMMC Storage Capacity"] || "Unknown"),
-          type: product.technicalDetails?.["Storage Type"] || "Unknown"
-        },
         details: {
           imageLinks: product.technicalDetails?.imageLinks || []
         }
       },
-      sites: product.sites?.map(site => ({
-        source: site.source,
-        price: parseFloat(site.price?.replace(/[^\d.]/g, '') || '0'),
-        link: site.link || '',
-        rating: parseFloat(site.rating || '0'),
-        ratingCount: site.ratingCount || '0',
-        basePrice: parseFloat(product.basePrice?.replace(/[^\d.]/g, '') || '0')
-      })) || [],
       allTimeLowPrice: parseFloat(product.basePrice?.replace(/[^\d.]/g, '') || '0')
     };
-    // @ts-expect-error - Type mismatch between Product and LaptopCompareItem interfaces will be resolved later
-    const success = addToCompare(laptopData);
+    
+    const success = addToCompare(laptopCompareItem);
     if (!success) {
       console.log("Cannot add laptop to compare - either full or already added");
     }

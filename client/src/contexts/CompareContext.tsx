@@ -6,19 +6,19 @@ export interface Laptop {
   series: string;
   specs: {
     head: string;
-    brand: string;
-    series: string;
+    brand?: string;
+    series?: string;
     processor: {
       name: string;
       gen: string;
       variant: string;
     };
     ram: {
-      size: string;
+      size: number; // Fixed: should be number to match database schema
       type: string;
     };
     storage: {
-      size: string;
+      size: number; // Fixed: should be number to match database schema
       type: string;
     };
     details: {
@@ -27,16 +27,18 @@ export interface Laptop {
     };
     displayInch: number;
     gpu: string;
-    basePrice: number;
-    ratingCount: string;
+    gpuVersion?: string;
+    touch?: boolean;
+    basePrice?: number;
+    ratingCount?: string | number;
   };
   sites: Array<{
     source: string;
     price: number;
     link: string;
     rating: number;
-    ratingCount: string;
-    basePrice: number;
+    ratingCount: string | number;
+    basePrice?: number;
   }>;
   allTimeLowPrice: number;
 }
@@ -215,8 +217,7 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
         fetchFullLaptopData,
         isLoading,
       }}
-    >
-      {children}
+    >      {children}
     </CompareContext.Provider>
   );
 };
