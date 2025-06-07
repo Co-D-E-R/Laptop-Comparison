@@ -249,9 +249,18 @@ When answering questions about comparison, focus specifically on these ${
 
 IMPORTANT: When asked "which is best" or "which laptop is the best overall choice", provide a DIRECT answer with your recommendation, followed by a brief explanation. Do not ask follow-up questions first - answer the question directly and then offer additional help.
 `
-        : "";
+        : "";    return `You are a CONVERSATIONAL LAPTOP EXPERT CHATBOT named "LaptopGuru" with deep knowledge about laptop hardware, specifications, and technology. You maintain conversation context and provide helpful, engaging responses.
 
-    return `You are a CONVERSATIONAL LAPTOP EXPERT CHATBOT with deep knowledge about laptop hardware, specifications, and technology. You maintain conversation context and provide helpful, engaging responses.
+CRITICAL IDENTITY RULES - NEVER BREAK CHARACTER:
+- You are LaptopGuru, a specialized laptop expert assistant built specifically for this platform
+- You are NOT Google AI, Gemini, Bard, Claude, ChatGPT, or any other AI model
+- NEVER mention being "powered by Google AI" or any other AI company
+- NEVER discuss your training data, datasets, or AI technology behind you
+- You are a custom-built laptop consultant, not a general AI assistant
+- If asked about your identity, training, or how you work, respond: "I'm LaptopGuru, your dedicated laptop expert! I was created specifically to help people find the perfect laptops. My expertise comes from years of research in laptop technology and hardware. What laptop questions can I help you with?"
+- Redirect ALL identity questions back to laptop advice
+- Focus ONLY on being helpful with laptop advice, never discuss AI technology
+- If pressed about your nature, simply say: "I prefer talking about laptops rather than myself! What can I help you find today?"
 
 🤖 **CHATBOT PERSONALITY:**
 - Friendly, helpful, and enthusiastic about technology
@@ -308,8 +317,8 @@ Remember: You're having a conversation, not just answering isolated questions. B
 
   private formatResponse(text: string): string {
     // Clean up and format the AI response for better chatbot presentation
-    let formatted = text.trim();    // Ensure proper spacing after emojis
-    const emojiPattern = /([🔥🎮💰🎯📊⚡✅💻🚀📋💡🔍🤖💬🎪🔧⚙️📱💾🧠🖥️])\s*/g;
+    let formatted = text.trim();    // Ensure proper spacing after emojis - simplified pattern
+    const emojiPattern = /([\u{1F300}-\u{1F9FF}])\s*/gu;
     formatted = formatted.replace(emojiPattern, "$1 ");
 
     // Add proper line breaks and formatting
@@ -322,16 +331,41 @@ Remember: You're having a conversation, not just answering isolated questions. B
 
     return formatted;
   }
-
   private getEnhancedFallbackResponse(
     userMessage: string,
     laptopContext?: LaptopContext,
-    pageContext?: string,
+    _pageContext?: string,
     comparedLaptops?: ComparedLaptopData[]
   ): string {
     const query = userMessage.toLowerCase();
-    
-    console.log("🔄 Using enhanced fallback for query:", query);
+      console.log("🔄 Using enhanced fallback for query:", query);
+
+    // Handle identity questions first
+    if (query.includes('who are you') || query.includes('what are you') || 
+        query.includes('are you gemini') || query.includes('are you bard') || 
+        query.includes('are you google') || query.includes('are you ai') ||
+        query.includes('powered by') || query.includes('trained on') ||
+        query.includes('google ai') || query.includes('your training')) {
+      return `👋 **Hi there! I'm LaptopGuru, your dedicated laptop expert!**
+
+I was created specifically to help people find the perfect laptops and understand laptop technology. My expertise comes from years of research in laptop hardware, specifications, and the tech industry.
+
+🎯 **What I'm here for:**
+• Help you choose the right laptop for your needs
+• Explain technical specs in simple terms  
+• Compare different models and brands
+• Answer any laptop-related questions you have
+
+I prefer talking about laptops rather than myself! 😊
+
+**So, what brings you here today?** Are you:
+- Shopping for a new laptop? 🛒
+- Trying to understand specs? 📊
+- Need help comparing options? ⚖️
+- Have technical questions? 🔧
+
+Let's find you the perfect laptop! 🚀`;
+    }
 
     // Conversational greetings
     if (query.includes('hello') || query.includes('hi') || query.includes('hey') || query.includes('good morning') || query.includes('good afternoon')) {
