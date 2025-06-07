@@ -61,7 +61,7 @@ export const useHistory = (userId?: string): UseHistoryReturn => {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch(`http://localhost:8080/api/history/${userId}`);
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/history/${userId}`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -146,7 +146,7 @@ export const useHistory = (userId?: string): UseHistoryReturn => {
     if (!userId) return false;
 
     try {
-      const response = await fetch(`http://localhost:8080/api/history/${userId}/${laptopId}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/history/${userId}/${laptopId}`, {
         method: 'DELETE',
         credentials: 'include'
       });
@@ -175,7 +175,7 @@ export const useHistory = (userId?: string): UseHistoryReturn => {
     if (!userId) return false;
 
     try {
-      const response = await fetch(`http://localhost:8080/api/history/${userId}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/history/${userId}`, {
         method: 'DELETE',
         credentials: 'include'
       });

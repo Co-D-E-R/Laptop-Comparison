@@ -43,7 +43,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/check-auth", {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/check-auth`, {
         method: "GET",
         credentials: "include", // Include cookies for session
       });
@@ -66,7 +66,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
   const login = async (email: string, password: string) => {
     try {
-      const response = await fetch("http://localhost:8080/api/login", {
+      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -94,7 +94,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   };
   const logout = async () => {
     try {
-      await fetch("http://localhost:8080/api/logout", {
+      await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/logout`, {
         method: "GET",
         credentials: "include", // Include cookies for session
       });

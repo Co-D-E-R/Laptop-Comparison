@@ -66,7 +66,7 @@ export const useFavorites = (userId?: string): UseFavoritesReturn => {
       setLoading(true);
       setError(null);
       const response = await fetch(
-        `http://localhost:8080/api/favorites/${userId}`
+        `${import.meta.env.VITE_API_BASE_URL}/api/favorites/${userId}`
       );
 
       if (!response.ok) {
@@ -182,10 +182,8 @@ export const useFavorites = (userId?: string): UseFavoritesReturn => {
 
   const removeFavorite = useCallback(
     async (laptopId: string): Promise<boolean> => {
-      if (!userId) return false;
-
-      try {
-        const response = await fetch(`http://localhost:8080/api/favorites`, {
+      if (!userId) return false;      try {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/favorites`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",
@@ -224,10 +222,8 @@ export const useFavorites = (userId?: string): UseFavoritesReturn => {
   );
   const addFavorite = useCallback(
     async (laptopId: string): Promise<boolean> => {
-      if (!userId) return false;
-
-      try {
-        const response = await fetch(`http://localhost:8080/api/favorites`, {
+      if (!userId) return false;      try {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/favorites`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
