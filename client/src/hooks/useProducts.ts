@@ -97,11 +97,9 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
               : []),
           ],
         };
-      };
-
-      // Fetch carousel products from /api/random
+      };      // Fetch carousel products from /api/random
       const carouselResponse = await fetch(
-        "        `${import.meta.env.VITE_API_BASE_URL}/api/random?count=8`"
+        `${import.meta.env.VITE_API_BASE_URL}/api/random?count=8`
       );
       if (!carouselResponse.ok) {
         throw new Error(`HTTP error! status: ${carouselResponse.status}`);
@@ -136,11 +134,10 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
           console.warn("Failed to fetch personalized recommendations, falling back to general suggestions:", recommendationError);
         }
       }
-      
-      // Fallback to general suggestions if no userId or personalized recommendations failed/empty
+        // Fallback to general suggestions if no userId or personalized recommendations failed/empty
       if (recommendedData.length === 0) {
         const suggestionResponse = await fetch(
-          "          `${import.meta.env.VITE_API_BASE_URL}/api/suggestions?limit=16`"
+          `${import.meta.env.VITE_API_BASE_URL}/api/suggestions?limit=16`
         );
         if (!suggestionResponse.ok) {
           throw new Error(`HTTP error! status: ${suggestionResponse.status}`);
@@ -160,7 +157,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
 
       // Fetch popular products from /api/popular
       const popularResponse = await fetch(
-        "        `${import.meta.env.VITE_API_BASE_URL}/api/popular?count=16`"
+        `${import.meta.env.VITE_API_BASE_URL}/api/popular?count=16`
       );
       if (!popularResponse.ok) {
         throw new Error(`HTTP error! status: ${popularResponse.status}`);

@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://laptop-comparison-service-cc8247f480f3.herokuapp.com/',
+        target: 'https://laptop-comparison-service-cc8247f480f3.herokuapp.com',
         changeOrigin: true,
         secure: false,
       },
