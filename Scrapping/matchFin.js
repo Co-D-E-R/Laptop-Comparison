@@ -11,7 +11,7 @@ const stripUnits = s => (s || '').toString().replace(/(gb|tb|cm|inch|")/gi, '').
 
 function extractSeries(name) {
   const keywords = [
-    'ideapad 3', 'ideapad 5', 'ideapad slim 3', 'ideapad slim 5', 'ideapad', 'thinkpad', 'victus 15', 'victus', 'omen', 'pavilion x360', 'pavilion', 'aspire',
+    'ideapad 3', 'ideapad 5', 'ideapad slim 3', 'ideapad slim 5', 'ideapad' , 'thinkpad', 'victus 15', 'victus', 'omen', 'pavilion x360', 'pavilion', 'aspire',
     'nitro 5', 'nitro v', 'elitebook', 'zbook', 'v15', 'v14', '15s', 'professional', 'one', 'yoga',
     'yogabook', 'chromebook', '240 G9', '14s', '255 g8', '255 g9', '255 g10', 'zbook', 'fire fly', '250 g8',
     'spectre x360', 'probook', 'alienware', 'vivobook', 'zenbook', 'rog', 'tuf',
@@ -22,13 +22,13 @@ function extractSeries(name) {
     //Dell
     'xps', 'latitude', 'inspiron', 'vostro', 'alienware', 'precision', 'g-series', 'g15', 'g16', 'g3', 'g5', 'g7',
     //MSI
-    'stealth', 'katana', 'pulse', 'vector', 'sword', 'creator', 'modern', 'summit', 'bravo', 'alpha', 'raider',
+    'stealth', 'katana', 'pulse', 'vector', 'sword', 'creator', 'modern', 'summit', 'bravo', 'alpha' ,'raider',
     //Apple
     'macbook air', 'macbook pro', 'imac', 'mac mini', 'mac studio', 'mac pro',
     //Lenovo
     'thinkbook', 'thinkcentre', 'thinkstation', 'ideacentre', 'yoga slim', 'legion slim', 'legion Pro', 'legion 5', 'legion 7', 'loq', 'workstation', ' legion',
     //HP
-    'elite dragonfly', 'elite folio', 'elite x2', 'elitebook x360', 'spetrex360', 'spectre', 'envy', 'pavilion gaming',
+    'elite dragonfly', 'elite folio', 'elite x2', 'elitebook x360', 'spetrex360',  'spectre', 'envy', 'pavilion gaming',
     //Asus
     'rog zephyrus', 'rog strix', 'rog flow', 'rog scar', 'rog mothership', 'rog swift', 'rog ally', 'zenbook pro', 'zenbook flip',
     //Acer
@@ -61,8 +61,11 @@ function extractProcessor(name) {
   if (match) return match[0];
 
   // AMD Ryzen 3/5/7/9
-  match = lower.match(/ryzen\s*([3579])/);
-  if (match) return `ryzen`;
+  // match = lower.match(/ryzen\s*([3579])/);
+  // if (match) return `ryzen`;
+  match = lower.match(/(ryzen 3|ryzen 5|ryzen 7|ryzen 9|ryzen3|ryzen5|ryzen9|ryzen  3|ryzen  5|ryzen  7|ryzen  9)/);
+  if(match) return match[1].replace(/\s+/g, ''); 
+
 
   // AMD Athlon
   match = lower.match(/amd\s+athlon/);
@@ -146,8 +149,6 @@ function extractProcessorVariant(name) {
     .toLowerCase()
     .replace(/\s+/g, ' ')
     .trim();
-
-
 
   // Check for AMD Ryzen variants
   let match = normalized.match(/ryzen\s*[3579]\s*(?:pro\s*)?.*?(\d{3,4}(?:x3d|xt|ge|hs|hx|h|u|g|x|s)?)/i);
@@ -377,11 +378,11 @@ function extractGpu(name) {
   const lower = norm(name);
   //For non Intel
   const match = lower.match(/(gtx|rtx|radeon|amd|qualcomm|mediatek|apple)/);
-  if (match) {
-    if (match[0].includes('radeon')) {
+  if(match){
+    if(match[0].includes('radeon')) {
       return 'amd'; // AMD Radeon
     }
-    if (match[0].includes('amd')) {
+    if(match[0].includes('amd')) {
       return 'amd'; // AMD
     }
     return match[0]; // Return the matched GPU type
@@ -512,7 +513,7 @@ function extractProcessorGenFromProductName(productName, title = '') {
 
 
 }
-function extractProcessorGenFromLink(name) {
+function extractProcessorGenFromLink(name){
   const lower = norm(name);
   // Match "11th gen", "12th generation" etc.
   const match = lower.match(/(10th|11th|12th|13th|14th)/);
@@ -546,9 +547,9 @@ function extractGpuVersion(name) {
 
 function extractStorageNumber(input) {
   // Normalize to array of lines
-  const lines = typeof input === 'string' ? [input]
-    : Array.isArray(input) ? input
-      : [];
+  const lines = typeof input === 'string' ? [input] 
+               : Array.isArray(input)      ? input 
+               : [];
 
   // 1️⃣ Look for 128/256/512 GB first
   for (const line of lines) {
@@ -580,13 +581,13 @@ function normalizeFlipkart(f) {
   const dispMatch = (t['Screen Size'] || '').match(/\(([\d.]+)\s*inch\)/i);
 
   return {
-    head: f.productName || "",
+    head : f.productName || "",
     brand: extractModel(f.productName),
     series: extractSeries(f.technicalDetails.Series) || extractSeries(f.productName),
     processor: {
       name: extractProcessor(f.technicalDetails["Processor Name"]) || extractProcessor(f.productName),
       gen: extractProcessorGeneration(f.technicalDetails["Processor Generation"]) || extractProcessorGenFromLink(f.productLink) ||
-        extractProcessorGenFromProductName(f.productName),
+      extractProcessorGenFromProductName(f.productName),
       variant: extractProcessorVariant(f.technicalDetails["Processor Variant"]) || extractProcessorVariant(f.productName)
     },
     details: f.technicalDetails || {},
@@ -600,15 +601,15 @@ function normalizeFlipkart(f) {
     },
     touch: extractTouchScreen(f.productName) || extractTouchScreen(f.technicalDetails.Touchscreen),
     displayInch: dispMatch ? parseFloat(dispMatch[1]) : null,
-    gpu: extractGpu(f.technicalDetails["Graphic Processor"]) || extractGpu(f.productName),
-    gpuversion: extractNvidiaGpuVersion(f.technicalDetails["Graphic Processor"]) || extractNvidiaGpuVersion(f.productName)
-      || extractGpuVersion(f.productName) || extractGpuVersion(f.technicalDetails["Graphic Processor"]),
-
-    price: Number((f.price || '').replace(/[^0-9]/g, '')),  // stored but not matched on
+   gpu:         extractGpu(f.technicalDetails["Graphic Processor"]) || extractGpu(f.productName),
+    gpuversion:  extractNvidiaGpuVersion(f.technicalDetails["Graphic Processor"]) || extractNvidiaGpuVersion(f.productName) 
+                || extractGpuVersion(f.productName)  || extractGpuVersion(f.technicalDetails["Graphic Processor"]),
+    
+    price: Number((f.currentPrice || '').replace(/[^0-9]/g, '')),  // stored but not matched on
     basePrice: Number((f.basePrice || '').replace(/[^0-9]/g, '')),
     link: f.productLink || f.cleanProductLink,
     rating: Number(f.rating || 0),
-    ratingCount: f.ratingsNumber || 0
+    ratingCount: f.ratingsCount || 0
   };
 }
 
@@ -620,7 +621,7 @@ function normalizeAmazon(a) {
   const title = a.title || '';
 
   return {
-    head: a.title || "",
+    head : a.title || "",
     brand: extractModel(title),
     series: extractSeries(title),
     processor: {
@@ -631,7 +632,7 @@ function normalizeAmazon(a) {
     details: a.details || {},
     ram: {
       size: extractRam(d["RAM Size"]) || extractRamFromName(title) || extractRamFromName((a.details.Features || []).join(' ')),
-      type: norm(a.details["Memory Technology"]) || extractRamType(title) || extractRamType((a.details.Features || []).join(' ')) || extractRamType(a.details["Computer Memory Type"]),
+      type: norm(a.details["Memory Technology"]) || extractRamType(title) ||  extractRamType((a.details.Features || []).join(' ')) || extractRamType(a.details["Computer Memory Type"]) ,
     },
     storage: {
       size: storageSize || extractStorage(d['Hard Drive Size']) || extractStorageNumber(title) || extractStorageNumber((a.details.Features || []).join(' ')) || extractStorageNumber(d.Description) || extractStorageNumber(a.details["Hard Disk Description"]),
@@ -639,10 +640,10 @@ function normalizeAmazon(a) {
     },
     touch: extractTouchScreen(title) || extractTouchScreen(d['Touchscreen']),
     displayInch: parseFloat(disp) || null,
-    gpu: extractGpu(a.details['Graphics Coprocessor']) || extractGpu(title) || extractGpu(d['Graphics Chipset Brand']),
-    gpuversion: extractNvidiaGpuVersion(a.details['Graphics Coprocessor']) || extractNvidiaGpuVersion(title)
-      || extractGpuVersion(title) || extractGpuVersion(d['Graphics Coprocessor']),
-
+    gpu:         extractGpu(a.details['Graphics Coprocessor']) || extractGpu(title) || extractGpu(d['Graphics Chipset Brand']),
+    gpuversion:  extractNvidiaGpuVersion(a.details['Graphics Coprocessor']) || extractNvidiaGpuVersion(title) 
+                  || extractGpuVersion(title) || extractGpuVersion(d['Graphics Coprocessor']),
+    
     price: Number((a.price || '').replace(/[^0-9]/g, '')),
     basePrice: Number((a.basePrice || '').replace(/[^0-9]/g, '')),
     link: a.url,
@@ -698,14 +699,14 @@ function buildEntries(amz, fk) {
         // Calculate minimum price between Amazon and Flipkart
         const prices = [normA.price, fkRec.price].filter(price => price && !isNaN(price));
         const allTimeLowPrice = prices.length > 0 ? Math.min(...prices) : null;
-
+        
         matched.push({
           brand: normA.brand,
           series: normA.series,
           specs: { ...normA, price: undefined, link: undefined, rating: undefined },
           sites: [
             { source: 'amazon', price: normA.price, link: normA.link, rating: normA.rating, ratingCount: normA.ratingCount, basePrice: normA.basePrice },
-            { source: 'flipkart', price: fkRec.price, link: fkRec.link, rating: fkRec.rating, ratingCount: fkRec.ratingCount, basePrice: fkRec.basePrice }
+            { source: 'flipkart', price: fkRec.price, link: fkRec.link, rating: fkRec.rating, ratingCount: fkRec.ratingCount, basePrice: fkRec.basePrice } 
           ],
           allTimeLowPrice: allTimeLowPrice // Add the all-time low price
         });
@@ -744,8 +745,8 @@ function buildEntries(amz, fk) {
 // --- Main ---
 (function () {
   // load data
-  const amazonPath = path.join(__dirname, 'amazon_complete_final.json');
-  const flipkartPath = path.join(__dirname, './Flipkart/allLaptops.json');
+  const amazonPath = path.join(__dirname, './NewData/amazon_complete_data.json');
+  const flipkartPath = path.join(__dirname, './NewData/flipkart_complete_data.json');
   const amazonData = JSON.parse(fs.readFileSync(amazonPath, 'utf-8'));
   const flipkartData = JSON.parse(fs.readFileSync(flipkartPath, 'utf-8'));
 
