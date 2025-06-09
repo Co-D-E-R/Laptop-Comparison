@@ -9,7 +9,7 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 9999;
   box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
@@ -348,18 +348,21 @@
 
 .message-time {
   font-size: 11px;
-  color: #a0aec0;
+  color: #1a202c;
   margin-top: 4px;
   align-self: flex-end;
+  font-weight: 600;
 }
 
 .message.user .message-time {
   align-self: flex-start;
   margin-right: 8px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .message.ai .message-time {
   margin-left: 8px;
+  color: #2d3748;
 }
 
 /* Typing Indicator */
