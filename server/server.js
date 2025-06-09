@@ -2361,6 +2361,87 @@ app.get("/api/deals", async (req, res) => {
 // Recommendation API
 app.use("/api/recommendations", require("./recommendation"));
 
+//Notifications for above 30% discount in favorites
+// discount is calculated as (basePrice - price) / basePrice and best discount is selected from all sites for each laptop
+app.get('/api/notifications/favorites/:userId', async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await User.findById(userId).populate('favorites');
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+
+    const notifications = user.favorites
+      .filter(laptop => {
+        // Check if laptop has sites and at least one site with price and basePrice
+        if (laptop.sites && laptop.sites.length > 0) {
+          // Calculate discount for each site
+          const siteDiscounts = laptop.sites.map(site => {
+            if (site.basePrice && site.price && site.basePrice > 0) {
+              const discount = (site.basePrice - site.price) / site.basePrice;
+              return {
+                source: site.source,
+                discount: discount,
+                price: site.price,
+                basePrice: site.basePrice
+              };
+            }
+            return null;
+          }).filter(Boolean); // Remove null entries
+
+          // If we have valid discount calculations
+          if (siteDiscounts.length > 0) {
+            // Find the best discount across all sites
+            const bestDiscount = siteDiscounts.reduce((best, current) =>
+              current.discount > best.discount ? current : best, siteDiscounts[0]);
+
+            // Return true if best discount is >= 30%
+            return bestDiscount.discount >= 0.3;
+          }
+        }
+        return false;
+      })
+      .map(laptop => {
+        // Calculate the best discount again for the selected laptops
+        const siteDiscounts = laptop.sites
+          .filter(site => site.basePrice && site.price && site.basePrice > 0)
+          .map(site => ({
+            source: site.source,
+            discount: (site.basePrice - site.price) / site.basePrice,
+            price: site.price,
+            basePrice: site.basePrice,
+            link: site.link
+          }));
+
+        const bestDiscount = siteDiscounts.reduce((best, current) =>
+          current.discount > best.discount ? current : best, siteDiscounts[0]);
+
+        return {
+          id: laptop._id,
+          name: laptop.specs.head,
+          brand: laptop.brand,
+          series: laptop.series,
+          currentPrice: bestDiscount.price,
+          originalPrice: bestDiscount.basePrice,
+          discountPercent: Math.round(bestDiscount.discount * 100),
+          source: bestDiscount.source,
+          link: bestDiscount.link,
+          image: laptop.specs.details?.imageLinks?.[0] || null,
+          createdAt: new Date()
+        };
+      });
+
+    res.status(200).json({
+      success: true,
+      notifications,
+      count: notifications.length
+    });
+  } catch (err) {
+    console.error('Error fetching discount notifications:', err);
+    res.status(500).json({ success: false, message: 'Server error' });
+  }
+});
+
 app.listen(8080, () => {
   console.log("Server Started at port 8080");
 });
