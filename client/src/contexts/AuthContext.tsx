@@ -47,14 +47,24 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         method: "GET",
         credentials: "include", // Include cookies for session
       });
-      const data = await response.json();
 
-      if (response.ok && data.authenticated && data.user) {
-        setUser(data.user);
+      if (response.ok) {
+        const data = await response.json();
+        if (data.authenticated && data.user) {
+          setUser(data.user);
+          setError(null);
+        } else {
+          setUser(null);
+          setError(null);
+        }
+      } else if (response.status === 401) {
+        // 401 is expected when user is not authenticated - not an error
+        setUser(null);
         setError(null);
       } else {
+        // Other errors (500, etc.) are actual problems
         setUser(null);
-        setError(null); // Clear any previous errors when user is simply not authenticated
+        setError("Failed to check authentication status");
       }
     } catch (error) {
       console.error("Auth check failed:", error);

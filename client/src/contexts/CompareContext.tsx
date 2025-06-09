@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
+import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from "react";
 import { createApiUrl } from "../utils/api";
 
 export interface Laptop {
@@ -90,9 +90,8 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
   const [isLoading, setIsLoading] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
 
-  // Cache for full laptop data to avoid repeated API calls
-  const [laptopCache, setLaptopCache] = useState<Map<string, Laptop>>(new Map());
-
+  // Use ref for cache to avoid dependency issues
+  const laptopCacheRef = useRef<Map<string, Laptop>>(new Map());
   // Load from localStorage on mount
   useEffect(() => {
     const loadSavedItems = () => {
@@ -116,7 +115,7 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
           laptops.forEach((laptop: Laptop) => {
             newCache.set(laptop._id, laptop);
           });
-          setLaptopCache(newCache);
+          laptopCacheRef.current = newCache;
         }
       } catch (error) {
         console.error('Failed to load compare data from localStorage:', error);
@@ -146,12 +145,11 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
         localStorage.removeItem('comparedLaptops');
       }
     }
-  }, [comparedLaptops, isInitialized]);
-  // Fetch full laptop data using the /laptop/:id endpoint
+  }, [comparedLaptops, isInitialized]);  // Fetch full laptop data using the /laptop/:id endpoint
   const fetchFullLaptopData = useCallback(async (laptopId: string): Promise<Laptop | null> => {
     // Check cache first
-    if (laptopCache.has(laptopId)) {
-      return laptopCache.get(laptopId)!;
+    if (laptopCacheRef.current.has(laptopId)) {
+      return laptopCacheRef.current.get(laptopId)!;
     }
 
     try {
@@ -161,7 +159,7 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
       if (data.success && data.laptop) {
         const laptop = data.laptop as Laptop;
         // Update cache
-        setLaptopCache(prev => new Map(prev).set(laptopId, laptop));
+        laptopCacheRef.current.set(laptopId, laptop);
         return laptop;
       }
       return null;
@@ -169,48 +167,34 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
       console.error(`Failed to fetch laptop data for ${laptopId}:`, error);
       return null;
     }
-  }, [laptopCache]);
-  // Load full data for all compare items
-  const loadAllCompareData = useCallback(async () => {
-    if (compareItems.length === 0) {
-      setComparedLaptops([]);
-      return;
-    }
-
-    setIsLoading(true);
-    try {
-      // If we have cached laptops from localStorage, use them first
-      if (comparedLaptops.length === compareItems.length) {
-        const allCached = compareItems.every(item => 
-          comparedLaptops.some(laptop => laptop._id === item._id)
-        );
-        if (allCached) {
-          setIsLoading(false);
-          return; // No need to refetch
-        }
-      }
-
-      const laptopPromises = compareItems.map(item => fetchFullLaptopData(item._id));
-      const laptops = await Promise.all(laptopPromises);
-      
-      // Filter out null results and update state
-      const validLaptops = laptops.filter((laptop): laptop is Laptop => laptop !== null);
-      setComparedLaptops(validLaptops);
-    } catch (error) {
-      console.error('Failed to load compare data:', error);
-      // Fallback: try to keep existing compared laptops if any
-      if (comparedLaptops.length === 0) {
-        setComparedLaptops([]);
-      }
-    } finally {
-      setIsLoading(false);
-    }
-  }, [compareItems, fetchFullLaptopData, comparedLaptops]);
-
-  // Load full data whenever compareItems changes
+  }, []);// Remove laptopCache dependency to prevent infinite loops  // Load full data for all compare items
   useEffect(() => {
+    const loadAllCompareData = async () => {
+      if (!isInitialized || compareItems.length === 0) {
+        if (isInitialized) {
+          setComparedLaptops([]);
+        }
+        return;
+      }
+
+      setIsLoading(true);
+      try {
+        const laptopPromises = compareItems.map(item => fetchFullLaptopData(item._id));
+        const laptops = await Promise.all(laptopPromises);
+        
+        // Filter out null results and update state
+        const validLaptops = laptops.filter((laptop): laptop is Laptop => laptop !== null);
+        setComparedLaptops(validLaptops);
+      } catch (error) {
+        console.error('Failed to load compare data:', error);
+        setComparedLaptops([]);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
     loadAllCompareData();
-  }, [loadAllCompareData]);
+  }, [compareItems, isInitialized, fetchFullLaptopData]);
 
   const addToCompare = useCallback(
     (laptop: LaptopCompareItem): boolean => {
@@ -227,22 +211,16 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
     },
     [compareItems]
   );
-
   const removeFromCompare = useCallback((laptopId: string) => {
     setCompareItems((prev) =>
       prev.filter((item) => item._id !== laptopId)
     );
     // Also remove from cache to free memory
-    setLaptopCache(prev => {
-      const newCache = new Map(prev);
-      newCache.delete(laptopId);
-      return newCache;
-    });
-  }, []);
-  const clearCompare = useCallback(() => {
+    laptopCacheRef.current.delete(laptopId);
+  }, []);  const clearCompare = useCallback(() => {
     setCompareItems([]);
     setComparedLaptops([]);
-    setLaptopCache(new Map());
+    laptopCacheRef.current.clear();
     localStorage.removeItem('compareItems');
     localStorage.removeItem('comparedLaptops');
   }, []);

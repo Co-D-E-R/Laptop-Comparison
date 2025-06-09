@@ -400,14 +400,6 @@
     - TailwindCSS for excellent styling framework
     - All laptop manufacturers for product specifications
 
-    ## 📞 Support
-
-    If you have any questions or need help with setup, please:
-
-    1. Check the troubleshooting section above
-    2. Look through existing [GitHub Issues](https://github.com/yourusername/laptop-comparison/issues)
-    3. Create a new issue with detailed information about your problem
-
     ---
 
     **Happy Coding! 🚀**
