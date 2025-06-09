@@ -412,4 +412,4 @@
 
     **Happy Coding! 🚀**
 
-    Made with ❤️ by [Your Name]
+    Made with ❤️
