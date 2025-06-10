@@ -1,4 +1,5 @@
 import React, { createContext, useState, useCallback, useEffect } from "react";
+import { createApiUrl } from "../utils/api";
 
 export interface Laptop {
   _id: string;
@@ -106,10 +107,8 @@ export const CompareProvider: React.FC<{ children: React.ReactNode }> = ({
     // Check cache first
     if (laptopCache.has(laptopId)) {
       return laptopCache.get(laptopId)!;
-    }
-
-    try {
-      const response = await fetch(`/api/laptop/${laptopId}`);
+    }    try {
+      const response = await fetch(createApiUrl(`/api/laptop/${laptopId}`));
       const data = await response.json();
       
       if (data.success && data.laptop) {

@@ -9,9 +9,11 @@ import {
 import { useProducts } from "../../hooks/useProducts";
 import { useHistory } from "../../hooks/useHistory";
 import { useAuth } from "../../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const {
     carouselProducts,
     recommendedProducts,
@@ -21,9 +23,13 @@ export default function Home() {
     error,
     refetch,
   } = useProducts({ userId: user?.id });
-
   // Use history hook for authenticated users
   const { historyProducts } = useHistory(user?.id);
+
+  // Handle navigation to search page
+  const handleExploreClick = () => {
+    navigate('/search');
+  };
 
   if (loading) {
     return (
@@ -98,9 +104,11 @@ export default function Home() {
               Discover, compare, and find your perfect laptop companion in our
               cosmic marketplace. Experience the future of laptop comparison
               with AI-powered recommendations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="cosmic-button px-8 py-4 rounded-xl text-white font-semibold text-lg w-full sm:w-auto min-w-[220px]">
+            </p>            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button 
+                onClick={handleExploreClick}
+                className="cosmic-button px-8 py-4 rounded-xl text-white font-semibold text-lg w-full sm:w-auto min-w-[220px] transition-all duration-300 hover:transform hover:scale-105"
+              >
                 🚀 Explore Laptops
               </button>
             </div>
@@ -116,21 +124,29 @@ export default function Home() {
           className="absolute bottom-20 left-1/4 w-12 h-12 bg-cyan-500/20 rounded-full animate-float neon-glow"
           style={{ animationDelay: "2s" }}
         ></div>
-      </section>{" "}
-      <main className="flex-1 space-y-16 pb-16">
+      </section>{" "}      <main className="flex-1 space-y-16 pb-16">
         <Carousel products={carouselProducts} />
         {user ? (
           // Authenticated user content
           <>
-            <ProductGrid
-              products={recommendedProducts}
-              title="🎯 Cosmic Recommendations"
-              sectionId="recommended"
-            />
+            {recommendedProducts.length > 0 && (
+              <ProductGrid
+                products={recommendedProducts}
+                title="🎯 Cosmic Recommendations"
+                sectionId="recommended"
+              />
+            )}
             {historyProducts.length > 0 && (
               <RecentlyViewed products={historyProducts} />
             )}
             <DealsSection products={dealProducts} />
+            {recommendedProducts.length === 0 && (
+              <ProductGrid
+                products={popularProducts}
+                title="🌟 Popular Laptops"
+                sectionId="popular"
+              />
+            )}
           </>
         ) : (
           // Non-authenticated user content

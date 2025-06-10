@@ -7,6 +7,7 @@ import {
   formatPrice,
   getPrimaryImage,
   calculateDiscount,
+  filterProductsWithValidPrices,
 } from "../../utils";
 import { FavoriteButton } from "../FavoriteButton/FavoriteButton";
 import { useCompare } from "../../hooks/useCompare";
@@ -51,12 +52,19 @@ const DealsSection: React.FC<DealsSectionProps> = ({ products }) => {
     return null;
   }
 
+  // Filter out products with invalid prices
+  const validProducts = filterProductsWithValidPrices(products);
+
+  if (validProducts.length === 0) {
+    return null;
+  }
+
   // Debug log to check product structure
-  if (products.length > 0) {
-    console.log("DealsSection - First product structure:", products[0]);
+  if (validProducts.length > 0) {
+    console.log("DealsSection - First product structure:", validProducts[0]);
     console.log(
       "DealsSection - Technical details:",
-      products[0]?.technicalDetails
+      validProducts[0]?.technicalDetails
     );
     console.log(
       "DealsSection - Image links:",

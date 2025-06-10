@@ -6,6 +6,7 @@ import {
   truncateText,
   getPrimaryImage,
   calculateDiscount,
+  filterProductsWithValidPrices,
 } from "../../utils";
 import { FavoriteButton } from "../FavoriteButton";
 import { useCompare } from "../../hooks/useCompare";
@@ -58,6 +59,14 @@ const ProductGrid: React.FC<ProductGridProps> = ({
   if (products.length === 0) {
     return null;
   }
+
+  // Filter out products with invalid prices
+  const validProducts = filterProductsWithValidPrices(products);
+
+  if (validProducts.length === 0) {
+    return null;
+  }
+
   return (
     <section id={sectionId} className="px-6 py-16">
       <div className="container mx-auto">
@@ -69,7 +78,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {products.map((product, idx) => (
+          {validProducts.map((product, idx) => (
             <div
               key={`${sectionId}-${product.productId}-${idx}`}
               className="glass-card rounded-2xl p-6 card-hover cursor-pointer group"

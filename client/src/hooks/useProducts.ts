@@ -108,7 +108,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
       if (!carouselResponse.ok) {
         throw new Error(`HTTP error! status: ${carouselResponse.status}`);
       }
-      const carouselData = await carouselResponse.json();      // Fetch recommended products - use personalized recommendations for authenticated users
+      const carouselData = await carouselResponse.json();      // Fetch recommended products - use personalized recommendations for authenticated users ONLY
       let recommendedData: Product[] = [];
       if (userId) {
         // Fetch personalized recommendations for authenticated users
@@ -120,6 +120,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
               credentials: 'include', // Include cookies for authentication
             }
           );
+          
           if (recommendationResponse.ok) {
             const recommendationResult = await recommendationResponse.json();
             console.log("Recommendation API response:", recommendationResult);
@@ -131,33 +132,21 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
               ).slice(0, 16);
               console.log("Transformed recommendations:", recommendedData);
             }
+          } else if (recommendationResponse.status === 400) {
+            // Handle 400 error (user has no history) gracefully - this is expected for new users
+            console.log("User has no history for personalized recommendations - will not show recommendation section");
+            // Keep recommendedData empty for new users so recommendation section won't show
           } else {
             console.warn("Recommendation API response not ok:", recommendationResponse.status);
           }
         } catch (recommendationError) {
-          console.warn("Failed to fetch personalized recommendations, falling back to general suggestions:", recommendationError);
+          console.warn("Failed to fetch personalized recommendations:", recommendationError);
         }
       }
-        // Fallback to general suggestions if no userId or personalized recommendations failed/empty
-      if (recommendedData.length === 0) {
-        const suggestionResponse = await fetch(
-          `${import.meta.env.VITE_API_BASE_URL}/api/suggestions?limit=16`
-        );
-        if (!suggestionResponse.ok) {
-          throw new Error(`HTTP error! status: ${suggestionResponse.status}`);
-        }
-        const suggestionData = await suggestionResponse.json();
-        
-        // Validate suggestion data
-        if (
-          !suggestionData.success ||
-          !Array.isArray(suggestionData.suggestions)
-        ) {
-          throw new Error("Invalid suggestion data format received from server");
-        }
-        
-        recommendedData = removeDuplicates(suggestionData.suggestions).slice(0, 16);
-      }
+      
+      // DO NOT fallback to general suggestions for authenticated users
+      // If user has no history, keep recommendedData empty so the recommendation section won't show
+      // Only non-authenticated users will see popular laptops instead
 
       // Fetch popular products from /api/popular
       const popularResponse = await fetch(

@@ -12,6 +12,8 @@ import {
   formatGPU,
   formatModel
 } from "../utils/textUtils";
+import { isValidPrice } from "../utils";
+import { createApiUrl } from "../utils/api";
 import Comments from "./Comments/Comments";
 import { Header } from "./index";
 import "./LaptopDetailEnhanced.css";
@@ -141,10 +143,8 @@ const LaptopDetailEnhanced: React.FC = () => {
         setError("Product ID not found");
         setLoading(false);
         return;
-      }
-
-      try {
-        const response = await fetch(`/api/laptop/${productId}`);
+      }      try {
+        const response = await fetch(createApiUrl(`/api/laptop/${productId}`));
         if (!response.ok) {
           throw new Error("Failed to fetch laptop details");
         }
@@ -152,12 +152,10 @@ const LaptopDetailEnhanced: React.FC = () => {
         if (data.success && data.laptop) {
           setLaptop(data.laptop);
           // Set current laptop for TechAssistant context
-          setCurrentLaptop(data.laptop);
-
-          // Add to user history if user is authenticated
+          setCurrentLaptop(data.laptop);          // Add to user history if user is authenticated
           if (user) {
             try {
-              await fetch("/api/history", {
+              await fetch(createApiUrl("/api/history"), {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
@@ -201,19 +199,17 @@ const LaptopDetailEnhanced: React.FC = () => {
 
   const toggleAutoSlide = () => {
     setIsAutoSliding(!isAutoSliding);
-  };
-
-  const getDisplayPrice = () => {
+  };  const getDisplayPrice = () => {
     if (!laptop?.sites || laptop.sites.length === 0) {
-      return laptop?.allTimeLowPrice || null;
+      return isValidPrice(laptop?.allTimeLowPrice) ? laptop?.allTimeLowPrice : null;
     }
 
     const prices = laptop.sites
       .map((site) => site.price)
-      .filter((price) => price && price > 0);
+      .filter((price) => isValidPrice(price));
     return prices.length > 0
       ? Math.min(...prices)
-      : laptop?.allTimeLowPrice || null;
+      : isValidPrice(laptop?.allTimeLowPrice) ? laptop?.allTimeLowPrice : null;
   };
   const formatProcessor = () => {
     return formatProcessorSpec(laptop?.specs?.processor);
@@ -564,16 +560,17 @@ const LaptopDetailEnhanced: React.FC = () => {
                 )}
               </div>
             )}
-          </div>
-          {/* Price Section */}
+          </div>          {/* Price Section */}
           <div className="price-section">
-            {displayPrice && (
+            {displayPrice ? (
               <div className="current-price">{formatPrice(displayPrice)}</div>
-            )}
-
-            {laptop.sites && laptop.sites.length > 0 && (
+            ) : (
+              <div className="current-price text-gray-400">Contact seller for pricing</div>
+            )}            {laptop.sites && laptop.sites.length > 0 && (
               <div className="price-comparison">
-                {laptop.sites.map((site, index) => (
+                {laptop.sites
+                  .filter((site) => isValidPrice(site.price))
+                  .map((site, index) => (
                   <div key={index} className="site-price">
                     <div className="site-info">
                       <img

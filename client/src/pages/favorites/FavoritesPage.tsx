@@ -3,15 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { Header, Footer } from "../../components";
 import { useFavorites } from "../../hooks/useFavorites";
 import { useAuth } from "../../contexts/AuthContext";
-import { handleProductClick, truncateText, getPrimaryImage } from "../../utils";
+import { handleProductClick, truncateText, getPrimaryImage, filterProductsWithValidPrices } from "../../utils";
 import type { Product } from "../../types/Product";
 
 const FavoritesPage: React.FC = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
-  const { favoriteProducts, loading, error, removeFavorite } = useFavorites(
+  const { user } = useAuth();  const { favoriteProducts, loading, error, removeFavorite } = useFavorites(
     user?.id
   );
+
+  // Filter products with valid prices
+  const validFavoriteProducts = filterProductsWithValidPrices(favoriteProducts);
 
   const handleRemoveFavorite = async (productId: string): Promise<boolean> => {
     try {
@@ -183,9 +185,8 @@ const FavoritesPage: React.FC = () => {
 
           <h1 className="text-4xl font-bold mb-4 gradient-text">
             Favorite Laptops
-          </h1>
-          <p className="text-white/70 text-lg">
-            Your saved favorites - {favoriteProducts.length} laptops
+          </h1>          <p className="text-white/70 text-lg">
+            Your saved favorites - {validFavoriteProducts.length} laptops
           </p>
         </div>
 
@@ -198,11 +199,10 @@ const FavoritesPage: React.FC = () => {
         ) : error ? (
           <div className="glass-card p-12 rounded-2xl border border-red-500/30 text-center">
             <div className="text-red-400">Error loading favorites: {error}</div>
-          </div>
-        ) : favoriteProducts.length > 0 ? (
+          </div>        ) : validFavoriteProducts.length > 0 ? (
           <div className="glass-card p-6 rounded-2xl border border-purple-500/30">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-              {favoriteProducts.map((product, idx) => (
+              {validFavoriteProducts.map((product, idx) => (
                 <FavoriteCard
                   key={`favorite-${product.productId}-${idx}`}
                   product={product}
