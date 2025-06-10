@@ -28,11 +28,11 @@ interface LaptopData {
     storage: {
       size: number;
       type: string;
-    };
-    displayInch: number;
+    };    displayInch: number;
     gpu: string;
     gpuVersion?: string;
     touch?: boolean;
+    basePrice?: number;
     details?: {
       imageLinks?: string[];
     };
@@ -487,20 +487,30 @@ const LaptopDetail: React.FC = () => {
                         <div className="site-price">
                           ₹{site.price.toLocaleString("en-IN")}
                         </div>
-                      )}
-
-                      {site.rating && (
+                      )}                      {site.rating && (
                         <div className="site-rating">
                           ⭐ {site.rating.toFixed(1)}
                           {site.ratingCount && ` (${site.ratingCount})`}
                         </div>
-                      )}
-
-                      {site.basePrice && site.basePrice !== site.price && (
-                        <div className="site-base-price">
-                          MRP: ₹{site.basePrice.toLocaleString("en-IN")}
-                        </div>
-                      )}
+                      )}                      {/* Show base price - prioritize site.basePrice, then specs.basePrice, then allTimeLowPrice */}
+                      {(() => {
+                        const effectiveBasePrice = site.basePrice && site.basePrice > site.price 
+                          ? site.basePrice 
+                          : (laptop?.specs?.basePrice && laptop.specs.basePrice > site.price 
+                            ? laptop.specs.basePrice 
+                            : (laptop && laptop.allTimeLowPrice && laptop.allTimeLowPrice > site.price 
+                              ? laptop.allTimeLowPrice 
+                              : null));
+                        
+                        if (effectiveBasePrice && effectiveBasePrice !== site.price) {
+                          return (
+                            <div className="site-base-price">
+                              MRP: ₹{effectiveBasePrice.toLocaleString("en-IN")}
+                            </div>
+                          );
+                        }
+                        return null;
+                      })()}
                     </div>
 
                     {site.link && (
