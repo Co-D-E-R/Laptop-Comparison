@@ -144,7 +144,7 @@ const LaptopDetail: React.FC = () => {
     setIsAutoSliding(!isAutoSliding);
   };  const getDisplayPrice = () => {
     if (!laptop?.sites || laptop.sites.length === 0) {
-      return isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
+      return isValidPrice(laptop?.allTimeLowPrice) ? laptop?.allTimeLowPrice : null;
     }
 
     const prices = laptop.sites
@@ -152,7 +152,7 @@ const LaptopDetail: React.FC = () => {
       .filter((price) => isValidPrice(price));
     return prices.length > 0
       ? Math.min(...prices)
-      : isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
+      : isValidPrice(laptop?.allTimeLowPrice) ? laptop?.allTimeLowPrice : null;
   };
 
   // Compare handlers
