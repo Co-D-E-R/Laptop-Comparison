@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         {/* Full width container - no max-width restrictions */}
         <div className="w-full px-12 py-4 relative footer-compact-spacing">
           {/* Main footer content - Full width grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
             
             {/* Brand Section - Compact */}
             <div className="space-y-2">
@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Compact divider */}
-          <div className="footer-enhanced-divider mb-6">
+          <div className="footer-enhanced-divider mb-4">
             <div className="relative flex justify-center">
               <div className="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-1 rounded-full">
                 <div className="flex items-center space-x-2">
@@ -154,13 +154,13 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Full width bottom section */}
-          <div className="footer-bottom rounded-t-lg -mx-12 px-12 py-4">
-            <div className="flex flex-col lg:flex-row justify-between items-center space-y-3 lg:space-y-0 gap-6">
-              <div className="text-white/70 text-sm font-medium">
+          <div className="footer-bottom rounded-t-lg -mx-12 px-12 py-3">
+            <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0 gap-4">
+              <div className="text-white/70 text-xs font-medium">
                 <span>&copy; 2025 LaptopVerse. All rights reserved.</span>
               </div>
               
-              <div className="flex items-center flex-wrap justify-center gap-4 text-sm">
+              <div className="flex items-center flex-wrap justify-center gap-3 text-xs">
                 <Link to="/terms" className="text-white/60 hover:text-purple-400 footer-nav-link transition-all duration-300 font-medium">
                   Terms
                 </Link>
@@ -170,9 +170,9 @@ const Footer: React.FC = () => {
                 <Link to="/cookies" className="text-white/60 hover:text-pink-400 footer-nav-link transition-all duration-300 font-medium">
                   Cookies
                 </Link>
-                <div className="flex items-center space-x-2 text-white/50">
+                <div className="flex items-center space-x-1 text-white/50">
                   <span>v2.1.0</span>
-                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
                 </div>
               </div>
             </div>

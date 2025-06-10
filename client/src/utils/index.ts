@@ -101,7 +101,7 @@ export const removeAdvancedDuplicates = (products: Product[]): Product[] => {
       ?.toLowerCase()
       .replace(/[^a-z0-9]/g, "")
       .trim();
-    const brand = product.technicalDetails?.Brand?.toLowerCase() || "";
+    const brand = (product.technicalDetails?.Brand || product.technicalDetails?.Manufacturer || "")?.toLowerCase() || "";
     const titleKey = `${brand}|${normalizedName}`;
     
     if (normalizedName && seenTitles.has(titleKey)) {
