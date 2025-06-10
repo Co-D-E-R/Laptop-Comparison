@@ -6,6 +6,7 @@ import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { formatStorage } from "../utils/storageUtils";
 import { formatBrand, formatSeries } from "../utils/textUtils";
+import { createApiUrl } from "../utils/api";
 import "./LaptopDetail.css";
 
 interface LaptopData {
@@ -84,13 +85,9 @@ const LaptopDetail: React.FC = () => {
         setError("Product ID not found");
         setLoading(false);
         return;
-      }
-
-      try {
+      }      try {
         // Fetch laptop details using the correct API endpoint
-        const response = await fetch(
-          `http://localhost:8080/api/laptop/${productId}`
-        );
+        const response = await fetch(createApiUrl(`/api/laptop/${productId}`));
         if (!response.ok) {
           throw new Error("Failed to fetch laptop details");
         }
@@ -100,10 +97,9 @@ const LaptopDetail: React.FC = () => {
           // Set current laptop for TechAssistant context
           setCurrentLaptop(data.laptop);
 
-          // Add to user history if user is authenticated
-          if (user) {
+          // Add to user history if user is authenticated          if (user) {
             try {
-              await fetch("http://localhost:8080/api/history", {
+              await fetch(createApiUrl("/api/history"), {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

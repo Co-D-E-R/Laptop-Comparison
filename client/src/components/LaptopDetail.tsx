@@ -13,6 +13,7 @@ import {
   formatGPU,
   formatModel
 } from "../utils/textUtils";
+import { createApiUrl } from "../utils/api";
 import "./LaptopDetail.css";
 
 interface LaptopData {
@@ -83,11 +84,9 @@ const LaptopDetail: React.FC = () => {
         setError("Product ID not found");
         setLoading(false);
         return;
-      }
-
-      try {
+      }      try {
         // Fetch laptop details using the correct API endpoint
-        const response = await fetch(`/api/laptop/${productId}`);
+        const response = await fetch(createApiUrl(`/api/laptop/${productId}`));
         if (!response.ok) {
           throw new Error("Failed to fetch laptop details");
         }
@@ -98,9 +97,8 @@ const LaptopDetail: React.FC = () => {
           setCurrentLaptop(data.laptop);
 
           // Add to user history if user is authenticated
-          if (user) {
-            try {
-              await fetch("/api/history", {
+          if (user) {            try {
+              await fetch(createApiUrl("/api/history"), {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

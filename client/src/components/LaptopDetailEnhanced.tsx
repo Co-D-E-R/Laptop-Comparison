@@ -12,6 +12,7 @@ import {
   formatGPU,
   formatModel
 } from "../utils/textUtils";
+import { createApiUrl } from "../utils/api";
 import Comments from "./Comments/Comments";
 import { Header } from "./index";
 import "./LaptopDetailEnhanced.css";
@@ -141,10 +142,8 @@ const LaptopDetailEnhanced: React.FC = () => {
         setError("Product ID not found");
         setLoading(false);
         return;
-      }
-
-      try {
-        const response = await fetch(`/api/laptop/${productId}`);
+      }      try {
+        const response = await fetch(createApiUrl(`/api/laptop/${productId}`));
         if (!response.ok) {
           throw new Error("Failed to fetch laptop details");
         }
@@ -152,12 +151,10 @@ const LaptopDetailEnhanced: React.FC = () => {
         if (data.success && data.laptop) {
           setLaptop(data.laptop);
           // Set current laptop for TechAssistant context
-          setCurrentLaptop(data.laptop);
-
-          // Add to user history if user is authenticated
+          setCurrentLaptop(data.laptop);          // Add to user history if user is authenticated
           if (user) {
             try {
-              await fetch("/api/history", {
+              await fetch(createApiUrl("/api/history"), {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
