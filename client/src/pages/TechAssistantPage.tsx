@@ -8,6 +8,12 @@ import React, {
 import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { geminiService } from "../services/geminiService";
 import { formatStorageSize } from "../utils/storageUtils";
+import { 
+  formatBrand, 
+  formatProcessorSpec, 
+  formatRAMSpec, 
+  formatGPU
+} from "../utils/textUtils";
 import type { LaptopContext } from "../services/geminiService";
 import type { Message } from "../types/techAssistant";
 import "./TechAssistantPage.css";
@@ -31,25 +37,19 @@ const TechAssistantPage: React.FC = () => {
     if (!currentLaptop) return undefined;
 
     return {
-      name: currentLaptop.specs?.head || "Unknown laptop",
-      processor:
-        currentLaptop.specs?.processor?.name &&
-        currentLaptop.specs?.processor?.gen
-          ? `${currentLaptop.specs.processor.name} ${
-              currentLaptop.specs.processor.gen
-            }th Gen ${currentLaptop.specs.processor.variant || ""}`.trim()
-          : currentLaptop.specs?.details?.ProcessorType || "Not specified",
-      ram:
-        currentLaptop.specs?.ram?.size && currentLaptop.specs?.ram?.type
-          ? `${currentLaptop.specs.ram.size}GB ${currentLaptop.specs.ram.type}`
-          : currentLaptop.specs?.details?.RAMSize || "Not specified",      storage:
+      name: currentLaptop.specs?.head || "Unknown laptop",      processor:
+        currentLaptop.specs?.processor
+          ? formatProcessorSpec(currentLaptop.specs.processor)
+          : currentLaptop.specs?.details?.ProcessorType || "Not specified",      ram:
+        currentLaptop.specs?.ram
+          ? formatRAMSpec(currentLaptop.specs.ram)
+          : currentLaptop.specs?.details?.RAMSize || "Not specified",storage:
         currentLaptop.specs?.storage?.size && currentLaptop.specs?.storage?.type
           ? `${formatStorageSize(currentLaptop.specs.storage.size)} ${currentLaptop.specs.storage.type}`
-          : currentLaptop.specs?.details?.HardDriveSize || "Not specified",
-      graphics:
-        currentLaptop.specs?.gpu ||
-        currentLaptop.specs?.details?.GraphicsCoprocessor ||
-        "Not specified",
+          : currentLaptop.specs?.details?.HardDriveSize || "Not specified",      graphics:
+        currentLaptop.specs?.gpu
+          ? formatGPU(currentLaptop.specs.gpu)
+          : currentLaptop.specs?.details?.GraphicsCoprocessor || "Not specified",
       screenSize: currentLaptop.specs?.displayInch
         ? `${currentLaptop.specs.displayInch}"`
         : currentLaptop.specs?.details?.StandingScreenDisplaySize ||
@@ -58,11 +58,12 @@ const TechAssistantPage: React.FC = () => {
         ? `₹${Math.min(
             ...currentLaptop.sites.map((s: { price: number }) => s.price)
           ).toLocaleString()}`
-        : "Not available",
-      brand:
-        currentLaptop.brand ||
-        currentLaptop.specs?.details?.Brand ||
-        "Not specified",
+        : "Not available",      brand:
+        currentLaptop.brand
+          ? formatBrand(currentLaptop.brand)
+          : currentLaptop.specs?.details?.Brand
+          ? formatBrand(currentLaptop.specs.details.Brand)
+          : "Not specified",
     };
   }, [currentLaptop]);
 
@@ -365,13 +366,11 @@ const TechAssistantPage: React.FC = () => {
           <div className="context-content">
             <div className="laptop-info">
               <h4>{currentLaptop.specs?.head || "Laptop"}</h4>
-              <div className="specs-grid">
-                {currentLaptop.specs?.processor && (
+              <div className="specs-grid">                {currentLaptop.specs?.processor && (
                   <div className="spec-item">
                     <span className="spec-label">Processor:</span>
                     <span className="spec-value">
-                      {currentLaptop.specs.processor.name}{" "}
-                      {currentLaptop.specs.processor.gen}th Gen
+                      {formatProcessorSpec(currentLaptop.specs.processor)}
                     </span>
                   </div>
                 )}
@@ -379,8 +378,7 @@ const TechAssistantPage: React.FC = () => {
                   <div className="spec-item">
                     <span className="spec-label">RAM:</span>
                     <span className="spec-value">
-                      {currentLaptop.specs.ram.size}GB{" "}
-                      {currentLaptop.specs.ram.type}
+                      {formatRAMSpec(currentLaptop.specs.ram)}
                     </span>
                   </div>
                 )}

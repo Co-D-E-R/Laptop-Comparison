@@ -5,6 +5,7 @@ import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { formatStorage } from "../utils/storageUtils";
+import { formatBrand, formatSeries } from "../utils/textUtils";
 import "./LaptopDetail.css";
 
 interface LaptopData {
@@ -321,9 +322,8 @@ const LaptopDetail: React.FC = () => {
             <div className="header-title-section">
               <h1>{laptop.specs.head}</h1>
               <div className="brand-series">
-                {laptop.brand && <span className="brand">{laptop.brand}</span>}
-                {laptop.series && (
-                  <span className="series">{laptop.series}</span>
+                {laptop.brand && <span className="brand">{formatBrand(laptop.brand)}</span>}                {laptop.series && (
+                  <span className="series">{formatSeries(laptop.series)}</span>
                 )}
               </div>
             </div>            <div className="header-actions">

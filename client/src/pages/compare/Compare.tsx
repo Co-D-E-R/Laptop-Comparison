@@ -2,6 +2,14 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../../components";
 import { useCompare } from "../../hooks/useCompare";
+import { 
+  formatBrand, 
+  formatSeries, 
+  formatProcessorSpec, 
+  formatRAMSpec, 
+  formatGPU,
+  formatStorageType
+} from "../../utils/textUtils";
 import type { Laptop } from "../../types/compare";
 import "./Compare.css";
 
@@ -54,19 +62,18 @@ const Compare: React.FC = () => {
     const values = comparedLaptops.map((laptop) => spec.getValue(laptop));
     return values.every((value) => isEmptyValue(value));
   };
-
   // Define comprehensive comparison specifications
   const comparisonSpecs: ComparisonSpec[] = [
     // Basic Information
     {
       label: "Brand",
-      getValue: (laptop) => laptop.specs?.brand || laptop.brand || "N/A",
+      getValue: (laptop) => formatBrand(laptop.specs?.brand || laptop.brand),
       type: "string",
       category: "basic",
     },
     {
       label: "Series",
-      getValue: (laptop) => laptop.specs?.series || laptop.series || "N/A",
+      getValue: (laptop) => formatSeries(laptop.specs?.series || laptop.series),
       type: "string",
       category: "basic",
     },
@@ -87,16 +94,15 @@ const Compare: React.FC = () => {
       label: "Manufacturer",
       getValue: (laptop) => laptop.specs?.details?.Manufacturer || "N/A",
       type: "string",
-      category: "basic",
-    },
+      category: "basic",    },
 
     // Performance Specifications
     {
       label: "Processor",
       getValue: (laptop) => {
         const proc = laptop.specs?.processor;
-        if (proc?.name && proc?.gen) {
-          return `${proc.name} ${proc.gen}th Gen ${proc.variant || ""}`.trim();
+        if (proc) {
+          return formatProcessorSpec(proc);
         }
         return laptop.specs?.details?.["Processor Type"] || "N/A";
       },
@@ -142,14 +148,13 @@ const Compare: React.FC = () => {
       },
       type: "number",
       unit: "GB",
-      category: "performance",
-    },    {
+      category: "performance",    },
+    {
       label: "Memory Technology",
       getValue: (laptop) => {
-        // First try the structured specs
-        const ramType = laptop.specs?.ram?.type;
-        if (ramType && ramType !== 'N/A') return ramType.toUpperCase();
-        
+        if (laptop.specs?.ram) {
+          return formatRAMSpec(laptop.specs.ram);
+        }
         // Fallback to details
         const memoryTech = laptop.specs?.details?.["Memory Technology"];
         if (memoryTech && memoryTech !== 'N/A') return memoryTech;
@@ -202,16 +207,17 @@ const Compare: React.FC = () => {
       },
       type: "string",
       category: "performance",
-    },
-    {
+    },    {
       label: "Storage Type",
-      getValue: (laptop) =>
-        laptop.specs?.storage?.type?.toUpperCase() ||
-        laptop.specs?.details?.["Hard Disk Description"] ||
-        "N/A",
+      getValue: (laptop) => {
+        const storageType = laptop.specs?.storage?.type;
+        if (storageType) {
+          return formatStorageType(storageType);
+        }
+        return laptop.specs?.details?.["Hard Disk Description"] || "N/A";
+      },
       type: "string",
-      category: "performance",
-    },
+      category: "performance",    },
     {
       label: "Hard Drive Interface",
       getValue: (laptop) =>
@@ -221,10 +227,10 @@ const Compare: React.FC = () => {
     },
     {
       label: "Graphics",
-      getValue: (laptop) =>
-        laptop.specs?.details?.["Graphics Coprocessor"] ||
-        laptop.specs?.gpu ||
-        "N/A",
+      getValue: (laptop) => {
+        const gpu = laptop.specs?.details?.["Graphics Coprocessor"] || laptop.specs?.gpu;
+        return gpu ? formatGPU(gpu) : "N/A";
+      },
       type: "string",
       category: "performance",
     },
@@ -639,16 +645,15 @@ const Compare: React.FC = () => {
                   >
                     ✕
                   </button>
-                </div>
-                <h3 className="font-semibold text-lg mb-2 line-clamp-2">
-                  {laptop.specs?.head || `${laptop.brand} ${laptop.series}`}
+                </div>                <h3 className="font-semibold text-lg mb-2 line-clamp-2">
+                  {laptop.specs?.head || `${formatBrand(laptop.brand)} ${formatSeries(laptop.series)}`}
                 </h3>
                 <div className="space-y-1 text-sm text-white/70">
                   <p>
-                    <span className="text-white">Brand:</span> {laptop.brand}
+                    <span className="text-white">Brand:</span> {formatBrand(laptop.brand)}
                   </p>
                   <p>
-                    <span className="text-white">Series:</span> {laptop.series}
+                    <span className="text-white">Series:</span> {formatSeries(laptop.series)}
                   </p>
                   <p>
                     <span className="text-white">Best Price:</span> ₹
@@ -711,13 +716,12 @@ const Compare: React.FC = () => {
                           <tr className="border-b border-purple-500/20">
                             <th className="text-left p-4 text-white/80 font-medium min-w-[200px]">
                               Specification
-                            </th>
-                            {comparedLaptops.map((laptop) => (
+                            </th>                            {comparedLaptops.map((laptop) => (
                               <th
                                 key={laptop._id}
                                 className="text-center p-4 text-white/80 font-medium min-w-[250px]"
                               >
-                                {laptop.brand} {laptop.series}
+                                {formatBrand(laptop.brand)} {formatSeries(laptop.series)}
                               </th>
                             ))}
                             {comparedLaptops.length < 3 && (
@@ -826,7 +830,7 @@ const Compare: React.FC = () => {
                     className="glass-card rounded-xl border border-purple-500/30 p-6"
                   >
                     <h3 className="text-xl font-semibold gradient-text mb-4">
-                      {laptop.brand} {laptop.series} - Key Features
+                      {formatBrand(laptop.brand)} {formatSeries(laptop.series)} - Key Features
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       {features.slice(0, 10).map((feature, index) => (
@@ -852,9 +856,8 @@ const Compare: React.FC = () => {
               <div
                 key={laptop._id}
                 className="glass-card rounded-xl border border-purple-500/30 p-6"
-              >
-                <h3 className="text-lg font-semibold mb-4 gradient-text">
-                  {laptop.brand} {laptop.series} - Purchase Options
+              >                <h3 className="text-lg font-semibold mb-4 gradient-text">
+                  {formatBrand(laptop.brand)} {formatSeries(laptop.series)} - Purchase Options
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {laptop.sites?.map((site) => (

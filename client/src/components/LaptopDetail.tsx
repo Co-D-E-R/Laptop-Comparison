@@ -5,6 +5,13 @@ import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { formatStorage } from "../utils/storageUtils";
+import { 
+  formatBrand, 
+  formatSeries, 
+  formatProcessorSpec, 
+  formatRAMSpec, 
+  formatGPU
+} from "../utils/textUtils";
 import "./LaptopDetail.css";
 
 interface LaptopData {
@@ -177,28 +184,12 @@ const LaptopDetail: React.FC = () => {
     if (!laptop) return;
     removeFromCompare(laptop._id);
   };
-
   const formatProcessor = () => {
-    if (!laptop?.specs?.processor) return "";
-    const { name, gen, variant } = laptop.specs.processor;
-    let processorText = "";
-
-    if (name) processorText += name;
-    if (gen) processorText += ` ${gen}th Gen`;
-    if (variant) processorText += ` ${variant}`;
-
-    return processorText.trim();
+    return formatProcessorSpec(laptop?.specs?.processor);
   };
 
   const formatRAM = () => {
-    if (!laptop?.specs?.ram) return "";
-    const { size, type } = laptop.specs.ram;
-    let ramText = "";
-
-    if (size) ramText += `${size}GB`;
-    if (type) ramText += ` ${type}`;
-
-    return ramText.trim();
+    return formatRAMSpec(laptop?.specs?.ram);
   };
   const formatStorageDisplay = () => {
     return formatStorage(laptop?.specs?.storage);
@@ -282,9 +273,8 @@ const LaptopDetail: React.FC = () => {
           {/* Header with Name */}
           <div className="laptop-header">
             <div className="header-title-section">
-              <h1>{laptop.specs.head}</h1>
-              {laptop.brand && (
-                <span className="brand-tag">{laptop.brand.toUpperCase()}</span>
+              <h1>{laptop.specs.head}</h1>              {laptop.brand && (
+                <span className="brand-tag">{formatBrand(laptop.brand)}</span>
               )}
             </div>            <div className="header-actions">
               <FavoriteButton
@@ -390,7 +380,7 @@ const LaptopDetail: React.FC = () => {
                   </div>
                   <div className="comparison-content">
                     <p className="comparison-label">Graphics</p>
-                    <p className="comparison-value">{laptop.specs.gpu}</p>
+                    <p className="comparison-value">{formatGPU(laptop.specs.gpu)}</p>
                   </div>
                 </div>
               )}
@@ -405,17 +395,16 @@ const LaptopDetail: React.FC = () => {
                   <span className="spec-label">Model Name</span>
                   <span className="spec-value">{laptop.specs.head}</span>
                 </div>
-              )}
-              {laptop.brand && (
+              )}              {laptop.brand && (
                 <div className="spec-item">
                   <span className="spec-label">Brand</span>
-                  <span className="spec-value">{laptop.brand}</span>
+                  <span className="spec-value">{formatBrand(laptop.brand)}</span>
                 </div>
               )}
               {laptop.series && (
                 <div className="spec-item">
                   <span className="spec-label">Series</span>
-                  <span className="spec-value">{laptop.series}</span>
+                  <span className="spec-value">{formatSeries(laptop.series)}</span>
                 </div>
               )}
               {formatProcessor() && (
@@ -442,11 +431,10 @@ const LaptopDetail: React.FC = () => {
                     {laptop.specs.displayInch} inches
                   </span>
                 </div>
-              )}
-              {laptop.specs.gpu && (
+              )}              {laptop.specs.gpu && (
                 <div className="spec-item">
                   <span className="spec-label">Graphics Card</span>
-                  <span className="spec-value">{laptop.specs.gpu}</span>
+                  <span className="spec-value">{formatGPU(laptop.specs.gpu)}</span>
                 </div>
               )}
               {laptop.specs.gpuVersion && (
