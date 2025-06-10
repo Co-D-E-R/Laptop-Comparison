@@ -59,16 +59,6 @@ const Footer: React.FC = () => {
             </div>
             
             <div className="space-y-6">
-              <h4 className="text-lg font-semibold text-white">💻 Categories</h4>
-              <ul className="space-y-3">
-                <li><Link to="/gaming" className="text-white/70 hover:text-purple-400 transition-colors duration-300">🎮 Gaming Laptops</Link></li>
-                <li><Link to="/business" className="text-white/70 hover:text-purple-400 transition-colors duration-300">💼 Business Laptops</Link></li>
-                <li><Link to="/budget" className="text-white/70 hover:text-purple-400 transition-colors duration-300">💰 Budget Laptops</Link></li>
-                <li><Link to="/ultrabooks" className="text-white/70 hover:text-purple-400 transition-colors duration-300">⚡ Ultrabooks</Link></li>
-              </ul>
-            </div>
-            
-            <div className="space-y-6">
               <h4 className="text-lg font-semibold text-white">🌟 Support</h4>
               <ul className="space-y-3">
                 <li><Link to="/help" className="text-white/70 hover:text-purple-400 transition-colors duration-300">❓ Help Center</Link></li>

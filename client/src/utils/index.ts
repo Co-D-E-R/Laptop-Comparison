@@ -83,6 +83,60 @@ export const removeDuplicates = (products: Product[]): Product[] => {
 };
 
 /**
+ * Removes duplicate products using advanced deduplication logic
+ * Combines productId, brand, and productName to catch more duplicates
+ */
+export const removeAdvancedDuplicates = (products: Product[]): Product[] => {
+  const seen = new Set<string>();
+  const seenTitles = new Set<string>();
+  
+  return products.filter((product) => {
+    // Primary check: productId
+    if (seen.has(product.productId)) {
+      return false;
+    }
+    
+    // Secondary check: normalized product name and brand combination
+    const normalizedName = product.productName
+      ?.toLowerCase()
+      .replace(/[^a-z0-9]/g, "")
+      .trim();
+    const brand = product.technicalDetails?.Brand?.toLowerCase() || "";
+    const titleKey = `${brand}|${normalizedName}`;
+    
+    if (normalizedName && seenTitles.has(titleKey)) {
+      return false;
+    }
+    
+    // Tertiary check: look for similar titles (60% similarity)
+    const productWords = normalizedName?.split(/\s+/) || [];
+    if (productWords.length > 2) {
+      for (const existingTitle of seenTitles) {
+        const existingWords = existingTitle.split("|")[1]?.split(/\s+/) || [];
+        if (existingWords.length > 2) {
+          const commonWords = productWords.filter(word => 
+            existingWords.some(existingWord => 
+              existingWord.includes(word) || word.includes(existingWord)
+            )
+          );
+          
+          // If 60% or more words are similar, consider it a duplicate
+          if (commonWords.length / Math.max(productWords.length, existingWords.length) >= 0.6) {
+            return false;
+          }
+        }
+      }
+    }
+    
+    seen.add(product.productId);
+    if (normalizedName) {
+      seenTitles.add(titleKey);
+    }
+    return true;
+  });
+};
+
+/**
  * Gets the primary image for a product
  */
 export const getPrimaryImage = (product: Product): string => {
