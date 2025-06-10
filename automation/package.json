@@ -1,0 +1,31 @@
+{
+    "name": "laptop-scraping-automation",
+    "version": "1.0.0",
+    "description": "Automated laptop data scraping and database update system",
+    "main": "scrape-scheduler.js",
+    "scripts": {
+        "start": "node scrape-scheduler.js",
+        "test": "node --check scrape-scheduler.js",
+        "setup": "bash setup-automation.sh",
+        "monitor": "bash monitor-scraping.sh",
+        "uninstall": "bash uninstall-automation.sh"
+    },
+    "dependencies": {
+        "axios": "^1.6.0",
+        "node-cron": "^3.0.3",
+        "nodemailer": "^6.9.0",
+        "fs-extra": "^11.2.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.50.0"
+    },
+    "keywords": [
+        "automation",
+        "scraping",
+        "cron",
+        "laptop",
+        "data-processing"
+    ],
+    "author": "Laptop Comparison System",
+    "license": "MIT"
+}
