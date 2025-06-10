@@ -9,9 +9,11 @@ import {
 import { useProducts } from "../../hooks/useProducts";
 import { useHistory } from "../../hooks/useHistory";
 import { useAuth } from "../../contexts/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const {
     carouselProducts,
     recommendedProducts,
@@ -21,9 +23,13 @@ export default function Home() {
     error,
     refetch,
   } = useProducts({ userId: user?.id });
-
   // Use history hook for authenticated users
   const { historyProducts } = useHistory(user?.id);
+
+  // Handle navigation to search page
+  const handleExploreClick = () => {
+    navigate('/search');
+  };
 
   if (loading) {
     return (
@@ -98,9 +104,11 @@ export default function Home() {
               Discover, compare, and find your perfect laptop companion in our
               cosmic marketplace. Experience the future of laptop comparison
               with AI-powered recommendations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="cosmic-button px-8 py-4 rounded-xl text-white font-semibold text-lg w-full sm:w-auto min-w-[220px]">
+            </p>            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button 
+                onClick={handleExploreClick}
+                className="cosmic-button px-8 py-4 rounded-xl text-white font-semibold text-lg w-full sm:w-auto min-w-[220px] transition-all duration-300 hover:transform hover:scale-105"
+              >
                 🚀 Explore Laptops
               </button>
             </div>

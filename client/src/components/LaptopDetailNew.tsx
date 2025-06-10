@@ -78,14 +78,15 @@ const LaptopDetail: React.FC = () => {
 
     return () => clearInterval(interval);
   }, [isAutoSliding, laptop?.specs?.details?.imageLinks]);
-
   useEffect(() => {
     const fetchLaptopDetails = async () => {
       if (!productId) {
         setError("Product ID not found");
         setLoading(false);
         return;
-      }      try {
+      }
+
+      try {
         // Fetch laptop details using the correct API endpoint
         const response = await fetch(createApiUrl(`/api/laptop/${productId}`));
         if (!response.ok) {
@@ -97,7 +98,8 @@ const LaptopDetail: React.FC = () => {
           // Set current laptop for TechAssistant context
           setCurrentLaptop(data.laptop);
 
-          // Add to user history if user is authenticated          if (user) {
+          // Add to user history if user is authenticated
+          if (user) {
             try {
               await fetch(createApiUrl("/api/history"), {
                 method: "POST",
@@ -122,6 +124,7 @@ const LaptopDetail: React.FC = () => {
         setLoading(false);
       }
     };
+
     fetchLaptopDetails();
   }, [productId, user, setCurrentLaptop]);
 
