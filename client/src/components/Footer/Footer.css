@@ -1,1 +1,329 @@
-/* Footer component styles - Using Tailwind CSS classes and global cosmic theme */
+/* Footer component styles - Enhanced professional design with cosmic theme - COMPACT VERSION */
+
+/* Reduced overall footer size - make it very compact and full width */
+footer {
+  min-height: auto !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+}
+
+.footer-enhanced-divider {
+  margin: 8px 0;
+}
+
+.footer-bottom {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 15, 35, 0.8),
+    rgba(30, 27, 75, 0.9)
+  );
+  border-top: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+/* Compact spacing overrides */
+.footer-compact-spacing {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Custom animations for footer */
+@keyframes shimmerGlow {
+  0% {
+    background-position: -200% 0;
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: 200% 0;
+    opacity: 0.6;
+  }
+}
+
+@keyframes subtleFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes socialHover {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(6deg);
+  }
+  100% {
+    transform: scale(1.05) rotate(3deg);
+  }
+}
+
+/* Footer specific overrides */
+.footer-gradient-divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(139, 92, 246, 0.8),
+    rgba(236, 72, 153, 0.8),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmerGlow 3s ease-in-out infinite;
+}
+
+/* Enhanced newsletter input styling */
+.footer-newsletter-input {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-newsletter-input:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2),
+    0 0 20px rgba(139, 92, 246, 0.1);
+}
+
+.footer-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Enhanced social media buttons */
+.footer-social-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-social-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.footer-social-link:hover::before {
+  left: 100%;
+}
+
+/* Navigation link hover effects */
+.footer-nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.footer-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, currentColor, transparent);
+  transition: width 0.3s ease;
+}
+
+.footer-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Section headers with enhanced styling */
+.footer-section-header {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-section-header::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: linear-gradient(90deg, currentColor, transparent);
+  border-radius: 1px;
+}
+
+/* Brand logo enhancement */
+.footer-brand-logo {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-brand-logo::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  animation: subtleFloat 8s ease-in-out infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.footer-brand-logo:hover::after {
+  opacity: 1;
+}
+
+/* Enhanced divider styling */
+.footer-enhanced-divider {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  height: 1px;
+  margin: 1.5rem 0;
+}
+
+.footer-enhanced-divider::before,
+.footer-enhanced-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: rgba(139, 92, 246, 0.6);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-enhanced-divider::before {
+  left: 20%;
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+.footer-enhanced-divider::after {
+  right: 20%;
+  animation: subtleFloat 4s ease-in-out infinite reverse;
+}
+
+/* Footer bottom section styling */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  margin-top: 1rem;
+}
+
+/* Wider footer specific styles */
+.footer-container-narrow {
+  max-width: none !important; /* Remove max-width to use full width */
+}
+
+/* Compact grid adjustments for full width */
+.footer-grid-narrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+@media (max-width: 1024px) {
+  .footer-grid-narrow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-grid-narrow {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .footer-newsletter-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .footer-social-link {
+    transform: scale(0.9);
+  }
+
+  .footer-section-header {
+    font-size: 1.1rem;
+  }
+
+  /* Prevent overlapping on mobile */
+  .footer-enhanced-divider {
+    margin: 2rem 0;
+  }
+
+  .footer-bottom {
+    margin-top: 1.5rem;
+    padding: 1rem 0.75rem !important;
+  }
+}
+
+/* Dark mode specific enhancements */
+@media (prefers-color-scheme: dark) {
+  .footer-newsletter-input {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .footer-newsletter-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .footer-nav-link {
+    border-bottom: 1px solid transparent;
+  }
+
+  .footer-nav-link:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .footer-social-link,
+  .footer-nav-link,
+  .footer-brand-logo {
+    transition: none;
+  }
+
+  .footer-brand-logo::after,
+  .footer-enhanced-divider::before,
+  .footer-enhanced-divider::after {
+    animation: none;
+  }
+
+  .footer-gradient-divider,
+  .footer-social-link,
+  .footer-brand-logo {
+    animation: none;
+  }
+}

@@ -13,6 +13,7 @@ import {
   formatModel
 } from "../utils/textUtils";
 import Comments from "./Comments/Comments";
+import { Header } from "./index";
 import "./LaptopDetailEnhanced.css";
 
 interface LaptopData {
@@ -396,30 +397,31 @@ const LaptopDetailEnhanced: React.FC = () => {
   const images = laptop.specs?.details?.imageLinks || [];
   const currentImage = images[currentImageIndex] || "/placeholder-laptop.png";
   const displayPrice = getDisplayPrice();
-
   return (
-    <div className="laptop-detail-enhanced">
-      {/* Header */}
-      <div className="detail-header">
-        <button onClick={() => navigate(-1)} className="back-button">
-          ← Back
-        </button>        <div className="breadcrumb">
-          <span 
-            className="breadcrumb-link"
-            onClick={() => navigate('/')}
-          >
-            Home
-          </span> 
-          <span>/</span> 
-          <span 
-            className="breadcrumb-link"
-            onClick={() => navigate('/search')}
-          >
-            Laptops
-          </span>          <span>/</span>
-          <span>{formatBrand(laptop.brand)}</span>
+    <>
+      <Header />
+      <div className="laptop-detail-enhanced">
+        {/* Header */}
+        <div className="detail-header">
+          <button onClick={() => navigate(-1)} className="back-button">
+            ← Back
+          </button>        <div className="breadcrumb">
+            <span 
+              className="breadcrumb-link"
+              onClick={() => navigate('/')}
+            >
+              Home
+            </span> 
+            <span>/</span> 
+            <span 
+              className="breadcrumb-link"
+              onClick={() => navigate('/search')}
+            >
+              Laptops
+            </span>          <span>/</span>
+            <span>{formatBrand(laptop.brand)}</span>
+          </div>
         </div>
-      </div>
 
       {/* Main Content */}
       <div className="detail-content">
@@ -771,15 +773,15 @@ const LaptopDetailEnhanced: React.FC = () => {
                 ))}
               </div>
             </div>
-          )}
-          {activeTab === "comments" && (
+          )}          {activeTab === "comments" && (
             <div className="comments-tab">
               <Comments laptopId={productId || ""} />
             </div>
           )}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 
