@@ -5,6 +5,13 @@ import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { formatStorage } from "../utils/storageUtils";
+import { 
+  formatBrand, 
+  formatProcessorSpec, 
+  formatRAMSpec, 
+  formatGPU,
+  formatModel
+} from "../utils/textUtils";
 import Comments from "./Comments/Comments";
 import "./LaptopDetailEnhanced.css";
 
@@ -207,28 +214,12 @@ const LaptopDetailEnhanced: React.FC = () => {
       ? Math.min(...prices)
       : laptop?.allTimeLowPrice || null;
   };
-
   const formatProcessor = () => {
-    if (!laptop?.specs?.processor) return "";
-    const { name, gen, variant } = laptop.specs.processor;
-    let processorText = "";
-
-    if (name) processorText += name;
-    if (gen) processorText += ` ${gen}th Gen`;
-    if (variant) processorText += ` ${variant}`;
-
-    return processorText.trim();
+    return formatProcessorSpec(laptop?.specs?.processor);
   };
 
   const formatRAM = () => {
-    if (!laptop?.specs?.ram) return "";
-    const { size, type } = laptop.specs.ram;
-    let ramText = "";
-
-    if (size) ramText += `${size}GB`;
-    if (type) ramText += ` ${type.toUpperCase()}`;
-
-    return ramText.trim();
+    return formatRAMSpec(laptop?.specs?.ram);
   };
   const formatStorageDisplay = () => {
     return formatStorage(laptop?.specs?.storage);
@@ -314,20 +305,19 @@ const LaptopDetailEnhanced: React.FC = () => {
       {
         label: "Display",
         value: laptop?.specs?.displayInch ? `${laptop.specs.displayInch}"` : "",
-      },
-      {
+      },      {
         label: "GPU",
-        value: laptop?.specs?.gpu ? laptop.specs.gpu.toUpperCase() : "",
+        value: laptop?.specs?.gpu ? formatGPU(laptop.specs.gpu) : "",
       },
       {
         label: "Operating System",
         value: details.OperatingSystem || details["Operating System"] || "",
-      },
-      {
+      },      {
         label: "Brand",
-        value: laptop?.brand || details.Brand || details.Manufacturer || "",
+        value: laptop?.brand || details.Brand || details.Manufacturer ? 
+               formatBrand(laptop?.brand || details.Brand || details.Manufacturer || "") : "",
       },
-      { label: "Model", value: laptop?.specs?.head || "" },
+      { label: "Model", value: laptop?.specs?.head ? formatModel(laptop.specs.head) : "" },
     ];
     // Filter out empty values and ensure we have at least some specs
     const filteredSpecs = specs.filter(
@@ -336,10 +326,9 @@ const LaptopDetailEnhanced: React.FC = () => {
     );
 
     // If no specs found, return some fallback information
-    if (filteredSpecs.length === 0) {
-      const fallback = [
+    if (filteredSpecs.length === 0) {      const fallback = [
         { label: "Brand", value: laptop?.brand || "Not specified" },
-        { label: "Model", value: laptop?.specs?.head || "Not specified" },
+        { label: "Model", value: laptop?.specs?.head ? formatModel(laptop.specs.head) : "Not specified" },
         { label: "Processor", value: "Information not available" },
         { label: "RAM", value: "Information not available" },
         { label: "Storage", value: "Information not available" },
@@ -427,9 +416,8 @@ const LaptopDetailEnhanced: React.FC = () => {
             onClick={() => navigate('/search')}
           >
             Laptops
-          </span> 
-          <span>/</span>
-          <span>{laptop.brand?.toUpperCase()}</span>
+          </span>          <span>/</span>
+          <span>{formatBrand(laptop.brand)}</span>
         </div>
       </div>
 
@@ -513,7 +501,7 @@ const LaptopDetailEnhanced: React.FC = () => {
           <div className="product-header">
             <div className="header-top">
               <div className="title-section">
-                <div className="brand-badge">{laptop.brand?.toUpperCase()}</div>
+                <div className="brand-badge">{formatBrand(laptop.brand)}</div>
                 <h1 className="product-title">{laptop.specs.head}</h1>
               </div>              <div className="header-actions">
                 <FavoriteButton
@@ -699,11 +687,10 @@ const LaptopDetailEnhanced: React.FC = () => {
                       <div className="overview-item">
                         <strong>Memory:</strong> {formatRAM()}
                       </div>
-                    )}
-                    {laptop.specs?.gpu && (
+                    )}                    {laptop.specs?.gpu && (
                       <div className="overview-item">
                         <strong>Graphics:</strong>{" "}
-                        {laptop.specs.gpu.toUpperCase()}
+                        {formatGPU(laptop.specs.gpu)}
                       </div>
                     )}
                   </div>
