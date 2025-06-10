@@ -26,15 +26,56 @@ require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 
 const cors = require("cors");
 
-// const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
+// const corsOptions = {
+//   origin: ["*","https://laptop-comparison.vercel.app","https://laptop-comparison-git-main-amanraj034s-projects.vercel.app","https://laptop-comparison-7ymlwhrzi-amanraj034s-projects.vercel.app"],
+//   //origin: true,
+//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//   credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+//   allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+// };
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://laptop-compare.vercel.app"],
+  origin: [
+    "https://laptop-comparison.vercel.app",
+    "https://laptop-comparison-git-main-amanraj034s-projects.vercel.app",
+    "https://laptop-comparison-7ymlwhrzi-amanraj034s-projects.vercel.app",
+    "http://localhost:5173"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+  optionsSuccessStatus: 204
 };
 
 const app = express();
 
+// You can keep your existing cors middleware as well
 app.use(cors(corsOptions));
+
+// app.use((req, res, next) => {
+//   const allowedOrigins = [
+//     "*",
+//     "http://localhost:5173",
+//     "https://laptop-comparison.vercel.app",
+//     "https://laptop-comparison-git-main-amanraj034s-projects.vercel.app",
+//     "https://laptop-comparison-7ymlwhrzi-amanraj034s-projects.vercel.app"
+//   ];
+  
+//   const origin = req.headers.origin;
+//   if (allowedOrigins.includes(origin)) {
+//     res.header('Access-Control-Allow-Origin', origin);
+//   }
+  
+//   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+//   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+//   res.header('Access-Control-Allow-Credentials', 'true');
+  
+//   if (req.method === 'OPTIONS') {
+//     return res.sendStatus(204);
+//   }
+//   next();
+// });
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
