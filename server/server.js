@@ -1214,7 +1214,7 @@ app.get("/api/random", async (req, res) => {
           allTimeLowPrice: 1,
         },
       },
-    ]);
+    ], { allowDiskUse: true });
 
     // Format the response data
     const formattedLaptops = randomLaptops.map((laptop) => {
@@ -1784,7 +1784,7 @@ app.get("/api/popular", async (req, res) => {
           allTimeLowPrice: 1,
         },
       },
-    ]);
+    ], { allowDiskUse: true });
 
     // Format the response data
     const formattedLaptops = popularLaptops.map((laptop) => {
@@ -1881,6 +1881,11 @@ app.get("/api/deals", async (req, res) => {
       {
         $match: {
           sites: { $exists: true, $ne: [] }, // Must have at least one site
+          // Add early filtering to reduce dataset size
+          $or: [
+            { "sites.price": { $lte: 500000 } }, // Filter out extremely high prices early
+            { "allTimeLowPrice": { $lte: 500000 } }
+          ]
         },
       },
       {
@@ -2231,12 +2236,9 @@ app.get("/api/deals", async (req, res) => {
         },
       },
       {
-        $sort: { maxDiscount: -1 },
-      },
-      {
         $replaceRoot: { newRoot: "$laptop" },
       },
-      // Sort by highest discount first instead of random sampling
+      // Single sort by highest discount and limit early
       { $sort: { maxDiscountPercent: -1 } },
       { $limit: count },
       {
@@ -2260,7 +2262,7 @@ app.get("/api/deals", async (req, res) => {
           maxDiscountPercent: 1,
         },
       },
-    ]);
+    ], { allowDiskUse: true });
 
     // Format the response data
     const formattedLaptops = dealsLaptops.map((laptop) => {

@@ -585,21 +585,33 @@ const LaptopDetailEnhanced: React.FC = () => {
                         {site.source.charAt(0).toUpperCase() +
                           site.source.slice(1)}
                       </span>
-                    </div>
-                    <div className="price-info">
+                    </div>                    <div className="price-info">
                       <span className="site-current-price">
                         {formatPrice(site.price)}
-                      </span>
-                      {site.basePrice && site.basePrice > site.price && (
-                        <>
-                          <span className="site-original-price">
-                            {formatPrice(site.basePrice)}
-                          </span>
-                          <span className="discount-badge">
-                            {calculateDiscount(site.basePrice, site.price)}% OFF
-                          </span>
-                        </>
-                      )}
+                      </span>                      {/* Show base price - prioritize site.basePrice, then specs.basePrice, then allTimeLowPrice */}
+                      {(() => {
+                        const effectiveBasePrice = site.basePrice && site.basePrice > site.price 
+                          ? site.basePrice 
+                          : (laptop.specs?.basePrice && laptop.specs.basePrice > site.price 
+                            ? laptop.specs.basePrice 
+                            : (laptop.allTimeLowPrice && laptop.allTimeLowPrice > site.price 
+                              ? laptop.allTimeLowPrice 
+                              : null));
+                        
+                        if (effectiveBasePrice) {
+                          return (
+                            <>
+                              <span className="site-original-price">
+                                {formatPrice(effectiveBasePrice)}
+                              </span>
+                              <span className="discount-badge">
+                                {calculateDiscount(effectiveBasePrice, site.price)}% OFF
+                              </span>
+                            </>
+                          );
+                        }
+                        return null;
+                      })()}
                     </div>
                     <button
                       className="buy-button"
