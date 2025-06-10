@@ -9,7 +9,8 @@ import {
   formatBrand, 
   formatProcessorSpec, 
   formatRAMSpec, 
-  formatGPU
+  formatGPU,
+  formatModel
 } from "../utils/textUtils";
 import Comments from "./Comments/Comments";
 import "./LaptopDetailEnhanced.css";
@@ -316,7 +317,7 @@ const LaptopDetailEnhanced: React.FC = () => {
         value: laptop?.brand || details.Brand || details.Manufacturer ? 
                formatBrand(laptop?.brand || details.Brand || details.Manufacturer || "") : "",
       },
-      { label: "Model", value: laptop?.specs?.head || "" },
+      { label: "Model", value: laptop?.specs?.head ? formatModel(laptop.specs.head) : "" },
     ];
     // Filter out empty values and ensure we have at least some specs
     const filteredSpecs = specs.filter(
@@ -325,10 +326,9 @@ const LaptopDetailEnhanced: React.FC = () => {
     );
 
     // If no specs found, return some fallback information
-    if (filteredSpecs.length === 0) {
-      const fallback = [
+    if (filteredSpecs.length === 0) {      const fallback = [
         { label: "Brand", value: laptop?.brand || "Not specified" },
-        { label: "Model", value: laptop?.specs?.head || "Not specified" },
+        { label: "Model", value: laptop?.specs?.head ? formatModel(laptop.specs.head) : "Not specified" },
         { label: "Processor", value: "Information not available" },
         { label: "RAM", value: "Information not available" },
         { label: "Storage", value: "Information not available" },

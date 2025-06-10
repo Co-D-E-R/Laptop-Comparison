@@ -8,7 +8,8 @@ import {
   formatProcessorSpec, 
   formatRAMSpec, 
   formatGPU,
-  formatStorageType
+  formatStorageType,
+  formatModel
 } from "../../utils/textUtils";
 import type { Laptop } from "../../types/compare";
 import "./Compare.css";
@@ -56,11 +57,16 @@ const Compare: React.FC = () => {
       getValue: (laptop) => formatSeries(laptop.specs?.series || laptop.series),
       type: "string",
       category: "basic",
-    },
-    {
+    },    {
       label: "Model",
-      getValue: (laptop) =>
-        laptop.specs?.details?.["Item model number"] || "N/A",
+      getValue: (laptop) => {
+        // Try to get a clean model name from the head
+        if (laptop.specs?.head) {
+          return formatModel(laptop.specs.head);
+        }
+        // Fallback to item model number
+        return laptop.specs?.details?.["Item model number"] || "N/A";
+      },
       type: "string",
       category: "basic",
     },

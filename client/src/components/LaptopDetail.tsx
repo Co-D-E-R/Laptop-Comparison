@@ -10,7 +10,8 @@ import {
   formatSeries, 
   formatProcessorSpec, 
   formatRAMSpec, 
-  formatGPU
+  formatGPU,
+  formatModel
 } from "../utils/textUtils";
 import "./LaptopDetail.css";
 
@@ -389,13 +390,12 @@ const LaptopDetail: React.FC = () => {
           {/* Technical Specifications */}
           <div className="technical-specs">
             <h3>📋 Detailed Specifications</h3>
-            <div className="specs-grid">
-              {laptop.specs.head && (
+            <div className="specs-grid">              {laptop.specs.head && (
                 <div className="spec-item">
                   <span className="spec-label">Model Name</span>
-                  <span className="spec-value">{laptop.specs.head}</span>
+                  <span className="spec-value">{formatModel(laptop.specs.head)}</span>
                 </div>
-              )}              {laptop.brand && (
+              )}{laptop.brand && (
                 <div className="spec-item">
                   <span className="spec-label">Brand</span>
                   <span className="spec-value">{formatBrand(laptop.brand)}</span>
