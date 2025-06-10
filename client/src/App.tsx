@@ -14,6 +14,12 @@ import Search from "./pages/search/Search";
 import Compare from "./pages/compare/Compare";
 import LaptopDetailEnhanced from "./components/LaptopDetailEnhanced";
 import TechAssistantPage from "./pages/TechAssistantPage";
+import HelpPage from "./pages/HelpPage";
+import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
+import CookiesPage from "./pages/CookiesPage";
 import FloatingCompareButton from "./components/FloatingCompareButton";
 import "./App.css";
 
@@ -60,6 +66,13 @@ function App() {
                   </ProtectedRoute>
                 }
               />
+              {/* Footer Pages */}
+              <Route path="/help" element={<HelpPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/terms" element={<TermsPage />} />
+              <Route path="/cookies" element={<CookiesPage />} />
               {/* Redirect any unknown routes to home */}
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

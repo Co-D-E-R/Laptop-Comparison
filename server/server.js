@@ -2130,24 +2130,60 @@ app.get("/api/deals", async (req, res) => {
           ],
         },
       },
-      // Remove duplicates based on specs.head (model name) and brand combination
+      // Remove duplicates based on multiple criteria for better deduplication
+      {
+        $addFields: {
+          // Create a more comprehensive deduplication key
+          deduplicationKey: {
+            $concat: [
+              { $toLower: { $ifNull: ["$brand", "unknown"] } },
+              "|",
+              { $toLower: { $ifNull: ["$series", "unknown"] } },
+              "|",
+              {
+                $replaceAll: {
+                  input: {
+                    $replaceAll: {
+                      input: { $toLower: { $ifNull: ["$specs.head", "unknown"] } },
+                      find: " ",
+                      replacement: "",
+                    },
+                  },
+                  find: "[^a-z0-9]",
+                  replacement: "",
+                },
+              },
+              "|",
+              { $toString: { $ifNull: ["$specs.processor.name", "unknown"] } },
+              "|",
+              { $toString: { $ifNull: ["$specs.ram.size", "0"] } },
+              "|",
+              { $toString: { $ifNull: ["$specs.storage.size", "0"] } },
+            ],
+          },
+        },
+      },
       {
         $group: {
-          _id: {
-            brand: "$brand",
-            // Use a safer approach for deduplication without $substr
-            simplifiedHead: {
-              $replaceAll: {
-                input: { $toLower: "$specs.head" },
-                find: " ",
-                replacement: "",
-              },
+          _id: "$deduplicationKey",
+          // Keep the laptop with the highest discount among duplicates
+          laptop: {
+            $first: {
+              $cond: [
+                { $eq: [{ $indexOfArray: [["$$ROOT"], "$$ROOT"] }, 0] },
+                "$$ROOT",
+                "$$ROOT",
+              ],
             },
           },
-          // Keep the laptop with the highest discount among duplicates
-          laptop: { $first: "$$ROOT" },
           maxDiscount: { $max: "$maxDiscountPercent" },
+          // Keep track of all laptops in this group for debugging
+          allLaptops: { $push: "$$ROOT" },
+          count: { $sum: 1 },
         },
+      },
+      {
+        $sort: { maxDiscount: -1 },
       },
       {
         $replaceRoot: { newRoot: "$laptop" },
@@ -2238,6 +2274,32 @@ app.get("/api/deals", async (req, res) => {
       const images = laptop.specs?.details?.imageLinks || [];
       const imageLinks = images.slice(0, 2);
 
+      // Calculate best rating and review count from available sites
+      let bestRating = null;
+      let bestRatingCount = null;
+
+      if (laptop.sites && laptop.sites.length > 0) {
+        const sitesWithRatings = laptop.sites.filter(site => site.rating && site.rating > 0);
+        if (sitesWithRatings.length > 0) {
+          // Find the site with the highest rating
+          const bestSite = sitesWithRatings.reduce((best, current) => {
+            return current.rating > best.rating ? current : best;
+          });
+
+          bestRating = bestSite.rating;
+
+          // Get review count from the best rated site
+          if (bestSite.ratingCount && bestSite.ratingCount !== "N/A") {
+            const count = typeof bestSite.ratingCount === 'string'
+              ? parseInt(bestSite.ratingCount.replace(/,/g, ""))
+              : bestSite.ratingCount;
+            if (!isNaN(count) && count > 0) {
+              bestRatingCount = count;
+            }
+          }
+        }
+      }
+
       return {
         id: laptop._id,
         productId: laptop._id,
@@ -2261,6 +2323,9 @@ app.get("/api/deals", async (req, res) => {
         basePrice: bestBasePrice
           ? `₹${bestBasePrice.toLocaleString("en-IN")}`
           : null,
+        // Add dynamic rating fields that DealsSection expects
+        rating: bestRating ? bestRating.toString() : null,
+        ratingsNumber: bestRatingCount ? bestRatingCount.toLocaleString() : null,
         // Multi-site data for advanced display
         amazonPrice: amazonPrice,
         flipkartPrice: flipkartPrice,

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import type { Product } from "../types/Product";
-import { removeDuplicates } from "../utils";
+import { removeDuplicates, removeAdvancedDuplicates } from "../utils";
 
 interface UseProductsReturn {
   carouselProducts: Product[];
@@ -44,6 +44,9 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
         processor: string;
         ram: string;
         storage: string;
+        // Add fields for deals API structure
+        rating?: string | number;
+        ratingsNumber?: string | number;
       }) => {
         // Determine display price (show lowest available or first available)
         const displayPrice = laptop.amazonPrice && laptop.flipkartPrice
@@ -58,7 +61,9 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
           basePrice: laptop.basePrice
             ? `₹${laptop.basePrice.toLocaleString()}`
             : undefined,
-          rating: laptop.amazonRating?.toString() || laptop.flipkartRating?.toString() || "4.0", // Add fallback rating
+          // Handle both deals API structure (top-level rating) and other APIs (amazonRating/flipkartRating)
+          rating: laptop.rating?.toString() || laptop.amazonRating?.toString() || laptop.flipkartRating?.toString() || null,
+          ratingsNumber: laptop.ratingsNumber?.toString() || null,
           technicalDetails: {
             imageLinks: laptop.images || [],
             "Model Name": laptop.title,
@@ -67,8 +72,7 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
             "Processor Name": laptop.processor || "Not specified",
             RAM: laptop.ram || "Not specified",
             "Storage Type": laptop.storage || "Not specified",
-          },
-          sites: [
+          },          sites: [
             ...(laptop.amazonPrice
               ? [
                   {
@@ -77,8 +81,8 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
                     link: laptop.amazonUrl || "#",
                     rating: laptop.amazonRating
                       ? laptop.amazonRating.toString()
-                      : "4.2",
-                    ratingCount: Math.floor(Math.random() * 500 + 100).toString(),
+                      : undefined,
+                    ratingCount: undefined, // Remove fake rating counts
                   },
                 ]
               : []),
@@ -90,8 +94,8 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
                     link: laptop.flipkartUrl || "#",
                     rating: laptop.flipkartRating
                       ? laptop.flipkartRating.toString()
-                      : "4.1",
-                    ratingCount: Math.floor(Math.random() * 400 + 80).toString(),
+                      : undefined,
+                    ratingCount: undefined, // Remove fake rating counts
                   },
                 ]
               : []),
@@ -184,13 +188,16 @@ export const useProducts = ({ userId }: UseProductsProps = {}): UseProductsRetur
       // Validate deal data
       if (!dealData.success || !Array.isArray(dealData.laptops)) {
         throw new Error("Invalid deal data format received from server");
-      }
-
-      // Transform all data sets
-      const transformedCarouselData =
-        carouselData.laptops.map(transformApiData);
-      const transformedDealData = dealData.laptops.map(transformApiData);
-      const transformedPopularData = popularData.laptops.map(transformApiData);
+      }      // Transform all data sets
+      const transformedCarouselData = removeDuplicates(
+        carouselData.laptops.map(transformApiData)
+      );
+      const transformedDealData = removeAdvancedDuplicates(
+        dealData.laptops.map(transformApiData)
+      );
+      const transformedPopularData = removeDuplicates(
+        popularData.laptops.map(transformApiData)
+      );
 
       setCarouselProducts(transformedCarouselData);
       setRecommendedProducts(recommendedData);

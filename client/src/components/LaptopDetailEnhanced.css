@@ -3,9 +3,11 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 6rem; /* Add more top padding to account for fixed header */
+  margin-bottom: 40px; /* Add bottom margin to separate from footer */
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
-  min-height: 100vh;
+  min-height: calc(100vh - 140px); /* Account for navbar and footer */
   color: #e2e8f0;
 }
 
@@ -799,6 +801,10 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .laptop-detail-enhanced {
+    padding-top: 5rem; /* Slightly less padding on tablets */
+  }
+
   .detail-content {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -816,6 +822,7 @@
 @media (max-width: 768px) {
   .laptop-detail-enhanced {
     padding: 15px;
+    padding-top: 4rem; /* Less padding on mobile */
   }
 
   .detail-header {
