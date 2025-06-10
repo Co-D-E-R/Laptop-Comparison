@@ -464,22 +464,13 @@ const Profile: React.FC = () => {
               </div>
 
               {/* Additional Sections */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 <div className="glass rounded-xl p-6">
                   <h3 className="text-xl font-semibold mb-4 text-cyan-300">
                     Price Alerts
                   </h3>
                   <p className="text-white/60">
                     Coming soon - Set price alerts for your favorite laptops
-                  </p>
-                </div>
-
-                <div className="glass rounded-xl p-6">
-                  <h3 className="text-xl font-semibold mb-4 text-cyan-300">
-                    Comparisons
-                  </h3>
-                  <p className="text-white/60">
-                    Coming soon - Save and manage laptop comparisons
                   </p>
                 </div>
               </div>

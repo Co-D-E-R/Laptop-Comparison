@@ -21,7 +21,7 @@ const STOR_TYPES = ['hdd', 'ssd', 'nvme', 'emmc', 'other'];
 //   WEIGHT CONSTANTS
 // ==============================
 
-const PRICE_WEIGHT = 2.0;    // doubles the impact of price differences
+const PRICE_WEIGHT = 0.75;    // doubles the impact of price differences
 const BRAND_WEIGHT = 1.2;    // increases brand match impact by 50%
 
 // ==============================
