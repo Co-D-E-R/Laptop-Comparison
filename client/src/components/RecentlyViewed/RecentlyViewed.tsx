@@ -6,6 +6,7 @@ import {
   truncateText,
   formatPrice,
   getPrimaryImage,
+  filterProductsWithValidPrices,
 } from "../../utils";
 import { FavoriteButton } from "../FavoriteButton/FavoriteButton";
 import { useCompare } from "../../hooks/useCompare";
@@ -28,7 +29,12 @@ const RecentlyViewed: React.FC<RecentlyViewedProps> = ({
   const [deletingItems, setDeletingItems] = useState<Set<string>>(new Set());
   const [clearingAll, setClearingAll] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const { addToCompare, removeFromCompare, canAddMore, isInCompare } = useCompare();  // Compare handlers
+  const { addToCompare, removeFromCompare, canAddMore, isInCompare } = useCompare();
+
+  // Filter out products with invalid prices
+  const validProducts = filterProductsWithValidPrices(products);
+
+  // Compare handlers
   const handleAddToCompare = (product: Product, event: React.MouseEvent) => {
     event.stopPropagation();
     const laptopData = {
@@ -51,15 +57,14 @@ const RecentlyViewed: React.FC<RecentlyViewedProps> = ({
     event.stopPropagation();
     removeFromCompare(productId);
   };
-
-  if (products.length === 0) {
+  if (validProducts.length === 0) {
     return null;
   }
 
   // Slider configuration
   const itemsPerSlide = 5;
-  const totalSlides = Math.ceil(products.length / itemsPerSlide);
-  const shouldShowSlider = products.length > itemsPerSlide;
+  const totalSlides = Math.ceil(validProducts.length / itemsPerSlide);
+  const shouldShowSlider = validProducts.length > itemsPerSlide;
 
   const nextSlide = () => {
     if (currentSlide < totalSlides - 1) {
@@ -76,8 +81,7 @@ const RecentlyViewed: React.FC<RecentlyViewedProps> = ({
   const goToSlide = (slideIndex: number) => {
     setCurrentSlide(slideIndex);
   };
-
-  if (products.length === 0) {
+  if (validProducts.length === 0) {
     return null;
   }
 
@@ -150,7 +154,7 @@ const RecentlyViewed: React.FC<RecentlyViewedProps> = ({
             <h2 className="text-4xl font-bold gradient-text-secondary animate-fadeInUp">
               ⏰ Your Cosmic Journey
             </h2>
-            {showDeleteButtons && onClearAll && products.length > 0 && (
+            {showDeleteButtons && onClearAll && validProducts.length > 0 && (
               <button
                 onClick={handleClearAll}
                 disabled={clearingAll}
@@ -200,8 +204,7 @@ const RecentlyViewed: React.FC<RecentlyViewedProps> = ({
               >
                 {Array.from({ length: totalSlides }, (_, slideIndex) => (
                   <div key={slideIndex} className="w-full flex-shrink-0">
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-2">
-                      {products
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-2">                      {validProducts
                         .slice(
                           slideIndex * itemsPerSlide,
                           (slideIndex + 1) * itemsPerSlide
@@ -396,10 +399,9 @@ const RecentlyViewed: React.FC<RecentlyViewedProps> = ({
                 ))}
               </div>
             </div>
-          ) : (
-            /* Regular Grid Layout for 5 or fewer items */
+          ) : (            /* Regular Grid Layout for 5 or fewer items */
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-              {products.map((product, idx) => (
+              {validProducts.map((product, idx) => (
                 <div
                   key={`recently-viewed-${product.productId}-${idx}`}
                   className="glass-card rounded-xl p-4 card-hover cursor-pointer group relative overflow-hidden"

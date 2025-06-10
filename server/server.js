@@ -1551,6 +1551,13 @@ app.post("/api/history", async (req, res) => {
     });
   } catch (err) {
     console.error(err);
+    // Handle Mongoose version error specifically
+    if (err.name === 'VersionError') {
+      return res.status(409).json({
+        success: false,
+        message: "Conflict: Document was modified by another request. Please try again."
+      });
+    }
     res.status(500).json({ success: false, message: "Server error" });
   }
 });

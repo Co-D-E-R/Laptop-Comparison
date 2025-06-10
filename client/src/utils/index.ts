@@ -159,3 +159,76 @@ export const getEmailValidationError = (email: string): string | null => {
   if (!validateEmail(email)) return "Please enter a valid email address";
   return null;
 };
+
+/**
+ * Validates if a price is valid (not N/A, 0, empty, or null)
+ */
+export const isValidPrice = (price: number | string | null | undefined): boolean => {
+  if (price === null || price === undefined) return false;
+  if (typeof price === 'string') {
+    const trimmed = price.trim();
+    if (trimmed === '' || trimmed.toLowerCase() === 'n/a' || trimmed === '0') return false;
+    const numericPrice = parseFloat(trimmed.replace(/[₹,]/g, ''));
+    return !isNaN(numericPrice) && numericPrice > 0;
+  }
+  if (typeof price === 'number') {
+    return !isNaN(price) && price > 0;
+  }
+  return false;
+};
+
+interface LaptopLike {
+  sites?: Array<{ price?: number | string }>;
+  allTimeLowPrice?: number | string;
+}
+
+interface ProductLike {
+  sites?: Array<{ price?: number | string }>;
+  price?: number | string;
+  basePrice?: number | string;
+}
+
+/**
+ * Checks if a laptop has at least one valid price (from sites or allTimeLowPrice)
+ */
+export const hasValidPrice = (laptop: LaptopLike): boolean => {
+  // Check if any site has a valid price
+  if (laptop.sites && Array.isArray(laptop.sites)) {
+    const hasValidSitePrice = laptop.sites.some((site) => isValidPrice(site.price));
+    if (hasValidSitePrice) return true;
+  }
+  
+  // Check allTimeLowPrice as fallback
+  return isValidPrice(laptop.allTimeLowPrice);
+};
+
+/**
+ * Filters out laptops that don't have valid prices
+ */
+export const filterLaptopsWithValidPrices = <T extends LaptopLike>(laptops: T[]): T[] => {
+  return laptops.filter(hasValidPrice);
+};
+
+/**
+ * Checks if a product has valid price information
+ */
+export const hasValidProductPrice = (product: ProductLike): boolean => {
+  // Check product.sites array first
+  if (product.sites && Array.isArray(product.sites)) {
+    const hasValidSitePrice = product.sites.some((site) => isValidPrice(site.price));
+    if (hasValidSitePrice) return true;
+  }
+  
+  // Check product.price
+  if (isValidPrice(product.price)) return true;
+  
+  // Check product.basePrice as fallback
+  return isValidPrice(product.basePrice);
+};
+
+/**
+ * Filters out products that don't have valid prices
+ */
+export const filterProductsWithValidPrices = <T extends ProductLike>(products: T[]): T[] => {
+  return products.filter(hasValidProductPrice);
+};

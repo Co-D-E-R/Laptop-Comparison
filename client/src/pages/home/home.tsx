@@ -124,21 +124,29 @@ export default function Home() {
           className="absolute bottom-20 left-1/4 w-12 h-12 bg-cyan-500/20 rounded-full animate-float neon-glow"
           style={{ animationDelay: "2s" }}
         ></div>
-      </section>{" "}
-      <main className="flex-1 space-y-16 pb-16">
+      </section>{" "}      <main className="flex-1 space-y-16 pb-16">
         <Carousel products={carouselProducts} />
         {user ? (
           // Authenticated user content
           <>
-            <ProductGrid
-              products={recommendedProducts}
-              title="🎯 Cosmic Recommendations"
-              sectionId="recommended"
-            />
+            {recommendedProducts.length > 0 && (
+              <ProductGrid
+                products={recommendedProducts}
+                title="🎯 Cosmic Recommendations"
+                sectionId="recommended"
+              />
+            )}
             {historyProducts.length > 0 && (
               <RecentlyViewed products={historyProducts} />
             )}
             <DealsSection products={dealProducts} />
+            {recommendedProducts.length === 0 && (
+              <ProductGrid
+                products={popularProducts}
+                title="🌟 Popular Laptops"
+                sectionId="popular"
+              />
+            )}
           </>
         ) : (
           // Non-authenticated user content

@@ -8,6 +8,7 @@ import {
   formatPrice,
   getPrimaryImage,
   calculateDiscount,
+  filterProductsWithValidPrices,
 } from "../../utils";
 import { FavoriteButton } from "../FavoriteButton/FavoriteButton";
 import { useCompare } from "../../hooks/useCompare";
@@ -32,9 +33,6 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ products }) => {
-  const { currentSlide, nextSlide, prevSlide, goToSlide } = useCarousel(
-    products.length
-  );
   const navigate = useNavigate();
   const { addToCompare, removeFromCompare, isInCompare, canAddMore } = useCompare();
 
@@ -68,6 +66,17 @@ const Carousel: React.FC<CarouselProps> = ({ products }) => {
   if (products.length === 0) {
     return null;
   }
+
+  // Filter out products with invalid prices
+  const validProducts = filterProductsWithValidPrices(products);
+  const { currentSlide, nextSlide, prevSlide, goToSlide } = useCarousel(
+    validProducts.length
+  );
+
+  if (validProducts.length === 0) {
+    return null;
+  }
+
   return (
     <section id="carousel" className="relative px-6 py-16 overflow-hidden">
       {/* Background cosmic elements */}
@@ -96,7 +105,7 @@ const Carousel: React.FC<CarouselProps> = ({ products }) => {
               className="flex transition-transform duration-500 ease-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {products.map((product, idx) => (
+              {validProducts.map((product, idx) => (
                 <div
                   key={`carousel-${product.productId}-${idx}`}
                   className="w-full flex-shrink-0 px-4"
@@ -363,7 +372,7 @@ const Carousel: React.FC<CarouselProps> = ({ products }) => {
 
           {/* Dots indicator */}
           <div className="flex justify-center space-x-3 mt-8">
-            {products.map((_, index) => (
+            {validProducts.map((_, index) => (
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${

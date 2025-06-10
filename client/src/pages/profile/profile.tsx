@@ -5,7 +5,7 @@ import { useHistory } from "../../hooks/useHistory";
 import { useFavorites } from "../../hooks/useFavorites";
 import { useCompare } from "../../hooks/useCompare";
 import { useNavigate } from "react-router-dom";
-import { handleProductClick, truncateText, getPrimaryImage } from "../../utils";
+import { handleProductClick, truncateText, getPrimaryImage, filterProductsWithValidPrices } from "../../utils";
 import type { Product } from "../../types/Product";
 
 const Profile: React.FC = () => {
@@ -35,6 +35,10 @@ const Profile: React.FC = () => {
     error: favoritesError,
     removeFavorite,
   } = useFavorites(user?.id);
+
+  // Filter products with valid prices
+  const validHistoryProducts = filterProductsWithValidPrices(historyProducts);
+  const validFavoriteProducts = filterProductsWithValidPrices(favoriteProducts);
 
   const showNotification = (type: "success" | "error", message: string) => {
     setNotification({ type, message });
@@ -360,10 +364,10 @@ const Profile: React.FC = () => {
                       Error loading history: {historyError}
                     </div>
                   </div>
-                ) : historyProducts.length > 0 ? (
+                ) : validHistoryProducts.length > 0 ? (
                   <>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                      {historyProducts.slice(0, 5).map((product) => (
+                      {validHistoryProducts.slice(0, 5).map((product) => (
                         <ProductCard
                           key={product.productId}
                           product={product}
@@ -374,10 +378,10 @@ const Profile: React.FC = () => {
                         />
                       ))}
                     </div>
-                    {historyProducts.length > 5 && (
+                    {validHistoryProducts.length > 5 && (
                       <div className="mt-4 text-center">
                         <p className="text-white/60 text-sm">
-                          Showing 5 of {historyProducts.length} laptops
+                          Showing 5 of {validHistoryProducts.length} laptops
                         </p>
                       </div>
                     )}
@@ -432,10 +436,10 @@ const Profile: React.FC = () => {
                       Error loading favorites: {favoritesError}
                     </div>
                   </div>
-                ) : favoriteProducts.length > 0 ? (
+                ) : validFavoriteProducts.length > 0 ? (
                   <>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                      {favoriteProducts.slice(0, 4).map((product) => (
+                      {validFavoriteProducts.slice(0, 4).map((product) => (
                         <ProductCard
                           key={product.productId}
                           product={product}
@@ -444,10 +448,10 @@ const Profile: React.FC = () => {
                         />
                       ))}
                     </div>
-                    {favoriteProducts.length > 4 && (
+                    {validFavoriteProducts.length > 4 && (
                       <div className="mt-4 text-center">
                         <p className="text-white/60 text-sm">
-                          Showing 4 of {favoriteProducts.length} favorites
+                          Showing 4 of {validFavoriteProducts.length} favorites
                         </p>
                       </div>
                     )}

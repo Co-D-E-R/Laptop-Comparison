@@ -13,6 +13,7 @@ import {
   formatGPU,
   formatModel
 } from "../utils/textUtils";
+import { isValidPrice } from "../utils";
 import { createApiUrl } from "../utils/api";
 import "./LaptopDetail.css";
 
@@ -141,18 +142,17 @@ const LaptopDetail: React.FC = () => {
   };
   const toggleAutoSlide = () => {
     setIsAutoSliding(!isAutoSliding);
-  };
-  const getDisplayPrice = () => {
+  };  const getDisplayPrice = () => {
     if (!laptop?.sites || laptop.sites.length === 0) {
-      return laptop?.allTimeLowPrice || null;
+      return isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
     }
 
     const prices = laptop.sites
       .map((site) => site.price)
-      .filter((price) => price && price > 0);
+      .filter((price) => isValidPrice(price));
     return prices.length > 0
       ? Math.min(...prices)
-      : laptop?.allTimeLowPrice || null;
+      : isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
   };
 
   // Compare handlers
@@ -448,13 +448,14 @@ const LaptopDetail: React.FC = () => {
                 </div>
               )}
             </div>
-          </div>
-          {/* Purchase Options at Bottom */}
+          </div>          {/* Purchase Options at Bottom */}
           {laptop.sites && laptop.sites.length > 0 && (
             <div className="purchase-section">
               <h3>🛒 Where to Buy</h3>
               <div className="site-options">
-                {laptop.sites.map((site, index) => (
+                {laptop.sites
+                  .filter((site) => isValidPrice(site.price))
+                  .map((site, index) => (
                   <div key={index} className="site-card">
                     <div className="site-header">
                       <div className="site-info">
@@ -499,10 +500,8 @@ const LaptopDetail: React.FC = () => {
                     )}
                   </div>
                 ))}
-              </div>
-
-              {/* Best Price Display */}
-              {displayPrice && (
+              </div>              {/* Best Price Display */}
+              {displayPrice ? (
                 <div className="best-price-section">
                   <div className="best-price">
                     <span className="best-price-label">💰 Best Price:</span>
@@ -511,7 +510,8 @@ const LaptopDetail: React.FC = () => {
                     </span>
                   </div>
                   {laptop.allTimeLowPrice &&
-                    laptop.allTimeLowPrice !== displayPrice && (
+                    laptop.allTimeLowPrice !== displayPrice &&
+                    isValidPrice(laptop.allTimeLowPrice) && (
                       <div className="all-time-low">
                         <span className="all-time-low-label">
                           🏆 All-time Low:
@@ -521,6 +521,15 @@ const LaptopDetail: React.FC = () => {
                         </span>
                       </div>
                     )}
+                </div>
+              ) : (
+                <div className="best-price-section">
+                  <div className="best-price">
+                    <span className="best-price-label">💰 Price:</span>
+                    <span className="best-price-value text-gray-400">
+                      Contact seller for pricing
+                    </span>
+                  </div>
                 </div>
               )}
             </div>

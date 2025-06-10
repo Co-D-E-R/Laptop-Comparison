@@ -12,6 +12,7 @@ import {
   formatGPU,
   formatModel
 } from "../utils/textUtils";
+import { isValidPrice } from "../utils";
 import { createApiUrl } from "../utils/api";
 import Comments from "./Comments/Comments";
 import { Header } from "./index";
@@ -198,19 +199,17 @@ const LaptopDetailEnhanced: React.FC = () => {
 
   const toggleAutoSlide = () => {
     setIsAutoSliding(!isAutoSliding);
-  };
-
-  const getDisplayPrice = () => {
+  };  const getDisplayPrice = () => {
     if (!laptop?.sites || laptop.sites.length === 0) {
-      return laptop?.allTimeLowPrice || null;
+      return isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
     }
 
     const prices = laptop.sites
       .map((site) => site.price)
-      .filter((price) => price && price > 0);
+      .filter((price) => isValidPrice(price));
     return prices.length > 0
       ? Math.min(...prices)
-      : laptop?.allTimeLowPrice || null;
+      : isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
   };
   const formatProcessor = () => {
     return formatProcessorSpec(laptop?.specs?.processor);
@@ -561,16 +560,17 @@ const LaptopDetailEnhanced: React.FC = () => {
                 )}
               </div>
             )}
-          </div>
-          {/* Price Section */}
+          </div>          {/* Price Section */}
           <div className="price-section">
-            {displayPrice && (
+            {displayPrice ? (
               <div className="current-price">{formatPrice(displayPrice)}</div>
-            )}
-
-            {laptop.sites && laptop.sites.length > 0 && (
+            ) : (
+              <div className="current-price text-gray-400">Contact seller for pricing</div>
+            )}            {laptop.sites && laptop.sites.length > 0 && (
               <div className="price-comparison">
-                {laptop.sites.map((site, index) => (
+                {laptop.sites
+                  .filter((site) => isValidPrice(site.price))
+                  .map((site, index) => (
                   <div key={index} className="site-price">
                     <div className="site-info">
                       <img

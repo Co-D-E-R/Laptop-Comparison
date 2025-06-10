@@ -4,6 +4,7 @@ import { Header } from "../../components";
 import { useAuth } from "../../contexts/AuthContext";
 import { useCompare } from "../../hooks/useCompare";
 import { FavoriteButton } from "../../components/FavoriteButton";
+import { filterLaptopsWithValidPrices } from "../../utils";
 
 interface SuggestionItem {
   id: string;
@@ -341,12 +342,15 @@ const Search: React.FC = () => {
           })
         );
 
-        setLaptops(transformedLaptops);
+        // Filter out laptops with invalid prices
+        const validLaptops = filterLaptopsWithValidPrices(transformedLaptops);
+        
+        setLaptops(validLaptops);
         // Use pagination data from API response
         setPagination({
-          total: data.pagination?.total || transformedLaptops.length,
+          total: data.pagination?.total || validLaptops.length,
           page: data.pagination?.page || 1,
-          limit: data.pagination?.limit || transformedLaptops.length,
+          limit: data.pagination?.limit || validLaptops.length,
           totalPages: data.pagination?.totalPages || 1,
           hasNext: false,
           hasPrev: false,
@@ -459,7 +463,10 @@ const Search: React.FC = () => {
         console.log("Search Parameters:", params.toString()); // Debug log
 
         if (data.success) {
-          setLaptops(data.laptops);
+          // Filter out laptops with invalid prices
+          const validLaptops = filterLaptopsWithValidPrices(data.laptops);
+          
+          setLaptops(validLaptops);
           setPagination(data.pagination);
         } else {
           console.error("Advanced Search API returned success: false");

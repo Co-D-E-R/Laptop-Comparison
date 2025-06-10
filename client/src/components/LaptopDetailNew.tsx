@@ -6,6 +6,7 @@ import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
 import { formatStorage } from "../utils/storageUtils";
 import { formatBrand, formatSeries } from "../utils/textUtils";
+import { isValidPrice } from "../utils";
 import { createApiUrl } from "../utils/api";
 import "./LaptopDetail.css";
 
@@ -145,21 +146,19 @@ const LaptopDetail: React.FC = () => {
   const toggleAutoSlide = () => {
     setIsAutoSliding(!isAutoSliding);
   };
-
   const getDisplayPrice = () => {
     if (!laptop?.sites || laptop.sites.length === 0) {
-      return laptop?.allTimeLowPrice || null;
+      return isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
     }
 
     const prices = laptop.sites
       .map((site) => site.price)
-      .filter((price) => price && price > 0);
+      .filter((price) => isValidPrice(price));
 
     return prices.length > 0
       ? Math.min(...prices)
-      : laptop?.allTimeLowPrice || null;
-  };
-  const getDisplayRating = () => {
+      : isValidPrice(laptop?.allTimeLowPrice) ? laptop.allTimeLowPrice : null;
+  };  const getDisplayRating = () => {
     if (!laptop?.sites || laptop.sites.length === 0) {
       return null;
     }
@@ -431,21 +430,27 @@ const LaptopDetail: React.FC = () => {
                 </div>
               )}
             </div>
-          </div>
-          {/* Pricing and Purchase Options */}
+          </div>          {/* Pricing and Purchase Options */}
           <div className="pricing-section">
-            {displayPrice && (
+            {displayPrice ? (
               <div className="price-display">
                 <span className="current-price">
                   ₹{displayPrice.toLocaleString("en-IN")}
                 </span>
                 {laptop.allTimeLowPrice &&
-                  laptop.allTimeLowPrice !== displayPrice && (
+                  laptop.allTimeLowPrice !== displayPrice &&
+                  isValidPrice(laptop.allTimeLowPrice) && (
                     <span className="all-time-low">
                       All-time low: ₹
                       {laptop.allTimeLowPrice.toLocaleString("en-IN")}
                     </span>
                   )}
+              </div>
+            ) : (
+              <div className="price-display">
+                <span className="current-price text-gray-400">
+                  Contact seller for pricing
+                </span>
               </div>
             )}
 
@@ -457,11 +462,11 @@ const LaptopDetail: React.FC = () => {
           </div>
           {/* Site Redirect Options */}
           <div className="purchase-options">
-            <h3>🛒 Available On</h3>
-
-            {laptop.sites && laptop.sites.length > 0 ? (
+            <h3>🛒 Available On</h3>            {laptop.sites && laptop.sites.length > 0 ? (
               <div className="sites-grid">
-                {laptop.sites.map((site, index) => (
+                {laptop.sites
+                  .filter((site) => isValidPrice(site.price))
+                  .map((site, index) => (
                   <div key={index} className="site-card">
                     <div className="site-header">
                       <img
