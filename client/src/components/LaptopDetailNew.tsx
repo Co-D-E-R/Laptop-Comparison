@@ -4,6 +4,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
+import { formatStorage } from "../utils/storageUtils";
 import "./LaptopDetail.css";
 
 interface LaptopData {
@@ -378,14 +379,11 @@ const LaptopDetail: React.FC = () => {
                     {laptop.specs.ram.size}GB {laptop.specs.ram.type}
                   </span>
                 </div>
-              )}
-
-              {laptop.specs.storage?.size && (
+              )}              {laptop.specs.storage?.size && (
                 <div className="comparison-item">
                   <span className="label">Storage</span>
                   <span className="value">
-                    {laptop.specs.storage.size}GB{" "}
-                    {laptop.specs.storage.type?.toUpperCase()}
+                    {formatStorage(laptop.specs.storage)}
                   </span>
                 </div>
               )}

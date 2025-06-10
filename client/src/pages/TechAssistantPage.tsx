@@ -7,6 +7,7 @@ import React, {
 } from "react";
 import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { geminiService } from "../services/geminiService";
+import { formatStorageSize } from "../utils/storageUtils";
 import type { LaptopContext } from "../services/geminiService";
 import type { Message } from "../types/techAssistant";
 import "./TechAssistantPage.css";
@@ -41,14 +42,9 @@ const TechAssistantPage: React.FC = () => {
       ram:
         currentLaptop.specs?.ram?.size && currentLaptop.specs?.ram?.type
           ? `${currentLaptop.specs.ram.size}GB ${currentLaptop.specs.ram.type}`
-          : currentLaptop.specs?.details?.RAMSize || "Not specified",
-      storage:
+          : currentLaptop.specs?.details?.RAMSize || "Not specified",      storage:
         currentLaptop.specs?.storage?.size && currentLaptop.specs?.storage?.type
-          ? `${
-              currentLaptop.specs.storage.size >= 1000
-                ? Math.round(currentLaptop.specs.storage.size / 1000) + "TB"
-                : currentLaptop.specs.storage.size + "GB"
-            } ${currentLaptop.specs.storage.type}`
+          ? `${formatStorageSize(currentLaptop.specs.storage.size)} ${currentLaptop.specs.storage.type}`
           : currentLaptop.specs?.details?.HardDriveSize || "Not specified",
       graphics:
         currentLaptop.specs?.gpu ||
@@ -391,12 +387,7 @@ const TechAssistantPage: React.FC = () => {
                 {currentLaptop.specs?.storage && (
                   <div className="spec-item">
                     <span className="spec-label">Storage:</span>
-                    <span className="spec-value">
-                      {currentLaptop.specs.storage.size &&
-                      currentLaptop.specs.storage.size >= 1000
-                        ? Math.round(currentLaptop.specs.storage.size / 1000) +
-                          "TB"
-                        : (currentLaptop.specs.storage.size || 0) + "GB"}{" "}
+                    <span className="spec-value">                      {formatStorageSize(currentLaptop.specs.storage.size)}{" "}
                       {currentLaptop.specs.storage.type}
                     </span>
                   </div>

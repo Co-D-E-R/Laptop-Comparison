@@ -4,6 +4,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
+import { formatStorage } from "../utils/storageUtils";
 import "./LaptopDetail.css";
 
 interface LaptopData {
@@ -199,22 +200,8 @@ const LaptopDetail: React.FC = () => {
 
     return ramText.trim();
   };
-
-  const formatStorage = () => {
-    if (!laptop?.specs?.storage) return "";
-    const { size, type } = laptop.specs.storage;
-    let storageText = "";
-
-    if (size) {
-      if (size >= 1000) {
-        storageText += `${(size / 1000).toFixed(size % 1000 === 0 ? 0 : 1)}TB`;
-      } else {
-        storageText += `${size}GB`;
-      }
-    }
-    if (type) storageText += ` ${type.toUpperCase()}`;
-
-    return storageText.trim();
+  const formatStorageDisplay = () => {
+    return formatStorage(laptop?.specs?.storage);
   };
 
   if (loading) {
@@ -366,8 +353,7 @@ const LaptopDetail: React.FC = () => {
                     <p className="comparison-value">{formatRAM()}</p>
                   </div>
                 </div>
-              )}
-              {formatStorage() && (
+              )}              {formatStorageDisplay() && (
                 <div className="comparison-item">
                   <div className="comparison-icon">
                     <svg viewBox="0 0 24 24" fill="currentColor">
@@ -376,7 +362,7 @@ const LaptopDetail: React.FC = () => {
                   </div>
                   <div className="comparison-content">
                     <p className="comparison-label">Storage</p>
-                    <p className="comparison-value">{formatStorage()}</p>
+                    <p className="comparison-value">{formatStorageDisplay()}</p>
                   </div>
                 </div>
               )}
@@ -443,11 +429,10 @@ const LaptopDetail: React.FC = () => {
                   <span className="spec-label">Memory (RAM)</span>
                   <span className="spec-value">{formatRAM()}</span>
                 </div>
-              )}
-              {formatStorage() && (
+              )}              {formatStorageDisplay() && (
                 <div className="spec-item">
                   <span className="spec-label">Storage</span>
-                  <span className="spec-value">{formatStorage()}</span>
+                  <span className="spec-value">{formatStorageDisplay()}</span>
                 </div>
               )}
               {laptop.specs.displayInch && (
