@@ -4,6 +4,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { useTechAssistant } from "../contexts/TechAssistantContext";
 import { useCompare } from "../hooks/useCompare";
 import { FavoriteButton } from "./FavoriteButton/FavoriteButton";
+import { formatStorage } from "../utils/storageUtils";
 import Comments from "./Comments/Comments";
 import "./LaptopDetailEnhanced.css";
 
@@ -229,21 +230,8 @@ const LaptopDetailEnhanced: React.FC = () => {
 
     return ramText.trim();
   };
-  const formatStorage = () => {
-    if (!laptop?.specs?.storage) return "";
-    const { size, type } = laptop.specs.storage;
-    let storageText = "";
-
-    if (size) {
-      if (size >= 1000) {
-        storageText += `${(size / 1000).toFixed(size % 1000 === 0 ? 0 : 1)}TB`;
-      } else {
-        storageText += `${size}GB`;
-      }
-    }
-    if (type) storageText += ` ${type.toUpperCase()}`;
-
-    return storageText.trim();
+  const formatStorageDisplay = () => {
+    return formatStorage(laptop?.specs?.storage);
   };
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-IN", {
@@ -322,7 +310,7 @@ const LaptopDetailEnhanced: React.FC = () => {
     const specs = [
       { label: "Processor", value: formatProcessor() },
       { label: "RAM", value: formatRAM() },
-      { label: "Storage", value: formatStorage() },
+      { label: "Storage", value: formatStorageDisplay() },
       {
         label: "Display",
         value: laptop?.specs?.displayInch ? `${laptop.specs.displayInch}"` : "",
@@ -723,10 +711,9 @@ const LaptopDetailEnhanced: React.FC = () => {
 
                 <div className="overview-section">
                   <h4>Storage & Display</h4>
-                  <div className="overview-items">
-                    {formatStorage() && (
+                  <div className="overview-items">                    {formatStorageDisplay() && (
                       <div className="overview-item">
-                        <strong>Storage:</strong> {formatStorage()}
+                        <strong>Storage:</strong> {formatStorageDisplay()}
                       </div>
                     )}
                     {laptop.specs?.displayInch && (

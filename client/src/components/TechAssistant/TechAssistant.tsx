@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useTechAssistant } from "../../contexts/TechAssistantContext";
 import { useCompare } from "../../hooks/useCompare";
 import { geminiService } from "../../services/geminiService";
+import { formatStorageSize } from "../../utils/storageUtils";
 import type {
   LaptopContext,
   ComparedLaptopData,
@@ -260,15 +261,9 @@ const TechAssistant: React.FC<TechAssistantProps> = () => {
         ram:
           laptop.specs?.ram?.size && laptop.specs?.ram?.type
             ? `${laptop.specs.ram.size}GB ${laptop.specs.ram.type}`
-            : extractString(laptop.specs?.details?.RAMSize),
-        storage:
+            : extractString(laptop.specs?.details?.RAMSize),        storage:
           laptop.specs?.storage?.size && laptop.specs?.storage?.type
-            ? `${
-                typeof laptop.specs.storage.size === "number" &&
-                laptop.specs.storage.size >= 1000
-                  ? Math.round(laptop.specs.storage.size / 1000) + "TB"
-                  : laptop.specs.storage.size + "GB"
-              } ${laptop.specs.storage.type}`
+            ? `${formatStorageSize(laptop.specs.storage.size)} ${laptop.specs.storage.type}`
             : extractString(laptop.specs?.details?.HardDriveSize),
         graphics:
           laptop.specs?.gpu ||
@@ -407,16 +402,10 @@ const TechAssistant: React.FC<TechAssistantProps> = () => {
               ram:
                 currentLaptop.specs?.ram?.size && currentLaptop.specs?.ram?.type
                   ? `${currentLaptop.specs.ram.size}GB ${currentLaptop.specs.ram.type}`
-                  : currentLaptop.specs?.details?.RAMSize || "Not specified",
-              storage:
+                  : currentLaptop.specs?.details?.RAMSize || "Not specified",              storage:
                 currentLaptop.specs?.storage?.size &&
                 currentLaptop.specs?.storage?.type
-                  ? `${
-                      currentLaptop.specs.storage.size >= 1000
-                        ? Math.round(currentLaptop.specs.storage.size / 1000) +
-                          "TB"
-                        : currentLaptop.specs.storage.size + "GB"
-                    } ${currentLaptop.specs.storage.type}`
+                  ? `${formatStorageSize(currentLaptop.specs.storage.size)} ${currentLaptop.specs.storage.type}`
                   : currentLaptop.specs?.details?.HardDriveSize ||
                     "Not specified",
               graphics:

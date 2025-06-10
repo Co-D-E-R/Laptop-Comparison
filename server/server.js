@@ -11,6 +11,7 @@ const matchLaptop = require("./model/matchLaptop.js");
 const Comment = require("./model/Review.js");
 
 const { AmazonData, FlipkartData } = require("./utils/dataFill.js");
+const { formatStorage } = require("./utils/storageUtils.js");
 
 // const amazonData = require('./Data/amazon_complete_data.json');
 // const flipkartData = require('./Data/flipkart_complete_data.json');
@@ -1022,10 +1023,7 @@ app.get("/api/suggestions", async (req, res) => {
           ? `${laptop.specs.ram.size || ""}${laptop.specs.ram.size ? "GB" : ""
           } ${laptop.specs.ram.type?.toUpperCase() || ""}`
           : "Unknown RAM",
-        storage: laptop.specs?.storage
-          ? `${laptop.specs.storage.size || ""}${laptop.specs.storage.size ? "GB" : ""
-          } ${laptop.specs.storage.type?.toUpperCase() || ""}`
-          : "Unknown Storage",
+        storage: formatStorage(laptop.specs?.storage),
         price: lowestPrice,
         rating: bestRating,
         reviewCount: bestRatingReviews,
@@ -1227,8 +1225,7 @@ app.get("/api/random", async (req, res) => {
           } ${laptop.specs.ram.type?.toUpperCase() || ""}`
           : "Unknown RAM",
         storage: laptop.specs?.storage
-          ? `${laptop.specs.storage.size || ""}${laptop.specs.storage.size ? "GB" : ""
-          } ${laptop.specs.storage.type?.toUpperCase() || ""}`
+          ? formatStorage(laptop.specs.storage)
           : "Unknown Storage",
         amazonPrice: amazonPrice,
         amazonRating: amazonRating,
@@ -1791,8 +1788,7 @@ app.get("/api/popular", async (req, res) => {
           } ${laptop.specs.ram.type?.toUpperCase() || ""}`
           : "Unknown RAM",
         storage: laptop.specs?.storage
-          ? `${laptop.specs.storage.size || ""}${laptop.specs.storage.size ? "GB" : ""
-          } ${laptop.specs.storage.type?.toUpperCase() || ""}`
+          ? formatStorage(laptop.specs.storage)
           : "Unknown Storage",
         amazonPrice: amazonPrice,
         amazonRating: amazonRating,
@@ -2258,8 +2254,7 @@ app.get("/api/deals", async (req, res) => {
           } ${laptop.specs.ram.type?.toUpperCase() || ""}`
           : "Unknown RAM",
         storage: laptop.specs?.storage
-          ? `${laptop.specs.storage.size || ""}${laptop.specs.storage.size ? "GB" : ""
-          } ${laptop.specs.storage.type?.toUpperCase() || ""}`
+          ? formatStorage(laptop.specs.storage)
           : "Unknown Storage",
         // Frontend expects formatted price strings
         price: `₹${bestPrice.toLocaleString("en-IN")}`,

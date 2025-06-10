@@ -177,23 +177,30 @@ const Compare: React.FC = () => {
       getValue: (laptop) => {
         // First try the structured specs
         const storage = laptop.specs?.storage?.size;
-        if (typeof storage === 'number' && storage > 0) return storage;
-        if (typeof storage === 'string' && storage && storage !== 'N/A') {
-          const parsed = parseInt(storage);
-          if (!isNaN(parsed)) return parsed;
+        if (storage) {
+          const numericSize = typeof storage === 'string' ? parseInt(storage) : storage;
+          if (!isNaN(numericSize) && numericSize > 0) {
+            // Use same logic as backend: if < 10, it's TB stored as single digit
+            if (numericSize < 10) {
+              return `${numericSize}TB`;
+            } else if (numericSize >= 1000) {
+              // Large GB values - convert to TB for display
+              const tbValue = numericSize / 1000;
+              return `${tbValue % 1 === 0 ? tbValue.toFixed(0) : tbValue.toFixed(1)}TB`;
+            } else {
+              return `${numericSize}GB`;
+            }
+          }
         }
         
         // Fallback to details
         const storageFromDetails = laptop.specs?.details?.["Hard Drive Size"];
         if (storageFromDetails && storageFromDetails !== 'N/A') {
-          const storageString = storageFromDetails.toString();
-          const match = storageString.match(/(\d+)/);
-          return match ? parseInt(match[1]) : 0;
+          return storageFromDetails.toString();
         }
-        return 0;
+        return "N/A";
       },
-      type: "number",
-      unit: "GB",
+      type: "string",
       category: "performance",
     },
     {
