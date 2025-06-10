@@ -22,10 +22,27 @@ footer {
 
 /* Compact spacing overrides */
 .footer-compact-spacing {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
   max-width: none !important;
   width: 100% !important;
+}
+
+/* Additional spacing for footer sections */
+.footer-section {
+  margin-bottom: 2rem;
+}
+
+.footer-nav-list {
+  margin-top: 1rem;
+}
+
+.footer-nav-list li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-nav-list li:last-child {
+  margin-bottom: 0;
 }
 
 /* Custom animations for footer */
@@ -148,6 +165,7 @@ footer {
 .footer-section-header {
   position: relative;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .footer-section-header::before {
@@ -199,7 +217,7 @@ footer {
     transparent
   );
   height: 1px;
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
 }
 
 .footer-enhanced-divider::before,
@@ -229,7 +247,9 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  margin-top: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /* Wider footer specific styles */
@@ -241,22 +261,22 @@ footer {
 .footer-grid-narrow {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 5rem;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 @media (max-width: 1024px) {
   .footer-grid-narrow {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 2.5rem;
   }
 }
 
 @media (max-width: 640px) {
   .footer-grid-narrow {
     grid-template-columns: 1fr;
-    gap: 1.25rem;
+    gap: 2rem;
   }
 }
 
@@ -272,16 +292,6 @@ footer {
 
   .footer-section-header {
     font-size: 1.1rem;
-  }
-
-  /* Prevent overlapping on mobile */
-  .footer-enhanced-divider {
-    margin: 2rem 0;
-  }
-
-  .footer-bottom {
-    margin-top: 1.5rem;
-    padding: 1rem 0.75rem !important;
   }
 }
 

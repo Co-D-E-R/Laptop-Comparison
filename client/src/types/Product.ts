@@ -19,6 +19,10 @@ export interface Product {
     "SSD Capacity"?: string;
     "HDD Capacity"?: string;
     "EMMC Storage Capacity"?: string;
+    Brand?: string;
+    Manufacturer?: string;
+    // Allow for additional fields that might be present
+    [key: string]: string | string[] | undefined;
   };
   // For multi-site display
   sites?: {
