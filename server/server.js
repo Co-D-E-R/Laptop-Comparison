@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const LaptopData = require("./Data/final_laptops.json");
 const matchLaptopData = require("./Data/matched_laptops.json");
-
+const MongoStore = require('connect-mongo');
 // Configuration constants
 const MAX_HISTORY_ITEMS = 9; // Maximum number of laptops to keep in user history (7-9 range)
 
@@ -85,11 +85,15 @@ app.use(
     secret: process.env.SESSION_SECRET || "laptop-compare-secret",
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({ 
+      mongoUrl: process.env.Mongo_URL,
+      touchAfter: 24 * 3600 // Only update sessions once per day
+    }),
     cookie: {
       httpOnly: true,
-      expires: Date.now() + 1000 * 60 * 60 * 24 * 7, // 1 week
+      expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
       maxAge: 1000 * 60 * 60 * 24 * 7,
-    }, // Set to true if using HTTPS
+    }
   })
 );
 
@@ -2552,6 +2556,6 @@ app.get('/api/notifications/favorites/:userId', async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
-  console.log("Server Started at port 8080");
+app.listen(PORT, () => {
+  console.log(`Server Started at port ${PORT}`);
 });
